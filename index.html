@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>PerCollECT - LidarLimbs</title>
+  <!-- include stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- include D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <!-- include jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- include table sort lib -->
+  <script src="https://table-sortable.now.sh/table-sortable.js"></script>
+  <!-- include scripts -->
+  <script src="src/model.js"></script>
+  <script src="src/utils.js"></script>
+  <script src="src/sidenav.js"></script>
+  <script src="src/content.js"></script>
+  <script src="src/xmlParser.js"></script>
+  <script src="src/treePlot.js"></script>
+  <script>
+    function isIE() {
+      let ua = window.navigator.userAgent;
+      return ua.indexOf('MSIE ') > 0 || ua.indexOf('Trident/') > 0;
+    }
+  </script>
+</head>
+
+<body onhashchange=location.reload()>
+  <script>
+    // define some global vars 
+    let repoName = "LidarLimbs";
+    let dataDict = "master/data/";
+    let xmlRootFile = "root_node.xml";
+    let dataHost = "https://raw.githubusercontent.com/PerCollECT/LidarLimbs/"
+    let homePath = (window.location.href.includes("localhost")) ?
+      `${window.location.origin}/` :
+      `${window.location.origin}/${window.location.pathname.split("/")[1]}/`;
+  </script>
+
+  <!-- sidenav  -->
+  <div id="side_nav" class="sidenav">
+    <div id="head">
+      <script>$("#head").append(createLink(repoName, homePath));</script>
+    </div>
+    <div class="infoHead">Effect Blocks</div>
+    <hr>
+    <div class="search-container">
+      <form action="javascript:jumpToSearch()" autocomplete="off">
+        <input id="search_input" type="text" placeholder="Search..." name="search" onfocus="this.value=''">
+        <button type="submit" class="btn btn-light"><em class="fa fa-search"></em></button>
+      </form>
+    </div>
+    <div id="side_nav_links"></div>
+  </div>
+
+  <!-- content  -->
+  <div class="content">
+    <div id="load_info">Loading data...</div>
+    <div id="tree_view"></div>
+    <div id="legend" class="legend"></div>
+    <div id="info_box"></div>
+
+    <!-- content table  -->
+    <div id="tree_table_container">
+      <!-- tree collapse button  -->
+      <button id="tree_table_collapse" type="button" class="btn btn-light open" title="Hide table"
+        style="display: none;">
+        <em id="toggle_symbol" class="fa fa-fw fa-chevron-up"></em>
+      </button>
+      <div id="tree_table_content" style="display: none;">
+        <!-- tree menu bar -->
+        <div id="tree_table_menu" class="row">
+          <div class="col-sm-4">
+            <input id="searchField" type="text" class="form-control" placeholder="Search...">
+          </div>
+          <p class="col-sm text-right">Rows per page</p>
+          <div class="col-sm-2">
+            <select id="changeRows" class="custom-select" name="rowsPerPage">
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="10" selected="">10</option>
+              <option value="15">15</option>
+            </select>
+          </div>
+        </div>
+        <!-- tree content -->
+        <div id="tree_table"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+
+    if (isIE()) {
+      $("#side_nav").empty();
+      let infoText =
+        "<h1 style='color:#2f4550;'>PerCollECT</h1>" +
+        "<p style='color:#2f4550;'>does not support Internet Explorer</p>" +
+        "<p style='color:#586f7c; font-family: monospace;'>Supported: Mozilla Firefox, Chrome, Edge, Opera, Safari, ...</p>"
+      $("#load_info").html(infoText)
+
+      throw new Error("index.js: No IE support");
+    }
+
+    // parse data only if tree not loaded already
+    if (getDataFromSessionStorage("tree") === null) {
+      let parsedData = parseTree(dataHost, dataDict, xmlRootFile);
+      if(!parsedData.length) throw new Error("index.js: Data error");
+
+      initTreeModel(parsedData);       
+      let serializedTree = new XMLSerializer().serializeToString(parsedData[0]);
+      keepDataInSessionStorage("tree", serializedTree);
+      keepDataInSessionStorage("additionalTreePairs", JSON.stringify(parsedData[1]));
+    }
+
+    // get adBlock data if not already exists
+    if (getDataFromSessionStorage("adBlocks") === null) {
+      let adBlocks = getAdBlocks();
+      keepDataInSessionStorage("adBlocks", JSON.stringify(adBlocks));
+    }
+
+    // handle active links of side bar
+    if (getDataFromSessionStorage("activeLinks") === null || window.location.href == homePath) {
+      keepDataInSessionStorage("activeLinks", JSON.stringify([]));
+    }
+
+    // manage page content
+    showCurrentContent();
+    addLegend();
+    if (window.location.href == homePath) addTreeTable();
+    addSideNavLinks();
+    addAutoComplete(document.getElementById("search_input"));
+
+  </script>
+
+</body>
+
+</html>

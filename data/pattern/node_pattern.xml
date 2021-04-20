@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- REMOVE COMMENT AFTER COPY
+This is a node pattern xml. 
+Copy, rename and fill in to create a new tree node with all necessary attributes.
+Note additional attributes:
+    designParameterCause="true" : render a tree node as type Design parameter
+-->
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="insert node id here (unique)"
+            title="insert node title/name here" 
+            adBlock="insert block name here, e.g. Reception"
+            description="insert node description text here"
+            references="insert reference here. Follow schema: 
+                [id_parent1, link1] 
+                [id_parent2, link2]
+                ..."
+            placementParentId="Leave blank if no multiple parents, else 
+                insert id of one parent to place under in tree."
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+
+    <!-- Include child node references here. Example include of node sp12: -->
+    <xi:include href="./sp_12_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="root" 
+            title="" 
+            adBlock="Object identification" 
+            description="" 
+            references=""
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+            
+    <xi:include href="./oi_1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi_2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

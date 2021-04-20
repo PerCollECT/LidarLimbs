@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="oi1" 
+            title="False negative in object list" 
+            adBlock="Object identification" 
+            description="An object present in ground truth is not detected by the sensor." 
+            references=""
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>
