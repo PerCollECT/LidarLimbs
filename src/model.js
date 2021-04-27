@@ -67,7 +67,7 @@ function connectMultiParentNode(allNodes, node, parent) {
  * @returns array with adBlock attributes
  */
 function getAdBlocks() {
-    let tree = $.parseXML(getDataFromSessionStorage("tree"));
+    let tree = $.parseXML(getDataFromSessionStorage("lidarLimbsTree"));
     if (!tree) return;
     let blocks = [];
     tree.getElementsByTagName("*").forEach(function (n) {
@@ -96,7 +96,7 @@ function treeIsEmpty(tree) {
  * @returns null if data does not includes node, else node
  */
 function getNodeByTitle(nodeName) {
-    let tree = $.parseXML(getDataFromSessionStorage("tree"));
+    let tree = $.parseXML(getDataFromSessionStorage("lidarLimbsTree"));
     if (!tree) return;
 
     let found;
@@ -117,7 +117,7 @@ function getNodeByTitle(nodeName) {
  * @returns null if data does not includes node, else node
  */
 function getNodeById(nodeId) {
-    let tree = $.parseXML(getDataFromSessionStorage("tree"));
+    let tree = $.parseXML(getDataFromSessionStorage("lidarLimbsTree"));
     if (!tree) return;
 
     let found;
@@ -136,7 +136,7 @@ function getNodeById(nodeId) {
  * @returns amount of parents
  */
 function getNumberOfParents(node) {
-    let additionalTreePairs = JSON.parse(getDataFromSessionStorage("additionalTreePairs"));
+    let additionalTreePairs = JSON.parse(getDataFromSessionStorage("lidarLimbsAdditionalTreePairs"));
     if (!additionalTreePairs) return;
     let num = 0;
 
@@ -162,7 +162,7 @@ function getNumberOfParents(node) {
  * @returns amount of children
  */
 function getNumberOfChildren(node) {
-    let additionalTreePairs = JSON.parse(getDataFromSessionStorage("additionalTreePairs"));
+    let additionalTreePairs = JSON.parse(getDataFromSessionStorage("lidarLimbsAdditionalTreePairs"));
     if (!additionalTreePairs) return;
 
     let childIds = [];
@@ -191,7 +191,7 @@ function getNumberOfChildren(node) {
  * @returns array with children nodes
  */
 function getAllChildren(node) {
-    let additionalTreePairs = JSON.parse(getDataFromSessionStorage("additionalTreePairs"));
+    let additionalTreePairs = JSON.parse(getDataFromSessionStorage("lidarLimbsAdditionalTreePairs"));
     if (!additionalTreePairs) return;
 
     let childIds = [];

@@ -5,7 +5,7 @@
  * @returns if tree is empty
  */
 function showCurrentContent() {
-  let tree = $.parseXML(getDataFromSessionStorage("tree"));
+  let tree = $.parseXML(getDataFromSessionStorage("lidarLimbsTree"));
   if (!tree || treeIsEmpty(tree)) return;
   if (!$("#load_info")) return;
 
@@ -46,7 +46,7 @@ function showCurrentContent() {
  * @param {Object} currentRoot 
  */
 function prepareNodeAsRoot(currentRoot) {
-  let additionalTreePairs = JSON.parse(getDataFromSessionStorage("additionalTreePairs"));
+  let additionalTreePairs = JSON.parse(getDataFromSessionStorage("lidarLimbsAdditionalTreePairs"));
   if (!additionalTreePairs) return;
 
   // check if all referenced childs already included as child of root
@@ -176,7 +176,7 @@ function jumpToSearch() {
 function addAutoComplete(input) {
   // TODO switch to jQuery
 
-  let tree = $.parseXML(getDataFromSessionStorage("tree"));
+  let tree = $.parseXML(getDataFromSessionStorage("lidarLimbsTree"));
   if (!tree) return;
 
   // collect all nodes names in tree
@@ -291,7 +291,7 @@ function addAutoComplete(input) {
  * Adds table to main content
  */
 function addTreeTable() {
-  let tree = $.parseXML(getDataFromSessionStorage("tree"));
+  let tree = $.parseXML(getDataFromSessionStorage("lidarLimbsTree"));
   if (!tree) return;
 
   if (!$("#tree_table_collapse")) return;

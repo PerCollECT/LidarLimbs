@@ -108,25 +108,25 @@
     }
 
     // parse data only if tree not loaded already
-    if (getDataFromSessionStorage("tree") === null) {
+    if (getDataFromSessionStorage("lidarLimbsTree") === null) {
       let parsedData = parseTree(dataHost, dataDict, xmlRootFile);
       if(!parsedData.length) throw new Error("index.js: Data error");
 
       initTreeModel(parsedData);       
       let serializedTree = new XMLSerializer().serializeToString(parsedData[0]);
-      keepDataInSessionStorage("tree", serializedTree);
-      keepDataInSessionStorage("additionalTreePairs", JSON.stringify(parsedData[1]));
+      keepDataInSessionStorage("lidarLimbsTree", serializedTree);
+      keepDataInSessionStorage("lidarLimbsAdditionalTreePairs", JSON.stringify(parsedData[1]));
     }
 
     // get adBlock data if not already exists
-    if (getDataFromSessionStorage("adBlocks") === null) {
+    if (getDataFromSessionStorage("lidarLimbsAdBlocks") === null) {
       let adBlocks = getAdBlocks();
-      keepDataInSessionStorage("adBlocks", JSON.stringify(adBlocks));
+      keepDataInSessionStorage("lidarLimbsAdBlocks", JSON.stringify(adBlocks));
     }
 
     // handle active links of side bar
-    if (getDataFromSessionStorage("activeLinks") === null || window.location.href == homePath) {
-      keepDataInSessionStorage("activeLinks", JSON.stringify([]));
+    if (getDataFromSessionStorage("lidarLimbsActiveLinks") === null || window.location.href == homePath) {
+      keepDataInSessionStorage("lidarLimbsActiveLinks", JSON.stringify([]));
     }
 
     // manage page content
