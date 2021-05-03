@@ -109,7 +109,8 @@ function updateTreePlot(source) {
         .style("fill", function (d) {
             if (d.designParameterCause) return "#b4acd2";
             return (getNumberOfChildren(d) > 0) ? "#f4f4f9" : "#ace3b5";
-        });
+        })
+        .on("click", onTreeNodeClicked);
 
     nodeEnter.append("text")
         .attr("y", nodeHeight / 2)
@@ -117,7 +118,8 @@ function updateTreePlot(source) {
         .attr("dy", ".35em")
         .text(function (d) { return d.name; })
         .call(wrapNodeText, maxTextLength)
-        .style("fill-opacity", 1e-6);
+        .style("fill-opacity", 1e-6)
+        .on("click", onTreeNodeClicked);
 
     nodeEnter.append("circle")
         .attr("class", "iButton")
@@ -175,13 +177,13 @@ function updateTreePlot(source) {
         .attr("stroke-width", function (d) {
             if (currentInfoboxNode == null) return;
             return (d.source == currentInfoboxNode
-                || d.target == currentInfoboxNode) ? 2.7 : 1.5;
+                || d.target == currentInfoboxNode) ? 2.7 : 2.0;
         })
         .style("stroke", function (d) {
             if (currentInfoboxNode == null) return;
             if (d.source == currentInfoboxNode) return "#f23d3d";
             if (d.target == currentInfoboxNode) return "#2185ff";
-            return "#ccc"
+            return "#A9A9A9"
         });
 
     link.exit().transition()
@@ -214,13 +216,13 @@ function updateTreePlot(source) {
         .attr("stroke-width", function (d) {
             if (currentInfoboxNode == null) return;
             return (d.source == currentInfoboxNode
-                || d.target == currentInfoboxNode) ? 2.7 : 1.5;
+                || d.target == currentInfoboxNode) ? 2.7 : 2.0;
         })
         .style("stroke", function (d) {
             if (currentInfoboxNode == null) return;
             if (d.source == currentInfoboxNode) return "#f23d3d";
             if (d.target == currentInfoboxNode) return "#2185ff";
-            return "#ccc"
+            return "#A9A9A9"
         });
 
     mpLink.exit().transition()
@@ -249,6 +251,20 @@ function onTreeInfoClicked(d) {
     $("#info_box").empty();
     addNodeInfos(node, "preview");
     document.getElementById("preview").scrollIntoView({ behavior: 'smooth' });
+    d3.event.stopPropagation();
+    collapseTreeTable();
+    updateTreePlot(d);
+}
+
+/**
+ * Performs action after the a node is clicked
+ * @param {Object} d clicked info
+ */
+ function onTreeNodeClicked(d) {
+    currentInfoboxNode = d;
+    let node = getNodeByTitle(d.name);
+    $("#info_box").empty();
+    addNodeInfos(node, "preview");
     d3.event.stopPropagation();
     collapseTreeTable();
     updateTreePlot(d);

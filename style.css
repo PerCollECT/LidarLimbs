@@ -214,7 +214,8 @@ body {
 
 .link, .mpLink {
   fill: none;
-  stroke: #ccc;
+  stroke: #A9A9A9;
+  stroke-width: 2.0;
 }
 
 .node .iButton {
