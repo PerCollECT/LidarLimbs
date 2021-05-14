@@ -437,7 +437,8 @@ function wrapNodeText(text, width) {
     text.each(function (d) {
         let textd3 = d3.select(this);
         if (textd3.node().getComputedTextLength() < width) return;
-        let words = textd3.text().split(new RegExp(/(?<=[.\-_\s+])/)).reverse();
+        //let words = textd3.text().split(new RegExp(/(?<=[.\-_\s+])/)).reverse();
+        let words = textd3.text().split(" ").reverse();
         // split into lines
         let word;
         let line = [];
