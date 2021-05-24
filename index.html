@@ -36,7 +36,7 @@
     let dataDict = "master/data/";
     let xmlRootFile = "root_node.xml";
     let dataHost = "https://raw.githubusercontent.com/PerCollECT/LidarLimbs/"
-    let homePath = (window.location.href.includes("localhost")) ?
+    let homePath = (window.location.href.includes("localhost") || window.location.href.includes("127.0.")) ?
       `${window.location.origin}/` :
       `${window.location.origin}/${window.location.pathname.split("/")[1]}/`;
   </script>
