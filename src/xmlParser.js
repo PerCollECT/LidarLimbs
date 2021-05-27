@@ -13,7 +13,7 @@ let errorOccurred;
  * @param {String} xmlRootFile file name of xml file defines three root
  */
 function parseTree(host, dataDict, xmlRootFile) {
-    let xmlRootFullPath = (window.location.href.includes("localhost")) ?
+    let xmlRootFullPath = (window.location.href.includes("localhost") || window.location.href.includes("127.0.")) ?
         `./data/${xmlRootFile}` : `${host}${dataDict}${xmlRootFile}`;
 
     recursionCounter = 0;
