@@ -102,13 +102,16 @@ function updateTreePlot(source) {
     nodeEnter.append("rect")
         .attr("width", nodeWidth)
         .attr("height", nodeHeight)
-        .attr("rx", function (d) {
+        /*.attr("rx", function (d) {
             return (getNumberOfChildren(d) > 0) ? 2 : 20;
+        })*/
+        .attr("rx", function (d) {
+            return (d.systemIndependentCause=="true" || d.designParameterCause=="true") ? 20 : 2;
         })
         .attr("stroke-width", 1.5)
         .style("fill", function (d) {
-            if (d.designParameterCause) return "#b4acd2";
-            return (getNumberOfChildren(d) > 0) ? "#f4f4f9" : "#ace3b5";
+            if (d.designParameterCause=="true") return "#b4acd2";
+            return (d.systemIndependentCause=="true") ? "#ace3b5" : "#f4f4f9";
         })
         .on("click", onTreeNodeClicked);
 
@@ -437,7 +440,8 @@ function wrapNodeText(text, width) {
     text.each(function (d) {
         let textd3 = d3.select(this);
         if (textd3.node().getComputedTextLength() < width) return;
-        let words = textd3.text().split(new RegExp(/(?<=[.\-_\s+])/)).reverse();
+        //let words = textd3.text().split(new RegExp(/(?<=[.\-_\s+])/)).reverse();
+        let words = textd3.text().split(" ").reverse();
         // split into lines
         let word;
         let line = [];
