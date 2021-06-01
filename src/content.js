@@ -106,11 +106,14 @@ function addNodeInfos(node, id) {
       case "references":
         value = prepareReferencesInfo(node.attributes[a].value);
         value.forEach(function (e) {
-          let nodeName = getNodeById(e[0]).getAttribute("title");
+          let nodeName = getNodeById(e[0].replaceAll(/[\s]/g, "")).getAttribute("title");
           let link = `${getLinkPath()}#${nodeName.replace(/[^A-Z0-9]/ig, "_").toLowerCase()}`;
-          e[0] = `Reference for influence on <a title='${e[0]}' href='${link}'>${nodeName}</a>`;
-          e[1] = `<a href='${e[1]}' target='_blank'>${e[1]}</a>`;
-          //e[2] = `test`;
+          e[0] = `Reference for influence on <a title='${e[0].replaceAll(/[\s]/g, "")}' href='${link}'>${nodeName}</a>`;
+          e[1] = `<a href='${e[1].replaceAll(/[\s]/g, "")}' target='_blank'>${e[1].replaceAll(/[\s]/g, "")}</a>`;
+          if (e.length > 2) {
+            e[1] = `${e[1]}, ${e[2]}`;
+            e.splice(2, 1);
+          }
         });
         break;      
       default:
@@ -415,17 +418,11 @@ function collapseTreeTable(delay) {
  * @returns 
  */
 function prepareReferencesInfo(referenceString){
-  /*let preparedRefString = referenceString
-  .replaceAll("[", "*+*")
-  .replaceAll("]", "*+*")
-  .replaceAll(/[,\s]/g, "*+*")
-  .split("*+*")
-  .filter(function (e) { return e != ""; });*/
 
   let preparedRefString = referenceString
   .replace("[", "")
   .replaceAll("]", "")
-  .replaceAll(/[\s]/g, "")
+  //.replaceAll(/[\s]/g, "")
   .split("[")
   .filter(function (e) { return e != ""; });
   
@@ -433,13 +430,6 @@ function prepareReferencesInfo(referenceString){
   for (item in preparedRefString) {
     value.push(preparedRefString[item].split(","));
   }
-
-  /*let value = preparedRefString.reduce(function (result, v, index, array) {
-    if (index % 2 === 0) {
-      result.push(array.slice(index, index + 2));
-    }
-    return result;
-  }, []);*/
 
   return value;
 }
