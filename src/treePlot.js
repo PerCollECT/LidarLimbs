@@ -7,19 +7,32 @@
 let root;
 let treePlot;
 let diagonal;
-let svg;
+let svgGroup;
 let duration = 750;
-let treeMargin = { top: 0, right: 100, bottom: 50, left: 20 };
-let treeWidth = window.innerWidth - treeMargin.right - treeMargin.left;
-let treeHeight = window.innerHeight - treeMargin.top - treeMargin.bottom;
+let treeMargin = { top: 20, right: 200, bottom: 100, left: 0 };
+let viewerWidth = window.innerWidth - treeMargin.right - treeMargin.left;
+let viewerHeight = window.innerHeight - treeMargin.top - treeMargin.bottom;
+let treeWidth;
 let maxTextLength = 90;
 let nodeWidth = maxTextLength + 20;
 let nodeHeight = 36;
-let scale = 0.85;
+let scale;
+let scaleTranslate;
 
 // helper properties
 let additionalLinks;
 let adBlockInfos;
+
+// Define the zoom function for the zoomable tree
+function zoom() {
+    currentScale = d3.event.scale * scale;
+    currentTranslate = [d3.event.translate[0] + scaleTranslate[0], d3.event.translate[1] + scaleTranslate[1]];
+    svgGroup.attr("transform", "translate(" + currentTranslate + ")scale(" + currentScale + ")");
+}
+
+// define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
+var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
+
 
 /**
 * Interface to plot tree data
@@ -52,22 +65,31 @@ function initTree(treeData) {
     // init tree
     treePlot = d3.layout.tree()
         .separation(function (a, b) { return 1; })
-        .size([treeWidth, treeHeight]);
+        .nodeSize(10)
+        .size([viewerWidth, viewerHeight])     //initialize with viewer dimensions, changed in updateTreeDimensions
     diagonal = d3.svg.diagonal()
         .projection(function (d) { return [d.x + nodeWidth / 2, d.y + nodeHeight / 2]; });
-    svg = d3.select("div#tree_view")
+    baseSvg = d3.select("div#tree_view")
         .append("svg")
-        .attr("width", treeWidth + treeMargin.right + treeMargin.left)
-        .attr("height", treeHeight + treeMargin.top + treeMargin.bottom)
-        .attr("transform", `translate(${treeMargin.left},${treeMargin.top})scale(${scale},${scale})`);
+        .attr("width", viewerWidth)
+        .attr("height", viewerHeight)
+        .attr("class", "overlay")
+        .call(zoomListener);
+    svgGroup = baseSvg.append("g");
+    
     root = treeData;
-    root.x0 = treeHeight / 2;
+    root.x0 = viewerHeight / 2;
     root.y0 = 0;
 
     // collect adBlock infos of nodes
     collectAdBlockDepthInfos(root);
     // collect additional links for nodes with multiple partens
     additionalLinks = collectAdditionalLinks();
+
+    treeWidth = getTreeDepth() * nodeWidth * 3;
+    scale = Math.min(viewerWidth/treeWidth - 0.05, 1);
+    scaleTranslate = [viewerWidth*0.05, viewerHeight/4];
+    svgGroup.attr("transform", "translate(" + scaleTranslate + ")scale(" + scale + ")");
 
     return true;
 }
@@ -92,7 +114,7 @@ function updateTreePlot(source) {
     });
 
     // ======== update nodes and text elements ========
-    let node = svg.selectAll("g.node")
+    let node = svgGroup.selectAll("g.node")
         .data(nodes, function (d) { return d.id || (d.id = ++i); });
 
     let nodeEnter = node.enter().append("g")
@@ -102,9 +124,6 @@ function updateTreePlot(source) {
     nodeEnter.append("rect")
         .attr("width", nodeWidth)
         .attr("height", nodeHeight)
-        /*.attr("rx", function (d) {
-            return (getNumberOfChildren(d) > 0) ? 2 : 20;
-        })*/
         .attr("rx", function (d) {
             return (d.systemIndependentCause=="true" || d.designParameterCause=="true") ? 20 : 2;
         })
@@ -162,7 +181,7 @@ function updateTreePlot(source) {
 
 
     // ======== update links ========
-    let link = svg.selectAll("path.link")
+    let link = svgGroup.selectAll("path.link")
         .data(links, function (d) { return d.target.id; });
 
     link.enter().insert("path", "g")
@@ -201,7 +220,7 @@ function updateTreePlot(source) {
     // ======== update additional links ========
     // WORKAROUND: add additional links defined in  
     // additionalLinks so that childs can have multiple parents
-    let mpLink = svg.selectAll("path.mpLink")
+    let mpLink = svgGroup.selectAll("path.mpLink")
         .data(additionalLinks);
 
     mpLink.enter().insert("path", "g")
@@ -277,18 +296,18 @@ function onTreeInfoClicked(d) {
  * Updates the tree dimension
  */
 function updateTreeDimension() {
-    treePlot.size([treeWidth, treeHeight]);
-    svg.attr("width", treeWidth + treeMargin.right + treeMargin.left)
-        .attr("height", treeHeight + treeMargin.top + treeMargin.bottom)
-        .attr("transform", `translate(${treeMargin.left},${treeMargin.top})scale(${scale},${scale})`);
+    treeWidth = getTreeDepth() * nodeWidth * 3;
+    treePlot.size([treeWidth, viewerHeight]);
+    baseSvg.attr("width", viewerWidth)
+        .attr("height", viewerHeight)
 }
 
 /**
  * Resizes the tree using current window dimension
  */
 function resizeTreePlot() {
-    treeWidth = 0.9 * window.innerWidth - treeMargin.right - treeMargin.left;
-    treeHeight = (getTreeDepth() + 2) * nodeHeight * 2;
+    viewerWidth = window.innerWidth - treeMargin.right - treeMargin.left;
+    viewerHeight = window.innerHeight - treeMargin.top - treeMargin.bottom;
     updateTreeDimension();
     updateTreePlot(root);
 }
@@ -474,3 +493,5 @@ function wrapNodeText(text, width) {
         d3.select(this.parentNode.childNodes[0]).attr("height", factor * (lineNumber + 1));
     });
 }
+
+

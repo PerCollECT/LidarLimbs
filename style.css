@@ -191,6 +191,10 @@ body {
   margin-right: 10px;
 } 
 
+.overlay{
+  background-color:#EEE;
+}
+
 .node-root {
   opacity: 0;
 }
