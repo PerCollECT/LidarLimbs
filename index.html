@@ -35,7 +35,7 @@
     let repoName = "LidarLimbs";
     let dataDict = "master/data/";
     let xmlRootFile = "root_node.xml";
-    let dataHost = "https://raw.githubusercontent.com/PerCollECT/LidarLimbs/"
+    let dataHost = "https://raw.githubusercontent.com/PerCollECT/" + repoName + "/"
     let homePath = (window.location.href.includes("localhost") || window.location.href.includes("127.0.")) ?
       `${window.location.origin}/` :
       `${window.location.origin}/${window.location.pathname.split("/")[1]}/`;
@@ -108,25 +108,25 @@
     }
 
     // parse data only if tree not loaded already
-    if (getDataFromSessionStorage("lidarLimbsTree") === null) {
+    if (getDataFromSessionStorage(repoName + "Tree") === null) {
       let parsedData = parseTree(dataHost, dataDict, xmlRootFile);
       if(!parsedData.length) throw new Error("index.js: Data error");
 
       initTreeModel(parsedData);       
       let serializedTree = new XMLSerializer().serializeToString(parsedData[0]);
-      keepDataInSessionStorage("lidarLimbsTree", serializedTree);
-      keepDataInSessionStorage("lidarLimbsAdditionalTreePairs", JSON.stringify(parsedData[1]));
+      keepDataInSessionStorage(repoName + "Tree", serializedTree);
+      keepDataInSessionStorage(repoName + "AdditionalTreePairs", JSON.stringify(parsedData[1]));
     }
 
     // get adBlock data if not already exists
-    if (getDataFromSessionStorage("lidarLimbsAdBlocks") === null) {
+    if (getDataFromSessionStorage(repoName + "AdBlocks") === null) {
       let adBlocks = getAdBlocks();
-      keepDataInSessionStorage("lidarLimbsAdBlocks", JSON.stringify(adBlocks));
+      keepDataInSessionStorage(repoName + "AdBlocks", JSON.stringify(adBlocks));
     }
 
     // handle active links of side bar
-    if (getDataFromSessionStorage("lidarLimbsActiveLinks") === null || window.location.href == homePath) {
-      keepDataInSessionStorage("lidarLimbsActiveLinks", JSON.stringify([]));
+    if (getDataFromSessionStorage(repoName + "ActiveLinks") === null || window.location.href == homePath) {
+      keepDataInSessionStorage(repoName + "ActiveLinks", JSON.stringify([]));
     }
 
     // manage page content

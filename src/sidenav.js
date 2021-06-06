@@ -4,10 +4,10 @@
  * Adds links based on tree element to side bar navigation.
  */
 function addSideNavLinks() {
-    let tree = $.parseXML(getDataFromSessionStorage("lidarLimbsTree"));
+    let tree = $.parseXML(getDataFromSessionStorage(repoName + "Tree"));
     if (!tree) return;
 
-    let adBlocks = JSON.parse(getDataFromSessionStorage("lidarLimbsAdBlocks"));
+    let adBlocks = JSON.parse(getDataFromSessionStorage(repoName + "AdBlocks"));
     if (!adBlocks) return;
 
     adBlocks.forEach(function (d) {
@@ -35,7 +35,7 @@ function addSideNavLinks() {
 
         // add listener
         btn.on("click", function () {
-            let localALinks = JSON.parse(getDataFromSessionStorage("lidarLimbsActiveLinks"));
+            let localALinks = JSON.parse(getDataFromSessionStorage(repoName + "ActiveLinks"));
             if (!localALinks) return;
 
             this.classList.toggle("active");
@@ -50,11 +50,11 @@ function addSideNavLinks() {
                 dropdownContent.style.display = "block";
                 localALinks.push(this.innerText);
             }
-            keepDataInSessionStorage("lidarLimbsActiveLinks", JSON.stringify(localALinks));
+            keepDataInSessionStorage(repoName + "ActiveLinks", JSON.stringify(localALinks));
         });
 
         // set currently active links
-        let aLinks = JSON.parse(getDataFromSessionStorage("lidarLimbsActiveLinks"));
+        let aLinks = JSON.parse(getDataFromSessionStorage(repoName + "ActiveLinks"));
         if (!aLinks) return;
         if (aLinks.includes(btn.text())) {
             btn.next().css("display", "block");
