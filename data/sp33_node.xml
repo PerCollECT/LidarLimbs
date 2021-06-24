@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp33" 
+            title="Signal distance in atm. particle volume" 
+            adBlock="Signal propagation" 
+            description="Distance of laser beam travelling through volume of particles in atmospheric aerosol and precipitation particles." 
+            references="[sp18, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Range R; p.10-11]"
+            systemIndependentCause="true"
+            placementParentId="sp18"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

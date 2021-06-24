@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="pp1" 
+            title="Not distinguishable from noise floor" 
+            adBlock="Pre-processing" 
+            description="The power recieved from the reflective surface of the object of interest present in ground truth is mathematically or visually not distinguishable from noise." 
+            references="[di1, https://ieeexplore.ieee.org/document/9354172/]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./re1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

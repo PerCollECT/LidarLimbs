@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp29" 
+            title="High number concentration of atm. particles" 
+            adBlock="Signal propagation" 
+            description="Number concentration of atmospheric aerosol particles in regular automotive lidar surroundings is high enough to interact measurable with laser beams. Number concentration of precipitation particles depending on precipitation intensity."
+            references="[sp18, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Number concentration N_j(R); p.10-11]" 
+            systemIndependentCause="true"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

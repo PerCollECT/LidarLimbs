@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp22" 
+            title="Backscattering by atm. aerosol and precipitation particles" 
+            adBlock="Signal propagation" 
+            description="Backscattering of beam by particles in atmospheric aerosol and precipitation particles. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of backscattering by molecules in air, if relevant." 
+            references="[di2, https://ieeexplore.ieee.org/document/9354172/]
+                        [di2, http://arxiv.org/abs/2105.04193]
+                        [di2, https://linkinghub.elsevier.com/retrieve/pii/S1270963816301900]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp26_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

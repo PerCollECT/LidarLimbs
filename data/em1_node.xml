@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="em1" 
+            title="Emitter wavelength" 
+            adBlock="Emission" 
+            description="Wavelength of the emitted light beam, considered an ectromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength]." 
+            references="[sp25, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Absorption cross section σ_abs(λ): Wavelength λ; p.10]
+                        [sp25, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408]
+                        [sp25, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840]
+                        [sp25, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Size factor x: Wavelength λ; p.6]
+                        [sp26, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Scattering cross section σ_sca(λ): Wavelength λ; p.10]
+                        [sp26, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408]
+                        [sp26, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840]
+                        [sp26, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Size factor x: Wavelength λ; p.6]"
+            designParameterCause="true"
+            placementParentId="sp25"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

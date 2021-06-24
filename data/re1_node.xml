@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re1" 
+            title="Low recieved power from object" 
+            adBlock="Reception" 
+            description="Laser beams which are backscattered by object of interest contain low light power when hitting reception unit." 
+            references="[pp1, https://linkinghub.elsevier.com/retrieve/pii/S0143816613000742]
+                        [pp1, https://ieeexplore.ieee.org/document/9354172/]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp18_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./re6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./em2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./em3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>
