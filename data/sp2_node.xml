@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp2" 
+            title="Object closer than min. distance" 
+            adBlock="Signal propagation" 
+            description="Excentric allignment and different divergences of laser beam and reciever field of view will lead to different stages of overlapping, depending on distance from sensor." 
+            references="[re1, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8]"
+            systemIndependentCause="true"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

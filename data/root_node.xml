@@ -7,6 +7,5 @@
             references=""
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
-            
-    <xi:include href="./oi_1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
 </basic_node>

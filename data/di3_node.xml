@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="di3" 
+            title="Detection threshold" 
+            adBlock="Detection identification" 
+            description="Measured light power impulses are determinated as detections only if detection threshold, e.g. power level threshold, is exceeded." 
+            references="[di1, https://ieeexplore.ieee.org/document/9354172/]
+                        [di2, https://ieeexplore.ieee.org/document/9354172/]"
+            designParameterCause="true"
+            placementParentId="di1"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

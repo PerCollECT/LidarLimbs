@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="di1" 
+            title="False negative detection" 
+            adBlock="Detection identification" 
+            description="Missing detection, compared to an ideally detected surrounding."
+            references="[oi1, https://ieeexplore.ieee.org/document/9354172/]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./pp1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./di3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>
