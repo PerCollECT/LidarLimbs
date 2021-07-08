@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re15" 
+            title="Spatial non-uniformities of pixels" 
+            adBlock="Reception" 
+            description="Fixed differences in material distribution and size of the pixels within the photodiode, determined by deviations in manufacturing." 
+            references="[re12, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773]
+                        [re12, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]
+                        [re13, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773]
+                        [re13, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]" 
+            systemIndependentCause="true"
+            placementParentId="re13"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

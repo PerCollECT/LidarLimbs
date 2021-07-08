@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp17" 
+            title="Sunlight background noise" 
+            adBlock="Signal propagation" 
+            description="Noise induced by measured power of solar radiation." 
+            references="[pp7, http://link.springer.com/10.1007/0-387-25101-4_4, p.11]
+                        [pp7, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]
+                        [pp7, https://ieeexplore.ieee.org/document/9121225/]
+                        [pp7, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./re14_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp23_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp24_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>
