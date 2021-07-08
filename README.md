@@ -205,7 +205,7 @@ If a node has multiple parent nodes make sure the `placementParentId` is set pro
 
 ## Credits
 
-The PerCollECT method is based on the following publication which has to be cited if referring to PerCollECT:<br>
+The PerCollECT method is based on the following [publication](https://tuprints.ulb.tu-darmstadt.de/18949/) which has to be cited if referring to PerCollECT:<br>
 C. Linnhoff, P. Rosenberger, S. Schmidt, L. Elster, R. Stark, and H. Winner, *“Towards Serious Perception Sensor Simulation for Safety Validation of Automated Driving - A Collaborative Method to Specify Sensor Models,”* submitted to the 24th International Conference on Intelligent Transportation Systems (ITSC), Indianapolis, IN, USA, 2021
 
 The work received initial funding from SET Level and VVM of the PEGASUS project family, promoted by the German Federal Ministry for Economic Affairs  and Energy based on a decision of the Deutsche Bundestag.

@@ -73,7 +73,7 @@ function loadTree(xmlFile) {
 
     // TODO properly catch error or adjust counter if tree grows
     ++recursionCounter;
-    if (recursionCounter > 1000) {
+    if (recursionCounter > 2000) {
         showErrorMsg(`xmlParser.js: Too much recursion.<br> See console output for more information`);
         console.warn(`too much recursion in ${xmlFile} or parent`)
         errorOccurred = true;
