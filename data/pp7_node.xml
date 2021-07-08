@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="pp7" 
+            title="Noise floor" 
+            adBlock="Pre-processing" 
+            description="Variety of unintentionally measured light power impulses." 
+            references="[pp1, http://ieeexplore.ieee.org/document/6851467/]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp22_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re5_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp36_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp34_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

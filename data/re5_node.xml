@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re5" 
+            title="Photosensor noise" 
+            adBlock="Reception" 
+            description="Noise induced by photosensor." 
+            references="[pp7, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]
+                        [pp7, https://ieeexplore.ieee.org/document/9121225/]
+                        [pp7, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./re17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re8_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re9_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re7_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp36_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

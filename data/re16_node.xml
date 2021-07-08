@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re16" 
+            title="Illumination intensity" 
+            adBlock="Reception" 
+            description="Intensity of illumination hitting the photosensor." 
+            references="[re13, https://linkinghub.elsevier.com/retrieve/pii/S0379073812005695]
+                        [re13, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]
+                        [sp36, http://aip.scitation.org/doi/10.1063/1.1720199]
+                        [sp36, http://ieeexplore.ieee.org/document/1449912/]" 
+            systemIndependentCause="true"
+            placementParentId="re13"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp23_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp24_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp35_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./em2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

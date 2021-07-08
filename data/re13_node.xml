@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re13" 
+            title="Photon response non-uniformity noise" 
+            adBlock="Reception" 
+            description="Noise induced by Photon response non-uniformity (PRNU), being the standard deviation of the pixel gain factor from the average pixel gain factor under even illumination, often given as a percentage." 
+            references="[re9, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]
+                        [re9, https://www.photometrics.com/wp-content/uploads/2021/01/Scientific-Image-Quality-A3-19-11-2020.pdf, Usage of CMOS and CCD imaging array technologies in flash lidar and atmospheric lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]"
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./re14_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./re15_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./re16_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

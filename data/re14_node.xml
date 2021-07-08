@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re14" 
+            title="Exposure time" 
+            adBlock="Reception" 
+            description="Temporal length of photosensor exposure." 
+            references="[re12, http://ieeexplore.ieee.org/document/6331408/]
+                        [re12, https://ieeexplore.ieee.org/document/8634703/]
+                        [re7, http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=876982]
+                        [re7, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773]
+                        [re7, http://ieeexplore.ieee.org/document/5378633/]
+                        [re7, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]
+                        [sp17, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]
+                        [sp17, https://iopscience.iop.org/article/10.1070/QEL17329]
+                        [sp34, https://iopscience.iop.org/article/10.1070/QEL17329]
+                        [re13, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]"
+            designParameterCause="true"
+            placementParentId="re7"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

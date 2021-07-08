@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp36" 
+            title="Shot noise" 
+            adBlock="Signal propagation" 
+            description="Noise induced by quantum mechanics, specifically the poisson distribution of photon units and electrons. Thus, the capability to generate free charge carriers within semiconductors of the photodiode correlates with the poisson distribution of incoming photons and generated photo-electrons. Also the spontaneous generation of free charge carriers due to thermal excitement of valence electrons within semiconductors of the photodiode without exposal to light, referred to as dark current, correlates with the poisson distribution of the generated photo-electrons and therefore entails shot noise." 
+            references="[pp7, https://ieeexplore.ieee.org/document/9464641/]
+                        [pp7, https://www.osapublishing.org/abstract.cfm?URI=ao-50-22-4478]
+                        [pp7, http://aip.scitation.org/doi/10.1063/1.1720199]
+                        [pp7, http://ieeexplore.ieee.org/document/1449912/]
+                        [re5, https://ieeexplore.ieee.org/document/9184668/]
+                        [re5, https://www.osapublishing.org/abstract.cfm?URI=ao-50-22-4478]
+                        [re5, http://aip.scitation.org/doi/10.1063/1.1720199],
+                        [re5, http://ieeexplore.ieee.org/document/1449912/]"
+            placementParentId="re5"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./re7_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./re16_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

@@ -4,8 +4,10 @@
             title="Emission power level" 
             adBlock="Emission" 
             description="Power level of emitted beam, specifically of one laser pulse." 
-            references="[re1, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: System factor K: Average Power of laser pulse P_0; p.6-7]"
+            references="[re1, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: System factor K: Average Power of laser pulse P_0; p.6-7]
+                        [re16, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]
+                        [re16, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: System factor K: Average Power of laser pulse P_0; p.6-7]"
             designParameterCause="true"
-            placementParentId=""
+            placementParentId="re16"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
 </basic_node>
