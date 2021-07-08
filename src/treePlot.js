@@ -106,12 +106,12 @@ function updateTreePlot(source) {
             && nodes.includes(l.target)
     });
 
-    // ======== transform ========
-    nodes.forEach(function (d) {
+    // ======== apply decomposition block repositioning ========
+    /*nodes.forEach(function (d) {
         prepareNodeDepth(d);
         d.y = d.depth * 80;
         if (d == root) d.y += 15;
-    });
+    });*/
 
     // ======== update nodes and text elements ========
     let node = svgGroup.selectAll("g.node")
