@@ -7,8 +7,8 @@
             references="[re17, http://ieeexplore.ieee.org/document/7520420/]
                         [re17, https://www.osapublishing.org/abstract.cfm?URI=oe-25-14-16589]
                         [re17, https://iopscience.iop.org/article/10.1070/QEL17329]
-                        [re8, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773]
-                        [re8, http://astronomicaltelescopes.spiedigitallibrary.org/article.aspx?doi=10.1117/1.JATIS.1.3.039002]
+                        [re8, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773, Usage of CMOS and CCD imaging array technologies in flash lidar and atmospheric lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]
+                        [re8, http://astronomicaltelescopes.spiedigitallibrary.org/article.aspx?doi=10.1117/1.JATIS.1.3.039002, Usage of CMOS and CCD imaging array technologies in flash lidar and atmospheric lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]
                         [re8, https://iopscience.iop.org/article/10.1070/QEL17329]
                         [re7, https://iopscience.iop.org/article/10.1070/QEL17329]"
             designParameterCause="true"
