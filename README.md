@@ -103,7 +103,7 @@ Note: After editing the data source you'll need to empty the session storage (e.
 
 ## Visualization
 
-Visualization of the tree can be found under [https://percollect.github.io/GenericGrove/](https://percollect.github.io/GenericGrove/).
+Visualization of the tree can be found under [https://percollect.github.io/LidarLimbs/](https://percollect.github.io/LidarLimbs/).
 It is supported by the following Browser: Chrome, Edge, Firefox, Opera and Safari. 
 
 ### Visualization Source Code

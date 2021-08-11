@@ -9,11 +9,11 @@ let treePlot;
 let diagonal;
 let svgGroup;
 let duration = 750;
-let treeMargin = { top: 20, right: 200, bottom: 100, left: 0 };
+let treeMargin = { top: 20, right: 170, bottom: 100, left: 0 };
 let viewerWidth = window.innerWidth - treeMargin.right - treeMargin.left;
 let viewerHeight = window.innerHeight - treeMargin.top - treeMargin.bottom;
 let treeWidth;
-let maxTextLength = 90;
+let maxTextLength = 120;
 let nodeWidth = maxTextLength + 20;
 let nodeHeight = 36;
 let scale;
@@ -31,7 +31,7 @@ function zoom() {
 }
 
 // define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
-var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
+var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 10]).on("zoom", zoom);
 
 
 /**
@@ -86,9 +86,9 @@ function initTree(treeData) {
     // collect additional links for nodes with multiple partens
     additionalLinks = collectAdditionalLinks();
 
-    treeWidth = getTreeDepth() * nodeWidth * 3;
+    treeWidth = getTreeDepth() * nodeWidth*3;
     scale = Math.min(viewerWidth/treeWidth - 0.05, 1);
-    scaleTranslate = [viewerWidth*0.05, viewerHeight/4];
+    scaleTranslate = [viewerWidth*0.05, viewerHeight/6];
     svgGroup.attr("transform", "translate(" + scaleTranslate + ")scale(" + scale + ")");
 
     return true;
@@ -296,8 +296,10 @@ function onTreeInfoClicked(d) {
  * Updates the tree dimension
  */
 function updateTreeDimension() {
-    treeWidth = getTreeDepth() * nodeWidth * 3;
-    treePlot.size([treeWidth, viewerHeight]);
+    treeDepth = getTreeDepth();
+    treeWidth = treeDepth * nodeWidth * 3;
+    treeHeight = treeDepth * nodeHeight * 4;
+    treePlot.size([treeWidth, treeHeight]);
     baseSvg.attr("width", viewerWidth)
         .attr("height", viewerHeight)
 }
