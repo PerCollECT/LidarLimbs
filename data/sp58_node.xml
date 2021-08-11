@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp58" 
+            title="Object surface color" 
+            adBlock="Signal propagation" 
+            description="Color of object surface being determined by non-absorbed but scattered portion of wavelengths of incident solar radiation hitting the object surface material." 
+            references="[sp47, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658]
+                        [sp47, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904]
+                        [sp47, https://www.osapublishing.org/abstract.cfm?URI=josaa-31-9-2055]
+                        [sp48, https://ieeexplore.ieee.org/document/9197138/]
+                        [sp46, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp46, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp46, http://link.springer.com/10.1007/978-3-319-12352-3_18, p.415 Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]"
+            systemIndependentCause="true"
+            placementParentId="sp47"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

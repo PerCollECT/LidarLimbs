@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re3" 
+            title="Photosensor noise" 
+            adBlock="Reception" 
+            description="Noise induced by photosensor." 
+            references="[di1, "
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./re17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re8_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re9_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re7_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp36_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

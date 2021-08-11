@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp64" 
+            title="Birefringence in object material" 
+            adBlock="Signal propagation" 
+            description="Birefringence, referred as double refraction, resulting from the occurance of an ordinary refractive index and an additional extraordinary refractive index depending on beam polarization state and incidence angle, most common for anisotropic materials." 
+            references="[sp46, http://aip.scitation.org/doi/10.1063/1.1662961]
+                        [sp47, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp47, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp47, http://link.springer.com/10.1007/978-3-319-12352-3_18, p.415 Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp48, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp48, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp48, http://link.springer.com/10.1007/978-3-319-12352-3_18, p.415 Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]"
+            systemIndependentCause="true"
+            placementParentId="sp47"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp65_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

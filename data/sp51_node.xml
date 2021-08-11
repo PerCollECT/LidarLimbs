@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp51" 
+            title="Incidence angle" 
+            adBlock="Signal propagation" 
+            description="Incidence angle describing the angle between incoming beam and surface normal." 
+            references="[sp65, http://link.springer.com/10.1007/978-3-319-99895-4, p.291-292]
+                        [sp46, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X]
+                        [sp46, https://iopscience.iop.org/article/10.1088/1681-7575/ab4523]
+                        [sp46, https://linkinghub.elsevier.com/retrieve/pii/S1875389213000953]
+                        [sp47, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658]
+                        [sp47, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X]
+                        [sp47, http://link.springer.com/10.1007/978-3-642-10523-4, p.93]
+                        [sp47, https://www.mdpi.com/1424-8220/20/11/3309]
+                        [sp47, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904]
+                        [sp48, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp48, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp48, http://link.springer.com/10.1007/978-3-319-12352-3_18, p.415 Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]"
+            systemIndependentCause="true"
+            placementParentId="sp65"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp52_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

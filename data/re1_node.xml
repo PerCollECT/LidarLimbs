@@ -13,4 +13,10 @@
     <xi:include href="./sp2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./em2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./em3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp40_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp46_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp47_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp42_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp45_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp48_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
 </basic_node>

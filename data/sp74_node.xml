@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp74" 
+            title="Absorption (see absorption by object parts)" 
+            adBlock="Signal propagation" 
+            description="Object parts absorbing portions of beam. Hence, converting incoming light engery into kinetic and thermal energy." 
+            references="[sp46, https://ieeexplore.ieee.org/document/9356196/]
+                        [sp46, https://iopscience.iop.org/article/10.1088/1681-7575/ab4523]
+                        [sp46, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X]
+                        [sp46, http://aip.scitation.org/doi/10.1063/1.1662961]
+                        [sp46, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378]
+                        [sp47, http://ieeexplore.ieee.org/document/6166850/]
+                        [sp47, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658]
+                        [sp47, https://iopscience.iop.org/article/10.1088/1681-7575/ab4523]
+                        [sp47, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378]"
+            systemIndependentCause="true"
+            placementParentId="sp46"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

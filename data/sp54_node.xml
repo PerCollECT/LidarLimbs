@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp54" 
+            title="Fraction of single beam hitting an object" 
+            adBlock="Signal propagation" 
+            description="Incomplete incidence of single beam on object because object size being smaller than beam cross section or beam hitting the object edge." 
+            references="[sp55, https://doi.org/10.14372/IEMEK.2017.12.1.43]"
+            placementParentId="sp55"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp42_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

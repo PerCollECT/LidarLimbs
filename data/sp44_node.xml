@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp44" 
+            title="Scattering by multiple objects (multi path)" 
+            adBlock="Signal propagation" 
+            description="Beam propagating back to reciever in multiple paths as being scattered by multiple objects." 
+            references="[sp40, https://link.aps.org/doi/10.1103/PhysRevLett.126.174301]"
+            placementParentId="sp40"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp47_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

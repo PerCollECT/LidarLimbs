@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp39" 
+            title="Distance between sensor and object" 
+            adBlock="Signal propagation" 
+            description="Spatial distance between LIDAR sensor and object." 
+            references="[sp42, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8/p.9/p.109]
+                        [sp42, https://ieeexplore.ieee.org/document/9127841/]"
+            systemIndependentCause="true"
+            placementParentId="sp42"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

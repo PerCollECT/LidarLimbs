@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp42" 
+            title="Divergence of outgoing beam" 
+            adBlock="Signal propagation" 
+            description="Divergence of outgoing beam being characterized by divergence angle." 
+            references="[sp2, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8/p.9/p.109]
+                        [re1, https://www.semanticscholar.org/paper/NORMALIZATION-OF-LIDAR-INTENSITY-DATA-BASED-ON-AND-Jutzi-Gross/91fc1c40a8168bf6060642a01ff456a36e42ebe0]
+                        [sp40, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X]
+                        [sp40, https://ieeexplore.ieee.org/document/9127841/]
+                        [sp54, https://doi.org/10.14372/IEMEK.2017.12.1.43]
+                        [sp54, https://linkinghub.elsevier.com/retrieve/pii/S0924271615001458]"
+            placementParentId="sp54"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp39_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

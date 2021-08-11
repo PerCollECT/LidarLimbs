@@ -11,8 +11,21 @@
                         [sp26, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Scattering cross section σ_sca(λ): Wavelength λ; p.10]
                         [sp26, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408]
                         [sp26, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840]
-                        [sp26, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Size factor x: Wavelength λ; p.6]"
+                        [sp26, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Size factor x: Wavelength λ; p.6]
+                        [sp48, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X]
+                        [sp48, http://link.springer.com/10.1007/978-3-642-10523-4, p.95]
+                        [sp48, http://link.springer.com/10.1007/978-3-642-10523-4, p.93]
+                        [sp46, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp46, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp46, http://link.springer.com/10.1007/978-3-319-12352-3_18, p.415 Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp47, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp47, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp47, http://link.springer.com/10.1007/978-3-319-12352-3_18, p.415 Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp65, http://link.springer.com/10.1007/978-3-642-10523-4, p.93]
+                        [sp65, http://link.springer.com/10.1007/978-3-319-99895-4, p.256]
+                        [sp66, http://link.springer.com/10.1007/978-3-642-10523-4, p.93]
+                        [sp66, http://link.springer.com/10.1007/978-3-319-99895-4, p.256]"
             designParameterCause="true"
-            placementParentId="sp25"
+            placementParentId="sp65"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
 </basic_node>
