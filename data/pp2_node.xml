@@ -1,0 +1,10 @@
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
+<!-- <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd"  -->
+            id="pp2" 
+            title="Measurement offset" 
+            adBlock="Pre-processing" 
+            description="" 
+            references="[pp9, http://link.springer.com/10.1007/978-3-662-48847-8, ?]"
+            placementParentId="pp9"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+<!-- </basic_node> -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="oi11" 
+            title="Existence filtering error" 
+            adBlock="Object identification" 
+            description="Bayes or bayes based filter, consisting of probability calculations." 
+            references="[oi1, http://link.springer.com/10.1007/978-3-662-48847-8, p.416-417.]
+                        [oi1, https://www.mdpi.com/1424-8220/19/6/1474]
+                        [oi4, http://link.springer.com/10.1007/978-3-662-48847-8, p.416-417.]
+                        [oi4, https://www.mdpi.com/1424-8220/19/6/1474]"
+            placementParentId="oi4"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp5_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./pp3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi9_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi10_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi26_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

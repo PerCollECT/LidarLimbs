@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp54" 
+            title="Fraction of single beam hitting an object part" 
+            adBlock="Signal propagation" 
+            description="Incomplete incidence of single beam on object part because object part size being smaller than beam cross section or beam hitting the edge of an object part." 
+            references="[sp55, https://doi.org/10.14372/IEMEK.2017.12.1.43]
+                        [sp55, https://ieeexplore.ieee.org/document/9127841/]
+                        [sp55, https://ieeexplore.ieee.org/document/9495137/, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]"
+            placementParentId="sp55"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp42_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp39_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

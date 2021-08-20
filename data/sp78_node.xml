@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp78" 
+            title="Periodic object movement" 
+            adBlock="Signal propagation" 
+            description="One or multiple objects moving periodically within receiver field of view." 
+            references="[pp17, https://ieeexplore.ieee.org/document/8500511/]"
+            systemIndependentCause="true"
+            placementParentId="pp17"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

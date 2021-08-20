@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="oi6" 
+            title="Object state error" 
+            adBlock="Object identification" 
+            description="Error in determination of a state of an object." 
+            references=""
+            placementParentId=""
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./oi17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi20_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi22_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi23_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi24_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi25_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

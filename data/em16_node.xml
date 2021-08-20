@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="em16" 
+            title="Horizontal/vertical scan angle" 
+            adBlock="Emission" 
+            description="Horizontal scan angle referred as azimuth angle, vertical scan angle referred as zenith angle. Gimballed alignment of emitter optics will lead to elliptic scan pattern." 
+            references="[sp77, http://link.springer.com/10.1007/s00502-018-0635-2]
+                        [sp77, https://linkinghub.elsevier.com/retrieve/pii/S0034425717301037]
+                        [sp77, https://linkinghub.elsevier.com/retrieve/pii/S0924271607000603]"
+            designParameterCause="true"
+            placementParentId="sp77"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

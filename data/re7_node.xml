@@ -8,11 +8,12 @@
                         [re5, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]
                         [re5, https://ieeexplore.ieee.org/document/9121225/]
                         [re5, https://iopscience.iop.org/article/10.1070/QEL17329]
+                        [re5, https://www.osapublishing.org/abstract.cfm?URI=ao-45-18-4437]
                         [sp36, http://aip.scitation.org/doi/10.1063/1.1720199]
                         [sp36, http://ieeexplore.ieee.org/document/1449912/]"
             placementParentId="sp36"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
-    <xi:include href="./re11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-    <xi:include href="./re14_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-    <xi:include href="./re10_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./re14_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re10_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
 </basic_node>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re3" 
+            title="Limited receiver field of view" 
+            adBlock="Reception" 
+            description="Receiver field of view being spatially limited." 
+            references="[di1, http://link.springer.com/10.1134/S1024856018060052, See dead zone.]"
+            placementParentId="di1"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./em6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp43_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

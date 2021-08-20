@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="re6" 
-            title="Small area of primary reciever optics" 
+            title="Small area of primary receiver optics" 
             adBlock="Reception" 
-            description="Limited field of view of primary reciever optics, determined by size of beam-recieving photo diode." 
-            references="[re1, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: System factor K: Cross section A; p.6-7]"
+            description="Limited field of view of primary receiver optics, determined by size of beam-receiving lens." 
+            references="[re1, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: System factor K: Area of primary receiver optics A; p.6-7.]
+                        [re1, https://ieeexplore.ieee.org/document/8500511/, Laser-Radar-Equation: Receiving lens surface A_sensor.]"
             designParameterCause="true"
-            placementParentId=""
+            placementParentId="re1"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
 </basic_node>

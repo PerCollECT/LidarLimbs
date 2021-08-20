@@ -6,10 +6,10 @@
             description="Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter." 
             references="[sp25, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408]
                         [sp25, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840]
-                        [sp25, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Mie coefficients a_j and b_j: complex index of refraction m'; p.6]
+                        [sp25, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Mie coefficients a_j and b_j: complex index of refraction m'; p.6.]
                         [sp26, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408]
                         [sp26, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840]
-                        [sp26, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Mie coefficients a_j and b_j: complex index of refraction m'; p.6]" 
+                        [sp26, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Mie coefficients a_j and b_j: complex index of refraction m'; p.6.]" 
             systemIndependentCause="true"
             placementParentId="sp26"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 

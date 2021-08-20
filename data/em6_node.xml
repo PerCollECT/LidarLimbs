@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="em6" 
+            title="Low set LIDAR mounting position" 
+            adBlock="Emission" 
+            description="Lidar mounted at low height." 
+            references="[re3,https://www.mdpi.com/1424-8220/20/8/2342]
+                        [sp9, https://www.mdpi.com/1424-8220/20/8/2342]"
+            designParameterCause="true"
+            placementParentId="re3"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

@@ -3,8 +3,10 @@
             id="sp33" 
             title="Signal distance in atm. particle volume" 
             adBlock="Signal propagation" 
-            description="Distance of laser beam travelling through volume of particles in atmospheric aerosol and precipitation particles." 
-            references="[sp18, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Range R; p.10-11]"
+            description="Distance of laser beam travelling through volume of particles in atmospheric aerosol and accumulated hydrometeors." 
+            references="[sp18, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Range R; p.10-11.]
+                        [sp18, https://linkinghub.elsevier.com/retrieve/pii/S0924271611001158, Formula reference to be added.]
+                        [sp18, http://ieeexplore.ieee.org/document/7535399/, Formula reference to be added.]"
             systemIndependentCause="true"
             placementParentId="sp18"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 

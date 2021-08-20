@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="oi19" 
+            title="Class filtering error" 
+            adBlock="Object identification" 
+            description="Bayes or bayes based filter, consisting of probability calculations." 
+            references="[oi3, http://link.springer.com/10.1007/978-3-662-48847-8, p.418.]
+                        [oi3, http://arxiv.org/abs/1907.04057]
+                        [oi3, http://www.mdpi.com/2072-4292/10/7/1078]
+                        [oi3, http://www.mdpi.com/2072-4292/6/5/3716]"
+            placementParentId="oi3"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./oi17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./re2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./oi7_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./oi20_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./oi24_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

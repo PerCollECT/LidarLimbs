@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp80" 
+            title="Fragments of light across the edges of main beam cross section" 
+            adBlock="Signal propagation" 
+            description="Small fragments of light being emitted across the edges of the main beam cross section, as the edges of the main beam cross section are not perfectly sharp cut." 
+            references="[sp79, http://www.mdpi.com/1424-8220/15/11/28099, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]
+                        [sp79, https://ieeexplore.ieee.org/document/9495137/, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]"            
+            systemIndependentCause="true"
+            placementParentId="sp79"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp80_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

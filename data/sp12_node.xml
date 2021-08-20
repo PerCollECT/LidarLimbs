@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp12" 
+            title="Security attack: Spoofing by relaying" 
+            adBlock="Signal propagation" 
+            description="Security attack by measuring the laser pulses or even particular ping waveforms sent out by the victims emitter and sending out delayed laser pulses/waveforms of the same wavelength to the victims receiver with the intention to insert false positive detections." 
+            references="[di2, http://link.springer.com/10.1007/978-3-319-66787-4, p.449-459]"
+            systemIndependentCause="true"
+            placementParentId="di2"
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+</basic_node>

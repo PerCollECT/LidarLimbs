@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp34" 
             title="Nighttime light background noise" 
             adBlock="Signal propagation" 
             description="Noise induced by measured power of radiation of nighttime dominant light sources." 
-            references="[pp7, http://link.springer.com/10.1007/0-387-25101-4_4, p.11]
+            references="[pp7, http://link.springer.com/10.1007/0-387-25101-4_4, p.11.]
                         [pp7, https://ieeexplore.ieee.org/document/9121225/]"
-            placementParentId=""
+            placementParentId="pp7"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
-    <xi:include href="./re14_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-    <xi:include href="./sp35_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp35_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re14_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
 </basic_node>

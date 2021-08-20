@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp52" 
+            title="Surface orientation" 
+            adBlock="Signal propagation" 
+            description="Surface orientation being the spatial orientation of the considered surface normal." 
+            references="[sp51, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X]
+                        [sp51, https://www.semanticscholar.org/paper/NORMALIZATION-OF-LIDAR-INTENSITY-DATA-BASED-ON-AND-Jutzi-Gross/91fc1c40a8168bf6060642a01ff456a36e42ebe0]"
+            systemIndependentCause="true"
+            placementParentId="sp51"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

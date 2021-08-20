@@ -8,4 +8,7 @@
             placementParentId=""
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
     <xi:include href="./oi2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <!-- <xi:include href="./pp6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" /> -->
 </basic_node>

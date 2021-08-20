@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp43" 
+            title="Divergence of receiver field of view" 
+            adBlock="Signal propagation" 
+            description="Divergence of receiver field of view due to its angular restriction." 
+            references="[re3, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8/p.9/p.109.]
+                        [re3, http://link.springer.com/10.1134/S1024856018060052]
+                        [sp2, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8/p.9/p.109.]"
+            designParameterCause="true"
+            placementParentId="sp2"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>
