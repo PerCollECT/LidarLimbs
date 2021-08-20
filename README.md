@@ -109,7 +109,7 @@ It is supported by the following Browser: Chrome, Edge, Firefox, Opera and Safar
 ### Visualization Source Code
 
 <p align="center">
-  <img src="https://github.com/PerCollECT/GenericGrove/blob/master/docs/PerCollECT_code_architecture.svg" width="800" textalign="center"/>
+  <img src="https://user-images.githubusercontent.com/27010086/130230287-0623ed69-ee16-4d1c-9c8d-51de19a907b8.png" width="800" textalign="center"/>
 </p>
 
 
