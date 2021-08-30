@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp37" 
+            title="Motion scan effect" 
+            adBlock="Signal propagation" 
+            description="Vertical or horizontal scan of an object moving vertically or horizontally relative to the scanning direction is leading to a longer or shorter object scan period and, thus, to a directional expansion or compression of the resolution of the beams hitting the object and incorrect dimensions of the received object point cloud. The inequalities between detections without impact of motion scan effect and dynamic detections distorted by motion scan effect being referred as detection state errors." 
+            references="[sp6, https://ieeexplore.ieee.org/document/8500511/, More/less beams hitting an object in case of motion scan effect compared to static measurements. Number of additional or less beams hitting the object is then dependent on sensor resolution.]
+                        [sp6, https://ieeexplore.ieee.org/document/8500511/, More/less beams hitting an object in case of motion scan effect compared to static measurements. Number of additional or less beams hitting the object is then dependent on sensor resolution.]
+                        [pp9, http://ieeexplore.ieee.org/document/4203071/]"
+            placementParentId="sp6"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />    
+    <xi:include href="./em17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />    
+</basic_node>

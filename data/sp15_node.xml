@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp15" 
+            title="Crosstalk" 
+            adBlock="Signal propagation" 
+            description="Crosstalk being a mutual illumination of receiver units by emitted beams between two seperately installed LIDAR sensors on different vehicles." 
+            references="[di2, http://publica.fraunhofer.de/dokumente/N-515177.html]"
+            placementParentId="di2"
+            xmlns:xi="http://www.w3.org/2003/XInclude">
+    <xi:include href="./sp16_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/> 
+</basic_node>

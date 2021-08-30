@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="em13" 
+            title="Missing stabilization system" 
+            adBlock="Emission" 
+            description="No use of a stabilization system consisting of various vibration isolators." 
+            references="[em8, https://library.csbe-scgab.ca/publications/cbe-journal/browse/6480-isolation-of-vibrations-transmitted-to-a-lidar-sensor-mounted-on-an-agricultural-vehicle-to-improve-obstacle-detection]"
+            designParameterCause="true"
+            placementParentId="em8"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

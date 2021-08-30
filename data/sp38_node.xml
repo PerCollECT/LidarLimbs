@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp38" 
+            title="Short mutual distance of objects" 
+            adBlock="Signal propagation" 
+            description="Short mutual distance of objects being the consequence of objects moving side by side or close positioned objects in general." 
+            references="[pp3, http://ieeexplore.ieee.org/document/5940442/]
+                        [pp3, http://www.mdpi.com/2072-4292/10/7/1078]
+                        [pp3, http://www.mdpi.com/2072-4292/6/5/3716]
+                        [pp3, http://ieeexplore.ieee.org/document/6121753/]"
+            systemIndependentCause="true"
+            placementParentId="pp3"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

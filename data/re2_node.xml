@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="re2" 
+            title="Low number of points received from object" 
+            adBlock="Detection identification" 
+            description="Low number of points belonging to an object received, impacting further classification." 
+            references="[oi19, http://arxiv.org/abs/1907.04057]
+                        [oi19, https://ieeexplore.ieee.org/document/8721124/]"
+            placementParentId="oi19"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp8_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

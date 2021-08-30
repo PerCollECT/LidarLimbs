@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="pp13" 
+            title="Grid size" 
+            adBlock="Pre-processing" 
+            description="Grid size being the size of an even plane within a variety of connected even planes, which are creating a gridded map in their entirety." 
+            references="[pp10, https://www.isprs.org/PROCEEDINGS/XXXIV/3-W13/papers/Smith_ALSDD2003.pdf]"
+            designParameterCause="true"
+            placementParentId="pp10"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

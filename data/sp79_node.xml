@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp79" 
+            title="Scattering of main beam by object part and light fragments not accompanying main beam by highly reflective object part" 
+            adBlock="Signal propagation" 
+            description="Highly reflective object parts in foreground, e.g. retroreflectors, being able to backscatter fragments of light from across the edges of the main beam cross section, additionally to main beam scattering by object part." 
+            references="[sp40, http://www.mdpi.com/1424-8220/15/11/28099, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]
+                        [sp40, https://ieeexplore.ieee.org/document/9495137/, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]"
+            placementParentId="sp40"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp80_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp39_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

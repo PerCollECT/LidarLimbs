@@ -3,10 +3,12 @@
             id="sp26" 
             title="Scattering by atm. particles" 
             adBlock="Signal propagation" 
-            description="Reflection of light by particles in atmospheric aerosol and precipitation particles, specifically without converting any light engery but scattering incoming beams, following the law of reflection. Scattering cross section being a measure of the probability to scatter light by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section." 
-            references="[sp18, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Scattering cross section σ_sca(λ); p.10-11]
-                        [sp22, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Backscatter coefficient β(R; λ): Differencial scattering cross section dσ_j;sca(π; λ); p.9-10]"
-            placementParentId="sp18"
+            description="Scattering of light by particles in atmospheric aerosol and accumulated hydrometeors, specifically without converting any light engery but scattering incoming beams, modelable with Mie theory. Scattering cross section being a measure of the probability to scatter light by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section." 
+            references="[sp18, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Scattering cross section σ_sca(λ); p.10-11.]
+                        [sp18, https://linkinghub.elsevier.com/retrieve/pii/S0924271611001158, Formula reference to be added.]
+                        [sp18, http://ieeexplore.ieee.org/document/7535399/, Formula reference to be added.]
+                        [sp22, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Backscatter coefficient β(R; λ): Differencial scattering cross section dσ_j;sca(π; λ); p.9-10.]"
+            placementParentId="sp22"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
     <xi:include href="./em1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp30_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>

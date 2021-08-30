@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="oi24" 
+            title="Object pose error" 
+            adBlock="Object identification" 
+            description="Error in determination of the pose of an object. Position and orientation are determining the pose of an object with respect to DIN ISO 5725. Thus, pose error sums up errors in estimated orientation angle of an object cluster, which is commonly expressed by a rectangle model, and in estimated position of an object cluster." 
+            references="[oi4, https://ieeexplore.ieee.org/document/9448795/, Positioning error being an object pose error with respect to DIN ISO 5725.]
+                        [oi6, http://link.springer.com/10.1007/978-3-662-48847-8, Positioning error being an object pose error with respect to DIN ISO 5725. See reference on object state error on p.413.]
+                        [oi6, http://ieeexplore.ieee.org/document/5940555/, Positioning error and orientation error both being an object pose error with respect to DIN ISO 5725.]
+                        [oi6, http://www.mdpi.com/1424-8220/15/7/16710, Positioning error being an object pose error with respect to DIN ISO 5725.]
+                        [oi19, https://ieeexplore.ieee.org/document/8721124/, Positioning error being an object pose error with respect to DIN ISO 5725.]"
+            placementParentId="oi19"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./oi10_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

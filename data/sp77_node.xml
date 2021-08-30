@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp77" 
+            title="Horizontal/vertical resolution" 
+            adBlock="Signal propagation" 
+            description="Density of emitted laser beams for a given distance." 
+            references="[sp6, http://ieeexplore.ieee.org/document/5940433/]
+                        [sp6, https://ieeexplore.ieee.org/document/8500511/, More/less beams hitting an object in case of motion scan effect compared to static measurements. Number of additional or less beams hitting the object is then dependent on sensor resolution.]"
+            designParameterCause="true"
+            placementParentId="sp6"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./em16_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./em17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./em18_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp39_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="sp48" 
+            title="Absorption by object parts" 
+            adBlock="Signal propagation" 
+            description="Object parts absorbing portions of beam. Hence, converting incoming light engery into kinetic and thermal energy." 
+            references="[re1, http://link.springer.com/10.1007/978-3-642-10523-4, p.93.]
+                        [re1, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being scattered.]
+                        [re1, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being scattered.]
+                        [re1, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being scattered. See p.415.]"
+            placementParentId="re1"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./em1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./em15_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp71_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp50_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp57_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp68_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp69_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp58_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp60_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp67_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp66_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp70_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp73_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp61_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp62_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp63_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp64_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp65_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp56_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp51_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

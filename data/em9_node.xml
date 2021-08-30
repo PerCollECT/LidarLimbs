@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="em9" 
+            title="Translation and rotation of vehicle about its centre of gravity" 
+            adBlock="Emission" 
+            description="Spatial movement with all degrees of freedom taken into consideration." 
+            references="[em8, https://library.csbe-scgab.ca/publications/cbe-journal/browse/6480-isolation-of-vibrations-transmitted-to-a-lidar-sensor-mounted-on-an-agricultural-vehicle-to-improve-obstacle-detection]"
+            placementParentId="em8"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./em10_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./em11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

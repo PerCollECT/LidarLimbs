@@ -8,12 +8,13 @@
                         [pp7, https://www.osapublishing.org/abstract.cfm?URI=ao-50-22-4478]
                         [pp7, http://aip.scitation.org/doi/10.1063/1.1720199]
                         [pp7, http://ieeexplore.ieee.org/document/1449912/]
+                        [pp7, https://www.osapublishing.org/abstract.cfm?URI=ao-45-18-4437]
                         [re5, https://ieeexplore.ieee.org/document/9184668/]
                         [re5, https://www.osapublishing.org/abstract.cfm?URI=ao-50-22-4478]
-                        [re5, http://aip.scitation.org/doi/10.1063/1.1720199],
+                        [re5, http://aip.scitation.org/doi/10.1063/1.1720199]
                         [re5, http://ieeexplore.ieee.org/document/1449912/]"
             placementParentId="re5"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
-    <xi:include href="./re7_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-    <xi:include href="./re16_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./re7_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./re16_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />    
 </basic_node>

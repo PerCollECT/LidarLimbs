@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="oi9" 
+            title="Uncertainty in estimated static variables" 
+            adBlock="Object identification" 
+            description="Error in static variables estimated by filter algorithm." 
+            references="[oi20, http://link.springer.com/10.1007/978-3-662-48847-8, p.413.]
+                        [oi20, http://ieeexplore.ieee.org/document/5940555/]
+                        [oi11, http://ieeexplore.ieee.org/document/5557917/]
+                        [oi11, https://www.mdpi.com/1424-8220/19/6/1474]
+                        [oi11, http://link.springer.com/10.1007/978-3-662-48847-8, p.416-417.]
+                        [oi11, https://www.semanticscholar.org/paper/3D-LIDAR-Multi-Object-Tracking-for-Autonomous-and-Rachman/bafc8fcdee9b22708491ea1293524ece9e314851, p.37-39.]"
+            placementParentId="oi20"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./pp9_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./pp8_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./oi27_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</basic_node>

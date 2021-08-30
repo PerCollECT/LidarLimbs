@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="em11" 
+            title="Type of terrain" 
+            adBlock="Emission" 
+            description="Type of terrain where LIDAR equiped vehicle is being driven determines state of ground unevenness." 
+            references="[em9, https://library.csbe-scgab.ca/publications/cbe-journal/browse/6480-isolation-of-vibrations-transmitted-to-a-lidar-sensor-mounted-on-an-agricultural-vehicle-to-improve-obstacle-detection]"
+            systemIndependentCause="true"
+            placementParentId="em9"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+</basic_node>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
+            id="pp3" 
+            title="Clustering error" 
+            adBlock="Pre-processing" 
+            description="Error in assignment of data points to point cloud of an object candidate." 
+            references="[oi17, http://www.mdpi.com/2072-4292/10/7/1078]
+                        [oi17, http://www.mdpi.com/2072-4292/6/5/3716]
+                        [pp9, http://www.mdpi.com/1424-8220/18/5/1508]
+                        [pp9, https://linkinghub.elsevier.com/retrieve/pii/S0166361517304748]
+                        [pp8, https://linkinghub.elsevier.com/retrieve/pii/S0166361517304748]
+                        [oi11, http://ieeexplore.ieee.org/document/5557917/]
+                        [oi11, https://www.mdpi.com/1424-8220/19/6/1474]
+                        [oi11, http://link.springer.com/10.1007/978-3-662-48847-8, p.416-417.]
+                        [oi11, https://www.semanticscholar.org/paper/3D-LIDAR-Multi-Object-Tracking-for-Autonomous-and-Rachman/bafc8fcdee9b22708491ea1293524ece9e314851, p.37-39.]"
+            placementParentId="pp9"
+            xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./di2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp38_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./pp11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./pp17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+</basic_node>

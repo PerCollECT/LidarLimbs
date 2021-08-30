@@ -3,9 +3,13 @@
             id="sp2" 
             title="Object closer than min. distance" 
             adBlock="Signal propagation" 
-            description="Excentric allignment and different divergences of laser beam and reciever field of view will lead to different stages of overlapping, depending on distance from sensor." 
-            references="[re1, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8]"
+            description="Excentric alignment and different divergences of laser beam and receiver field of view will lead to different stages of overlapping, depending on distance from sensor. Thus, the minimum object distance being determined." 
+            references="[re1, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8/p.9/p.109.]"
             systemIndependentCause="true"
-            placementParentId=""
+            placementParentId="re1"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./em14_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp42_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp43_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp39_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
 </basic_node>
