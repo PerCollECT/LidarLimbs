@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp45" 
-            title="Broadened returned pulse profile" 
+            title="Broadened measured impulse profile" 
             adBlock="Signal propagation" 
-            description="Increased cross section of beam returning from object." 
-            references="[re1, https://www.semanticscholar.org/paper/NORMALIZATION-OF-LIDAR-INTENSITY-DATA-BASED-ON-AND-Jutzi-Gross/91fc1c40a8168bf6060642a01ff456a36e42ebe0, Impact of broadened pulse profile on returned beam intensity considered being equivalent to impact of divergence of pulse.]"
+            description="Measured radiation engery impulse width increases when illuminated object part surface normal is not coaxial to laser beam propagation direction because of surface parts which are further back being illuminated later." 
+            references="[re1, https://ieeexplore.ieee.org/document/8683075/]"
             placementParentId="re1"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
     <xi:include href="./sp47_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-    <xi:include href="./sp53_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp51_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
 </basic_node>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp16" 
-            title="Other uncoupled active LIDAR sensor" 
+            title="Another active LIDAR sensor" 
             adBlock="Signal propagation" 
             description="Emerging of further active LIDAR sensors." 
             references="[sp15, http://publica.fraunhofer.de/dokumente/N-515177.html]

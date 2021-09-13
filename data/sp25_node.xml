@@ -9,6 +9,7 @@
                         [sp18, http://ieeexplore.ieee.org/document/7535399/, Formula reference to be added.]"
             placementParentId="sp18"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp66_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./em1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp30_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp31_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>

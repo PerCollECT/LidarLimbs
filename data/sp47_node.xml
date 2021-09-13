@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <basic_node xi:noNamespaceSchemaLocation="./schema/basic_node.xsd" 
             id="sp47" 
-            title="Specular/diffuse scattering by object parts" 
+            title="Specular/diffuse reflection by object parts" 
             adBlock="Signal propagation" 
-            description="Object parts scattering portions of beam. Reflectance expressed by Bidirectional Reflectance Distribution Function (BRDF)." 
+            description="Object parts reflecting portions of beam. Diffuse reflection being referred as scattering. Reflectance of an object part being expressed by Bidirectional Reflectance Distribution Function (BRDF)." 
             references="[sp45, https://ieeexplore.ieee.org/document/8683075/]
                         [sp45, https://ieeexplore.ieee.org/document/9127841/]
                         [sp44, https://link.aps.org/doi/10.1103/PhysRevLett.126.174301]
                         [sp44, https://www.fs.usda.gov/treesearch/pubs/30652]
+                        [sp44, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29]
                         [sp55, https://doi.org/10.14372/IEMEK.2017.12.1.43]
                         [di2, http://ieeexplore.ieee.org/document/5409636/, Reflection by perfectly mirroring surfaces leading to false positive detections behind the mirroring surface.]
                         [di2, http://link.springer.com/10.1007/978-3-030-14757-0_5, Reflection by perfectly mirroring surfaces leading to false positive detections behind the mirroring surface. See p.61.]
                         [di2, https://ieeexplore.ieee.org/document/8936913/, Reflection by perfectly mirroring surfaces leading to false positive detections behind the mirroring surface.]
-                        [re1, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being scattered. Additionaly; direct reference is given here by Laser-Radar-Equation: Reflectivity of object K_r.]
-                        [re1, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being scattered. Additionaly diffuse scattering leading to distribution of scattering intensity (see BRDF).]
-                        [re1, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being scattered. See p.415.]
-                        [re1, https://www.mdpi.com/1424-8220/20/11/3309, Diffuse scattering leading to distribution of scattering intensity (see BRDF).]
-                        [re1, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904, Diffuse scattering leading to distribution of scattering intensity (see BRDF).]
+                        [re1, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected. Additionaly; direct reference is given here by Laser-Radar-Equation: Reflectivity of object K_r.]
+                        [re1, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected. Additionaly diffuse scattering leading to distribution of scattering intensity (see BRDF).]
+                        [re1, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected. See p.415.]
+                        [re1, https://www.mdpi.com/1424-8220/20/11/3309, Distribution of scattering intensity (see BRDF).]
+                        [re1, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904, Distribution of scattering intensity (see BRDF).]
                         [sp40, https://ieeexplore.ieee.org/document/9127841/]
                         [sp40, https://doi.org/10.14372/IEMEK.2017.12.1.43]
                         [sp40, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X]
@@ -34,7 +35,6 @@
 
     <xi:include href="./em15_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp65_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-    <xi:include href="./sp66_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
 
     <xi:include href="./sp68_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp69_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
@@ -48,4 +48,5 @@
     <xi:include href="./sp64_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./em1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp71_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./sp66_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
 </basic_node>
