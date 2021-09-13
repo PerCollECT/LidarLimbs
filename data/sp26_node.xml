@@ -10,6 +10,7 @@
                         [sp22, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Backscatter coefficient β(R; λ): Differencial scattering cross section dσ_j;sca(π; λ); p.9-10.]"
             placementParentId="sp22"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
+    <xi:include href="./sp66_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./em1_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp30_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp31_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>

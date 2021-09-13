@@ -6,7 +6,7 @@
             description="Noise induced by analog-to-digital converter of the photosensor due to inaccuracies while converting continuous voltage signal into discrete digital signal." 
             references="[re5, https://www.osapublishing.org/abstract.cfm?URI=oe-25-14-16589]
                         [re5, https://iopscience.iop.org/article/10.1070/QEL17329]
-                        [re5, https://ieeexplore.ieee.org/document/8778154/]"
+                        [re5, http://ieeexplore.ieee.org/document/7520420/]"
             placementParentId="re5"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
     <xi:include href="./re11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />

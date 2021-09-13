@@ -14,10 +14,12 @@
                         [sp47, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904]
                         [sp47, https://www.osapublishing.org/abstract.cfm?URI=ao-47-7-986]
                         [sp47, https://ieeexplore.ieee.org/document/8917455/]
-                        [sp48, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
-                        [sp48, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two.]
-                        [sp48, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with absorption coefficient A; reflection coefficient R; transmission coefficient T. Thus; causes for one of these three inevitably affect the other two. See p.415.]
-                        [sp65, http://link.springer.com/10.1007/978-3-319-99895-4, p.291-292.]"
+                        [sp48, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp48, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.]
+                        [sp48, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]
+                        [sp65, http://link.springer.com/10.1007/978-3-319-99895-4, p.291-292.]
+                        [sp45, https://ieeexplore.ieee.org/document/8683075/]
+                        [sp45, https://ieeexplore.ieee.org/document/9127841/]"
             systemIndependentCause="true"
             placementParentId="sp65"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 

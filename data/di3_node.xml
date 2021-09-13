@@ -3,7 +3,7 @@
             id="di3" 
             title="Detection threshold" 
             adBlock="Detection identification" 
-            description="Measured light power impulses are determinated as detections only if detection threshold, e.g. power level threshold, is exceeded." 
+            description="Measured radiation power impulses are determinated as detections only if detection threshold, e.g. power level threshold, is exceeded." 
             references="[di1, https://ieeexplore.ieee.org/document/9354172/]
                         [di2, https://ieeexplore.ieee.org/document/9354172/]"
             designParameterCause="true"

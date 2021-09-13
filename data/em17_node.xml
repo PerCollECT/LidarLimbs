@@ -5,7 +5,7 @@
             adBlock="Emission" 
             description="Freqeuency of oscillating/rotating components of emitter optics." 
             references="[sp77, http://link.springer.com/10.1007/s00502-018-0635-2]
-                        [sp77, https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2018/51906/Atlanta,%20Georgia,%20USA/270931]
+                        [sp77, https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2018/51906/Atlanta%20Georgia,%20USA/270931]
                         [pp17, https://ieeexplore.ieee.org/document/8500511/]
                         [sp37, https://ieeexplore.ieee.org/document/8500511/]"
             designParameterCause="true"
