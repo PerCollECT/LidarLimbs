@@ -4,11 +4,11 @@
             title="Uncertainty in estimated dynamic variables" 
             adBlock="Object identification" 
             description="Error in dynamic variables estimated by filter algorithm." 
-            references="[oi24, http://link.springer.com/10.1007/978-3-662-48847-8, Reference on object positioning error; here. Positioning error being an object pose error with respect to DIN ISO 5725. See reference on object positioning error on p.413.]
-                        [oi24, http://ieeexplore.ieee.org/document/5940555/, Reference on object positioning error; here. Positioning error being an object pose error with respect to DIN ISO 5725.]
-                        [oi24, https://library.csbe-scgab.ca/publications/cbe-journal/browse/6480-isolation-of-vibrations-transmitted-to-a-lidar-sensor-mounted-on-an-agricultural-vehicle-to-improve-obstacle-detection, Reference on object positioning error; here. Positioning error being an object pose error with respect to DIN ISO 5725.]
-                        [oi24, http://ieeexplore.ieee.org/document/5940555/, Reference on object orientation error; here. Orientation error being an object pose error with respect to DIN ISO 5725.]
-                        [oi24, https://iopscience.iop.org/article/10.1088/1757-899X/472/1/012017, Reference on object orientation error; here. Orientation error being an object pose error with respect to DIN ISO 5725.]
+            references="[oi24, http://link.springer.com/10.1007/978-3-662-48847-8, Reference on object positioning error; here. Positioning error being an object pose error with respect to DIN EN ISO 8373. See reference on object positioning error on p.413.]
+                        [oi24, http://ieeexplore.ieee.org/document/5940555/, Reference on object positioning error; here. Positioning error being an object pose error with respect to DIN EN ISO 8373.]
+                        [oi24, https://library.csbe-scgab.ca/publications/cbe-journal/browse/6480-isolation-of-vibrations-transmitted-to-a-lidar-sensor-mounted-on-an-agricultural-vehicle-to-improve-obstacle-detection, Reference on object positioning error; here. Positioning error being an object pose error with respect to DIN EN ISO 8373.]
+                        [oi24, http://ieeexplore.ieee.org/document/5940555/, Reference on object orientation error; here. Orientation error being an object pose error with respect to DIN EN ISO 8373.]
+                        [oi24, https://iopscience.iop.org/article/10.1088/1757-899X/472/1/012017, Reference on object orientation error; here. Orientation error being an object pose error with respect to DIN EN ISO 8373.]
                         [oi22, http://link.springer.com/10.1007/978-3-662-48847-8, p.413.]
                         [oi22, http://ieeexplore.ieee.org/document/5940555/]
                         [oi23, http://ieeexplore.ieee.org/document/5940555/]

@@ -9,6 +9,8 @@
             placementParentId="oi10"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
     <!-- <xi:include href="./pp2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />  -->
+    <xi:include href="./sp4_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+    <xi:include href="./sp5_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
     <xi:include href="./em8_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
     <xi:include href="./pp3_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
     <xi:include href="./pp10_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />

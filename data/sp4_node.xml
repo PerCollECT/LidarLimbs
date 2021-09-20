@@ -5,7 +5,9 @@
             adBlock="Signal propagation" 
             description="Possible measuring error, describable by stochastic disturbance variable modeled as zero-mean white noise." 
             references="[pp8, http://link.springer.com/10.1007/978-3-662-48847-8, Measurement equation z_k+1;k: Stochastic disturbance variable w_k+1; p.414-415.]
-                        [pp8, http://ieeexplore.ieee.org/document/4114334/]"
+                        [pp8, http://ieeexplore.ieee.org/document/4114334/]
+                        [pp9, http://link.springer.com/10.1007/978-3-662-48847-8, Measurement equation z_k+1;k: Stochastic disturbance variable w_k+1; p.414-415.]
+                        [pp9, http://ieeexplore.ieee.org/document/4114334/]"
             systemIndependentCause="true"
             placementParentId="pp8"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 

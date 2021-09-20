@@ -18,6 +18,6 @@
     <xi:include href="./di2_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./sp38_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
     <xi:include href="./pp11_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
-    <xi:include href="./pp17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
+    <xi:include href="./pp17_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
     <xi:include href="./sp6_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude"/>
 </basic_node>

@@ -4,10 +4,9 @@
             title="Existence filtering error" 
             adBlock="Object identification" 
             description="Bayes or bayes based filter, consisting of probability calculations." 
-            references="[oi1, http://link.springer.com/10.1007/978-3-662-48847-8, p.416-417.]
-                        [oi1, https://www.mdpi.com/1424-8220/19/6/1474]
+            references="[oi1, http://ieeexplore.ieee.org/document/4290111/]
                         [oi4, http://link.springer.com/10.1007/978-3-662-48847-8, p.416-417.]
-                        [oi4, https://www.mdpi.com/1424-8220/19/6/1474]"
+                        [oi4, http://ieeexplore.ieee.org/document/4290111/]"
             placementParentId="oi4"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
     <xi:include href="./sp5_node.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
