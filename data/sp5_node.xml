@@ -5,7 +5,8 @@
             adBlock="Signal propagation" 
             description="Number of measurements that confirm the existence of an object." 
             references="[oi11, http://link.springer.com/10.1007/978-3-662-48847-8, p.417.]
-                        [pp8, http://link.springer.com/10.1007/978-3-662-48847-8, p.413-415.]"
+                        [pp8, http://link.springer.com/10.1007/978-3-662-48847-8, p.413-415.]
+                        [pp9, http://link.springer.com/10.1007/978-3-662-48847-8, p.413-415.]"
             designParameterCause="true"
             placementParentId="pp8"
             xmlns:xi="http://www.w3.org/2003/XInclude"> 
