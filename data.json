@@ -5,7 +5,7 @@
     "title": "False negative detection",
     "decomBlock": "Detection identification",
     "description": "Missing detection, compared to an ideally detected surrounding" ,
-    "references": "[2, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
+    "references": "[8, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
     "nodeType": "effect"
   },
   {
