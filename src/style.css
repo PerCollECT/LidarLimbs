@@ -179,7 +179,7 @@ body {
   margin-top: 100px;
   margin-bottom: 200px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: var(--main-color-sec);
 } 
 
@@ -209,7 +209,7 @@ body {
 }
 
 .node text {
-  font: 12px sans-serif;
+  font: 18px sans-serif;
 }
 
 .link-root {

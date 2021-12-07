@@ -1,0 +1,470 @@
+[
+  {
+    "id": "0",
+    "parentIds": ["8"],
+    "title": "False negative detection",
+    "decomBlock": "Detection identification",
+    "description": "Missing detection, compared to an ideally detected surrounding" ,
+    "references": "[2, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "1",
+    "parentIds": ["14"],
+    "title": "Detection position error",
+    "decomBlock": "Detection identification",
+    "description": "Detection identified at wrong position e.g. due to aliasing or multi-path propagation" ,
+    "references": "[14, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "2",
+    "parentIds": ["15"],
+    "title": "Detection velocity error",
+    "decomBlock": "Detection identification",
+    "description": "Detection identified with a wrong velocity e.g. due to multi-path propagation" ,
+    "references": "[15, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "3",
+    "parentIds": ["2"],
+    "title": "Error in velocity ambiguity resolution",
+    "decomBlock": "Detection identification",
+    "description": "Error in algorithm for ambiguity resolution of ambiguous velocity measurements" ,
+    "references": "[2, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "4",
+    "parentIds": ["1"],
+    "title": "Error in angle ambiguity resolution",
+    "decomBlock": "Detection identification",
+    "description": "Error in algorithm for ambiguity resolution of ambiguous angle measurements" ,
+    "references": "[1, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "5",
+    "parentIds": ["0"],
+    "title": "Detection separation error",
+    "decomBlock": "Detection identification",
+    "description": "Multiple object parts are located within a single resolution cell and cannot be separated" ,
+    "references": "[0, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "6",
+    "parentIds": ["13"],
+    "title": "False positive detection",
+    "decomBlock": "Detection identification",
+    "description": "Additional detection, compared to an ideally detected surrounding" ,
+    "references": "[13, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving, https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, for multi-path propagation]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "7",
+    "parentIds": ["33","34","40","41","42","22"],
+    "title": "Emitter wavelength",
+    "decomBlock": "Emission",
+    "description": "Wavelength of the emitted electromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].",
+    "references": " [33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992] [40, Ucar, Radar Cross Section Reduction, http://oaji.net/articles/2016/3113-1462436644.pdf] [41, Zhang et al., Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455] [42, Zhang et al., Evaluation of BRDF Archetypes for Representing Surface Reflectance Anisotropy Using MODIS BRDF Data, https://www.mdpi.com/2072-4292/7/6/7826] [22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "8",
+    "parentIds": ["12"],
+    "title": "False negative features",
+    "decomBlock": "Feature identification",
+    "description": "",
+    "references": "[12, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "9",
+    "parentIds": [],
+    "title": "Object existence error",
+    "decomBlock": "Object identification",
+    "description": "Error in determination of the existence of an object",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "10",
+    "parentIds": [],
+    "title": "Object state error",
+    "decomBlock": "Object identification",
+    "description": "Error in determination of a state of an object",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "11",
+    "parentIds": [],
+    "title": "Object class error",
+    "decomBlock": "Object identification",
+    "description": "Error in determination of the object class",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "12",
+    "parentIds": ["9"],
+    "title": "False negative in object list",
+    "decomBlock": "Object identification",
+    "description": "An object present in ground truth is not detected by the sensor",
+    "references": "[9, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "13",
+    "parentIds": ["9"],
+    "title": "False positive in object list",
+    "decomBlock": "Object identification",
+    "description": "An object not present in ground truth is detected by the sensor",
+    "references": "[9, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "14",
+    "parentIds": ["10"],
+    "title": "Object position error",
+    "decomBlock": "Object identification",
+    "description": "The identified object is located at a wrong position",
+    "references": "[10, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "15",
+    "parentIds": ["10"],
+    "title": "Object velocity error",
+    "decomBlock": "Object identification",
+    "description": "The identified object has a wrong velocity",
+    "references": "[10, Dietmayer, Prediction of Machine Perception for Automated Driving, https://link.springer.com/chapter/10.1007/978-3-662-48847-8_20, pp.412.]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "16",
+    "parentIds": ["12","13","14","15"],
+    "title": "Tracking error",
+    "decomBlock": "Object identification",
+    "description": "Error in object tracking algorithm e.g. in the transient phases of a filter",
+    "references": "[12, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [13, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [14, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf] [15, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "17",
+    "parentIds": ["0"],
+    "title": "Not distinguishable from noise floor",
+    "decomBlock": "Pre-processing",
+    "description":"The power received from the reflective surface of the object of interest present in ground truth is mathematically or visually not distinguishable from noise.",
+    "references": "[0, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "18",
+    "parentIds": ["19","20"],
+    "title": "Aliasing",
+    "decomBlock": "Pre-processing",
+    "description":"Aliasing effects in FFTs leading to ambiguous measurements",
+    "references": "[19, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2][20, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "19",
+    "parentIds": ["3"],
+    "title": "Ambiguous velocity measurements",
+    "decomBlock": "Pre-processing",
+    "description":"Ambiguous velocity measurement due to aliasing effects in FFTs",
+    "references": "[3, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "20",
+    "parentIds": ["4"],
+    "title": "Ambiguous angle measurements",
+    "decomBlock": "Pre-processing",
+    "description":"Ambiguous angle measurement due to aliasing effects in FFTs",
+    "references": "[4, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "21",
+    "parentIds": ["5"],
+    "title": "Velocity resolution",
+    "decomBlock": "Pre-processing",
+    "description":"Resolution of velocity measurement after FFT",
+    "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "22",
+    "parentIds": ["5"],
+    "title": "Range resolution",
+    "decomBlock": "Pre-processing",
+    "description":"Resolution of range measurement after FFT",
+    "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "23",
+    "parentIds": ["5"],
+    "title": "Angle resolution",
+    "decomBlock": "Pre-processing",
+    "description":"Resolution of angle measurement after FFT",
+    "references": "[5, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "24",
+    "parentIds": ["6"],
+    "title": "Mixer non-linearities",
+    "decomBlock": "Pre-processing",
+    "description":"The mixer in a radar is often realized with Schottky diodes. While higher frequency components are suppressed by low-pass filters, the harmonics of the mixed signal’s product can cause distractions if its attenuation is not sufficiently high.' (Holder et al.)",
+    "references": "[6, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, 'For a large and highly reflective target the radar will report a second target at the double distance similar to a repeated path reflection.']",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "25",
+    "parentIds": ["17"],
+    "title": "Low received power from object",
+    "decomBlock": "Reception",
+    "description": "Electromagnetic wave which is reflected by object of interest contains low radiation power when returning to the receiving antenna.",
+    "references": "[17, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "26",
+    "parentIds": ["17"],
+    "title": "Resolution of receiver",
+    "decomBlock": "Reception",
+    "description": "",
+    "references": "[17, Buehren, Simulation of Automotive Radar Target Lists considering Clutter and Limited Resolution, https://www.iss.uni-stuttgart.de/forschung/publikationen/buehren_irs2007.pdf]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "27",
+    "parentIds": ["17"],
+    "title": "Sensitivity of receiver",
+    "decomBlock": "Reception",
+    "description":"Lowest possible receiving power at the receiver with which the radar still detects a target.",
+    "references": "[17, Li, Trade-off between sensitivity and dynamic range in designing digital radar receivers, https://ieeexplore.ieee.org/document/4540695]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "28",
+    "parentIds": ["22"],
+    "title": "Modulation bandwidth",
+    "decomBlock": "Reception",
+    "description":"Bandwith of chirps in chirp sequence radar",
+    "references": "[22, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "29",
+    "parentIds": ["21"],
+    "title": "Measurement time",
+    "decomBlock": "Reception",
+    "description":"Time for one scan",
+    "references": "[21, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limited resolution]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "30",
+    "parentIds": ["23"],
+    "title": "Spacing between virtual reception antennas",
+    "decomBlock": "Reception",
+    "description":"Spacing between virtual antennas of a MIMO antenna array",
+    "references": "[23, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "31",
+    "parentIds": ["23"],
+    "title": "Number of virtual reception antennas",
+    "decomBlock": "Reception",
+    "description":"Number of virtual antennas in a MIMO antenna array",
+    "references": "[23, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "32",
+    "parentIds": ["25"],
+    "title": "Occlusion by objects",
+    "decomBlock": "Signal propagation",
+    "description":"Objects located in front of other objects preventing reception of power by receiving antenna",
+    "references": "[25, Holder et al, Measurements revealing Challenges in Radar Sensor Modeling for Virtual Validation of Autonomous Driving, https://ieeexplore.ieee.org/document/8569423]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "33",
+    "parentIds": ["49"],
+    "title": "Absorption by atm. particles",
+    "decomBlock": "Signal propagation",
+    "description":"Absorption of electromganetic wave by particles in atmospheric aerosol and accumulated hydrometeors. Hence, converting incoming engery into kinetic and thermal energy within particles. Absorption cross section being a measure of the probability to absorb an electromagnetic wave by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section",
+    "references": "[49, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "34",
+    "parentIds": ["49"],
+    "title": "Scattering by atm. particles",
+    "decomBlock": "Signal propagation",
+    "description":"Scattering of electromagnetic wave by particles in atmospheric aerosol and accumulated hydrometeors, specifically without converting any engery but scattering incoming electromagnetic waves",
+    "references": "[49, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "35",
+    "parentIds": ["32"],
+    "title": "Occlusion by object parts",
+    "decomBlock": "Signal propagation",
+    "description":"",
+    "references": "[32, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "36",
+    "parentIds": ["32"],
+    "title": "Abscence of other mirroring surfaces",
+    "decomBlock": "Signal propagation",
+    "description":"",
+    "references": "[32, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "37",
+    "parentIds": ["33","34"],
+    "title": "Number concentration of atm. particles",
+    "decomBlock": "Signal propagation",
+    "description":"Number concentration of atmospheric aerosol particles in regular automotive radar surroundings is high enough to interact measurable with electromagnetic wave. Number concentration of accumulated hydrometeors depending on environmental influences",
+    "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992][34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "38",
+    "parentIds": ["33","34"],
+    "title": "Refractive index of atm. particles",
+    "decomBlock": "Signal propagation",
+    "description":"Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter",
+    "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992][34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "39",
+    "parentIds": ["33","34"],
+    "title": "Size of atm. particles",
+    "decomBlock": "Signal propagation",
+    "description":"Geometric size of atmospheric particles",
+    "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992][34, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "40",
+    "parentIds": ["25"],
+    "title": "Transmittance and refraction by object parts",
+    "decomBlock": "Signal propagation",
+    "description":"Object parts transmitting portions of the electromagnetic wave. Transmittance, building on refraction, being expressed by Bidirectional Transmittance Distribution Function (BTDF)",
+    "references": "[25, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455",
+    "nodeType": "effect"
+  },
+  {
+    "id": "41",
+    "parentIds": ["25","35"],
+    "title": "Absorption by object parts",
+    "decomBlock": "Signal propagation",
+    "description":"Object parts absorbing portions of the electromagnetic wave. Hence, converting incoming light engery into kinetic and thermal energy",
+    "references": "[25, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][35, Holder, Synthetic Generation of Radar Sensor Data for Virtual Validation of Autonomous Driving, https://tuprints.ulb.tu-darmstadt.de/17545/]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "42",
+    "parentIds": ["25","35","50"],
+    "title": "Specular/diffuse reflection by object parts",
+    "decomBlock": "Signal propagation",
+    "description":"Object parts reflecting portions of the electromagnetic wave. Diffuse reflection being referred as scattering. Reflectance of an object part being expressed by Bidirectional Reflectance Distribution Function (BRDF)",
+    "references": "[25, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][35, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][50, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Causes multi-path reflections when multiple object parts involved]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "43",
+    "parentIds": ["33"],
+    "title": "Signal distance in atm. particle volume",
+    "decomBlock": "Signal propagation",
+    "description":"Distance of electromagnetic wave travelling through volume of particles in atmospheric aerosol and accumulated hydrometeors",
+    "references": "[33, Oguchi, Electromagnetic wave propagation and scattering in rain and other hydrometeors, https://ieeexplore.ieee.org/document/1456992]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "44",
+    "parentIds": ["40","41","42"],
+    "title": "Material properties of object parts",
+    "decomBlock": "Signal propagation",
+    "description":"",
+    "references": "[40, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455][41, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298][42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "45",
+    "parentIds": ["42"],
+    "title": "Object part surface roughness",
+    "decomBlock": "Signal propagation",
+    "description":"Roughness being a value for the heights and depths of microscopic bumps and holes within a surface",
+    "references": "[42, Schneider, Modellierung der Wellenausbreitung für ein bildgebendes Kfz-Radar, https://publikationen.bibliothek.kit.edu/24298]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "46",
+    "parentIds": ["42"],
+    "title": "Object part surface texture",
+    "decomBlock": "Signal propagation",
+    "description":"Object part surface texture describing the macroscopic appearance of the object part surface structure",
+    "references": "[42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "47",
+    "parentIds": ["42"],
+    "title": "Size of object parts",
+    "decomBlock": "Signal propagation",
+    "description":"",
+    "references": "[42, Zhang, Research on automotive windshield impact on the W-band millimeter-wave transmission, https://ieeexplore.ieee.org/document/7413455]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "48",
+    "parentIds": ["42"],
+    "title": "Pose of object parts",
+    "decomBlock": "Signal propagation",
+    "description":"",
+    "references": "[42, Holder et al, Measurements revealing Challenges in Radar Sensor Modeling for Virtual Validation of Autonomous Driving, https://ieeexplore.ieee.org/document/8569423]",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "49",
+    "parentIds": ["25"],
+    "title": "Attenuation by atm. aerosol particles and accumulated hydrometeors",
+    "decomBlock": "Signal propagation",
+    "description":"Attenuation of electromagnetic wave due to scattering and absorption by particles in atmospheric aerosol and accumulated hydrometeors. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In: Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of attenuation by molecules in air, if relevant. Hydrometeors being considered as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.",
+    "references": "[25, Yamawaki, 60-GHz Millimeter-Wave Automotive Radar, https://www.denso-ten.com/business/technicaljournal/pdf/11-1E.pdf]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "50",
+    "parentIds": ["1","2","6"],
+    "title": "Multi-path reflection by multiple object parts",
+    "decomBlock": "Signal propagation",
+    "description":"The sensor signal is reflected by multiple object parts within the scene",
+    "references": "[1, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][2, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections][6, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Mirror reflections]",
+    "nodeType": "effect"
+  },
+  {
+    "id": "51",
+    "parentIds": ["21"],
+    "title": "Speed of light",
+    "decomBlock": "Signal propagation",
+    "description":"Speed of light in propagation medium",
+    "references": "[21, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Limitation of resolution]",
+    "nodeType": "systemIndependent"
+  }
+]

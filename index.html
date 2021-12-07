@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PerCollECT - LidarLimbs</title>
+  <title>PerCollECT - LidarRami</title>
   <!-- include stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
   <!-- include D3 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- include jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- include table sort lib -->
@@ -18,9 +18,10 @@
   <script src="src/model.js"></script>
   <script src="src/utils.js"></script>
   <script src="src/sidenav.js"></script>
-  <script src="src/content.js"></script>
-  <script src="src/xmlParser.js"></script>
-  <script src="src/treePlot.js"></script>
+  <script src="src/helper.js"></script>
+  <script src="https://unpkg.com/d3-dag@0.8.2"></script>
+  <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+  <script src="src/dag.js"></script>
   <script>
     function isIE() {
       let ua = window.navigator.userAgent;
@@ -32,9 +33,9 @@
 <body onhashchange=location.reload()>
   <script>
     // define some global vars 
-    let repoName = "LidarLimbs";
-    let dataDict = "master/data/";
-    let xmlRootFile = "root_node.xml";
+    let repoName = "LidarRami";
+    let dataDict = "master/";
+    let jsonDataFile = "data.json";
     let dataHost = "https://raw.githubusercontent.com/PerCollECT/" + repoName + "/"
     let homePath = (window.location.href.includes("localhost") || window.location.href.includes("127.0.")) ?
       `${window.location.origin}/` :
@@ -59,8 +60,7 @@
 
   <!-- content  -->
   <div class="content">
-    <div id="load_info">Loading data, this might take several minutes... Best performance with Google Chrome.</div>
-    <div id="tree_view"></div>
+    <svg></svg>
     <div id="legend" class="legend"></div>
     <div id="info_box"></div>
 
@@ -88,56 +88,12 @@
           </div>
         </div>
         <!-- tree content -->
-        <div id="tree_table"></div>
+        <svg></svg>
       </div>
     </div>
-
   </div>
 
-  <script>
-
-    if (isIE()) {
-      $("#side_nav").empty();
-      let infoText =
-        "<h1 style='color:#2f4550;'>PerCollECT</h1>" +
-        "<p style='color:#2f4550;'>does not support Internet Explorer</p>" +
-        "<p style='color:#586f7c; font-family: monospace;'>Supported: Mozilla Firefox, Chrome, Edge, Opera, Safari, ...</p>"
-      $("#load_info").html(infoText)
-
-      throw new Error("index.js: No IE support");
-    }
-
-    // parse data only if tree not loaded already
-    if (getDataFromSessionStorage(repoName + "Tree") === null) {
-      let parsedData = parseTree(dataHost, dataDict, xmlRootFile);
-      if(!parsedData.length) throw new Error("index.js: Data error");
-
-      initTreeModel(parsedData);       
-      let serializedTree = new XMLSerializer().serializeToString(parsedData[0]);
-      keepDataInSessionStorage(repoName + "Tree", serializedTree);
-      keepDataInSessionStorage(repoName + "AdditionalTreePairs", JSON.stringify(parsedData[1]));
-    }
-
-    // get adBlock data if not already exists
-    if (getDataFromSessionStorage(repoName + "AdBlocks") === null) {
-      let adBlocks = getAdBlocks();
-      keepDataInSessionStorage(repoName + "AdBlocks", JSON.stringify(adBlocks));
-    }
-
-    // handle active links of side bar
-    if (getDataFromSessionStorage(repoName + "ActiveLinks") === null || window.location.href == homePath) {
-      keepDataInSessionStorage(repoName + "ActiveLinks", JSON.stringify([]));
-    }
-
-    // manage page content
-    showCurrentContent();
-    addLegend();
-    if (window.location.href == homePath) addTreeTable();
-    addSideNavLinks();
-    addAutoComplete(document.getElementById("search_input"));
-
-  </script>
-
+  <script src="src/content.js"></script>
 </body>
 
 </html>

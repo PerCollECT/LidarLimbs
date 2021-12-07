@@ -4,13 +4,13 @@
  * Adds links based on tree element to side bar navigation.
  */
 function addSideNavLinks() {
-    let tree = $.parseXML(getDataFromSessionStorage(repoName + "Tree"));
+    let tree = JSON.parse(getDataFromSessionStorage(repoName + "Tree"));
     if (!tree) return;
 
-    let adBlocks = JSON.parse(getDataFromSessionStorage(repoName + "AdBlocks"));
-    if (!adBlocks) return;
+    let decomBlocks = JSON.parse(getDataFromSessionStorage(repoName + "decomBlocks"));
+    if (!decomBlocks) return;
 
-    adBlocks.forEach(function (d) {
+    decomBlocks.forEach(function (d) {
         // append button
         let btn = $("<a></a>")
             .html(d)
@@ -21,13 +21,15 @@ function addSideNavLinks() {
 
         // add links for each node of block
         let ddLinks = [];
-        tree.getElementsByTagName("*").forEach(function (n) {
-            if(n.id == "root") return;
-            if (n.getAttribute("adBlock") == d) {
+        tree.forEach(function (n) {
+            if (n.decomBlock == d) {
                 // add node
-                let nodeName = n.getAttribute("title").replace(/[^A-Z0-9]/ig, "_").toLowerCase();
+                let nodeName = n.title.replace(/[^A-Z0-9]/ig, "_").toLowerCase();
                 ddLinks.push(
-                    createLink(n.getAttribute("title"), `${getLinkPath()}#${nodeName}`)
+                    $("<a></a>")
+                    .attr("onclick", "navLink('" + n.title + "')")
+                    .attr("href", "#")
+                    .html(n.title)
                 );
             }
         });
@@ -99,12 +101,24 @@ function createDropDownContainer(linkArray) {
 }
 
 /**
+ * Creates navigation links
+ * @param {String} title title of node
+ * @param {String} id id of node
+ */
+function navLink(title) {
+    let node = getNodeByTitle(title);
+    $("#info_box").empty();
+    addNodeInfos(node, "preview");
+    updateGraphPlot(node.id);
+}
+
+/**
  * Creates a link element
  * @param {String} name innerHTML of link
  * @param {String} url of link
  * @returns link element
  */
-function createLink(name, url) {
+ function createLink(name, url) {
     return $("<a></a>")
     .attr("href", url)
     .html(name);
