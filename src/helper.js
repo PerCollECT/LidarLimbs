@@ -1,4 +1,39 @@
-// Script provides methods for content behavior
+// Script provides helper functions
+
+// check brower support of used methods, polyfill if not exists
+if (!HTMLCollection.prototype.forEach) {
+  HTMLCollection.prototype.forEach = Array.prototype.forEach;
+}
+/*if (!Object.prototype.forEach) {
+  Object.prototype.forEach = Array.prototype.forEach;
+}*/
+if (!HTMLCollection.prototype.indexOf) {
+  HTMLCollection.prototype.indexOf = Array.prototype.indexOf;
+}
+
+/**
+* Keeps data in session storage
+*/
+function keepDataInSessionStorage(name, object) {
+  window.sessionStorage.setItem(name, object);
+}
+
+/**
+* Gets data from session storage
+* @return data from session storage
+*/
+function getDataFromSessionStorage(name) {
+  return window.sessionStorage.getItem(name);
+}
+
+/**
+* Capitalizes the first letter of string
+* @param {String} string 
+* @returns manipulated string
+*/
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 /**
  * Add info block of node
