@@ -31,7 +31,7 @@ The following shows a simple example of relations between node _18_ (child) and 
     "description":"Aliasing effects in FFTs leading to ambiguous measurements",
     "references": "[19, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2][20, Holder et al., Modeling and Simulation of Radar Sensor Artifacts for Virtual Testing of Autonomous Driving,https://mediatum.ub.tum.de/doc/1535151/1535151.pdf, Aliasing, p.2]",
     "nodeType": "designParameter"
-  }
+}
 ```
 
 A node always contains the following attributes:
@@ -49,7 +49,6 @@ A node always contains the following attributes:
   3. Add a comma after the last node
   4. Add your new node with all the aforementiones attributes
 
-To realize multiple root nodes the tree has an invisible root node stored at `./data/root_node.xml`.
 Note: After editing the data source you'll need to empty the session storage (e.g. by closing the active tab) to see the changes!
 
 ## Visualization
