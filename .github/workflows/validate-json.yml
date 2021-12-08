@@ -1,0 +1,16 @@
+name: Validate JSON
+
+on: [push, pull_request]
+
+jobs:
+  verify-json-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Checkout submodules
+        run: git submodule update --init --recursive
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: ./src/data-schema.json
+          INPUT_JSONS: ./data.json
