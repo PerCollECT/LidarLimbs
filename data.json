@@ -54,15 +54,6 @@
     "nodeType": "designParameter"
   },
   {
-    "id": "6", 
-    "parentIds": [],
-    "title": "LIDAR spin rate", 
-    "decomBlock": "Emission", 
-    "description": "", 
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
     "id": "7", 
     "parentIds": ["56", "79"],
     "title": "Low set LIDAR mounting position", 
@@ -493,15 +484,6 @@
     "description": "Receiver field of view being spatially limited.", 
     "references": "[0, Bobrovnikov et al., A Multi-Aperture Transceiver System of a Lidar with Narrow Field of View and Minimal Dead Zone, http://link.springer.com/10.1134/S1024856018060052, See dead zone.]",
     "nodeType": "effect"  
-  },
-  {
-    "id": "57", 
-    "parentIds": [],
-    "title": "Photodetector alignment", 
-    "decomBlock": "Reception", 
-    "description": "", 
-    "references": "",
-    "nodeType": "designParameter"
   },
   {
     "id": "58", 
