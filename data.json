@@ -145,7 +145,7 @@
   },
   {
     "id": "17", 
-    "parentIds": ["137", "53", "102"],
+    "parentIds": ["137", "102"],
     "title": "LIDAR/mirror spin rate/oscillation frequency", 
     "decomBlock": "Emission", 
     "description": "Freqeuency of oscillating/rotating components of emitter optics.", 
