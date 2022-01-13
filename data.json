@@ -145,11 +145,11 @@
   },
   {
     "id": "17", 
-    "parentIds": ["137", "53", "102"],
+    "parentIds": ["137", "102"],
     "title": "LIDAR/mirror spin rate/oscillation frequency", 
     "decomBlock": "Emission", 
     "description": "Freqeuency of oscillating/rotating components of emitter optics.", 
-    "references": "[137, Yoo et al., MEMS-based lidar for autonomous driving, http://link.springer.com/10.1007/s00502-018-0635-2] [137, Benson et al., Lissajous-Like Scan Pattern for a Nodding Multi-Beam Lidar, https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2018/51906/Atlanta%20Georgia,%20USA/270931] [53, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/] [102, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/]",
+    "references": "[137, Yoo et al., MEMS-based lidar for autonomous driving, http://link.springer.com/10.1007/s00502-018-0635-2] [137, Benson et al., Lissajous-Like Scan Pattern for a Nodding Multi-Beam Lidar, https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2018/51906/Atlanta%20Georgia,%20USA/270931] [102, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/]",
     "nodeType": "designParameter"
   },
   {
@@ -448,15 +448,6 @@
     "description": "Merging of data received by LIDAR and additional perception sensor.", 
     "references": "[50, Weon et al., Object Recognition Based Interpolation With 3D LIDAR and Vision for Autonomous Driving of an Intelligent Vehicle, https://ieeexplore.ieee.org/document/9044844/] [50, Zheng et al., Frequency-multiplexing photon-counting multi-beam LiDAR, https://www.osapublishing.org/abstract.cfm?URI=prj-7-12-1381]",
     "nodeType": "designParameter"
-  },
-  {
-    "id": "53", 
-    "parentIds": ["41"],
-    "title": "Aliasing", 
-    "decomBlock": "Pre-processing", 
-    "description": "Aliasing in this context meaning the appearance of an alias object candidate, being an illusion induced by one or multiple objects moving frecquentially and relative to the sensor. If the sampling frequency, being the number of full spatial images per second, does not satisfy the Nyquist-Shannon theorem with respect to the moving frequency of the object/s, an alias object candidate occurs.", 
-    "references": "[41, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/]",
-    "nodeType": "effect"
   },
   {
     "id": "54", 
@@ -1206,15 +1197,6 @@
     "nodeType": "designParameter"
   },
   {
-    "id": "138", 
-    "parentIds": ["53"],
-    "title": "Periodic object movement", 
-    "decomBlock": "Signal propagation", 
-    "description": "One or multiple objects moving periodically within receiver field of view.", 
-    "references": "[53, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/]",
-    "nodeType": "systemIndependent"
-  },
-  {
     "id": "139", 
     "parentIds": ["105"],
     "title": "Reflection of main beam by object part and of radiation fragments not accompanying main beam by highly reflective foreground object part", 
@@ -1241,5 +1223,4 @@
     "references": "[94, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Backscatter coefficient β(R; λ): Number concentration N_j(R); p.9.]",
     "nodeType": "systemIndependent"
   }
-  
 ]
