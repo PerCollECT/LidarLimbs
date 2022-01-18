@@ -2,7 +2,7 @@
 
 # PerCollECT - [LidarLimbs](https://percollect.github.io/LidarLimbs/)
 
-## Perception Sensor Collaborative Effect and Cause Tree (PerCollECT) - Radar Tree
+## Perception Sensor Collaborative Effect and Cause Tree (PerCollECT) - Lidar Tree
 
 This tree facilitates the analysis of cause and effect chain in the signal processing of automotive lidar sensors. Visualization of the tree can be found under [https://percollect.github.io/LidarLimbs/](https://percollect.github.io/LidarLimbs/).
 
