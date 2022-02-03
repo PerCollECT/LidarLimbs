@@ -605,7 +605,7 @@
   {
     "id": "72", 
     "parentIds": ["43"],
-    "title": "Excess charges flowing into neighboring photodiodes or pixels", 
+    "title": "Blooming: Excess charges flowing into neighboring photodiodes or pixels", 
     "decomBlock": "Signal propagation", 
     "description": "In case of saturation of the photodiode, excess electron charges will flow into neighboring photodiodes or pixels, if not blocked.", 
     "references": "[43, Lambert et al., Performance Analysis of 10 Models of 3D LiDARs for Automated Driving, https://ieeexplore.ieee.org/document/9142208/, See blooming.] [43, Uehara, Systems and methods for mitigating effects of high-reflectivity objects in lidar data, https://patents.justia.com/patent/20190391270]",
