@@ -1227,7 +1227,7 @@
     "id": "142", 
     "parentIds": ["72", "0"],
     "title": "Saturation of photodiode", 
-    "decomBlock": "Signal propagation", 
+    "decomBlock": "Reception", 
     "description": "With regard to an installed photodiode, an electric field is induced by the electron flow of the electrons released by the luminous flux, which is opposite to the field existing due to the bias voltage of the diode. Thereby the flow of the released photoelectrons is slowed down until, at a certain exposure intensity, the photoelectron current asymptotically approaches a limit value.",
     "references": "[72, Uehara, Systems and methods for mitigating effects of high-reflectivity objects in lidar data, https://patents.justia.com/patent/20190391270] [0, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, Blind sector inevitably leading to false negative detections. See p.457.]",
     "nodeType": "effect"
