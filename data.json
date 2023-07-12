@@ -857,7 +857,7 @@
   {
     "id": "100", 
     "parentIds": ["99", "69"],
-    "title": "Moonlight, starlight, artificial light intensity", 
+    "title": "Moonlight and starlight intensity", 
     "decomBlock": "Signal propagation", 
     "description": "Moonlight, starlight and artificial light being the nighttime dominant light sources.", 
     "references": "[99, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [99, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/] [69, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [69, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [69, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/]",
@@ -1231,5 +1231,14 @@
     "description": "With regard to an installed photodiode, an electric field is induced by the electron flow of the electrons released by the luminous flux, which is opposite to the field existing due to the bias voltage of the diode. Thereby the flow of the released photoelectrons is slowed down until, at a certain exposure intensity, the photoelectron current asymptotically approaches a limit value.",
     "references": "[72, Uehara, Systems and methods for mitigating effects of high-reflectivity objects in lidar data, https://patents.justia.com/patent/20190391270] [0, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, Blind sector inevitably leading to false negative detections. See p.457.]",
     "nodeType": "effect"
+  },
+  {
+    "id": "143", 
+    "parentIds": ["99", "69"],
+    "title": "Artificial light intensity", 
+    "decomBlock": "Signal propagation", 
+    "description": "Moonlight, starlight and artificial light being the nighttime dominant light sources.", 
+    "references": "[99, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [69, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.]",
+    "nodeType": "systemIndependent"
   }
 ]
