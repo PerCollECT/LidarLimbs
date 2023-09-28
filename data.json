@@ -19,11 +19,11 @@
   },
   {
     "id": "2",
-    "parentIds": ["0", "1"],
+    "parentIds": ["39", "1"],
     "title": "Detection threshold",
     "decomBlock": "Detection identification",
     "description": "Measured radiation power impulses are determinated as detections only if detection threshold, e.g. power level threshold, is exceeded.",
-    "references": "[0, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [1, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/]",
+    "references": "[39, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [39, Jiang et al., Adaptive Suppression Method of LiDAR Background Noise Based on Threshold Detection, https://www.mdpi.com/2076-3417/13/6/3772, Adaptive adjustment of the signal detection threshold in order to maintain the TNR (Threshold Noise Ratio).] [1, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/]",
     "nodeType": "designParameter"
   },
   {
@@ -92,9 +92,9 @@
   {
     "id": "39", 
     "parentIds": ["0"],
-    "title": "Not distinguishable from noise floor", 
+    "title": "Received power below detection threshold", 
     "decomBlock": "Pre-processing",
-    "description": "The power received from the reflective surface of the object of interest present in ground truth is mathematically or visually not distinguishable from noise.",
+    "description": "The power received from the reflective surface of the object of interest present in ground truth does not exceed the static/dynamic detection threshold.",
     "references": "[0, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/]",
     "nodeType": "effect"
   },
@@ -104,7 +104,7 @@
     "title": "Noise floor", 
     "decomBlock": "Pre-processing", 
     "description": "Variety of unintentionally measured radiation power impulses.", 
-    "references": "[39, Liu et al., A dual-rate multi-filter algorithm for LiDAR-aided indoor navigation systems, http://ieeexplore.ieee.org/document/6851467/] [39, Maksymova et al., Review of LiDAR Sensor Data Acquisition and Compression for Automotive Applications, http://www.mdpi.com/2504-3900/2/13/852, See signal to noise ratio (SNR)] [1, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29, See blooming. Excess charges flowing into neighboring photodiodes or pixels; creating unintentionally measured power impulses and thus; creating false positive detections.] [1, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [1, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, Raised noise floor due to saturation/blending security attack might reach detection threshold. See p.457]",
+    "references": "[39, Jiang et al., Adaptive Suppression Method of LiDAR Background Noise Based on Threshold Detection, https://www.mdpi.com/2076-3417/13/6/3772, Adaptive adjustment of the signal detection threshold in order to maintain the TNR (Threshold Noise Ratio).] [39, Liu et al., A dual-rate multi-filter algorithm for LiDAR-aided indoor navigation systems, http://ieeexplore.ieee.org/document/6851467/] [39, Maksymova et al., Review of LiDAR Sensor Data Acquisition and Compression for Automotive Applications, http://www.mdpi.com/2504-3900/2/13/852, See signal to noise ratio (SNR)] [1, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29, See blooming. Excess charges flowing into neighboring photodiodes or pixels; creating unintentionally measured power impulses and thus; creating false positive detections.] [1, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [1, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, Raised noise floor due to saturation/blending security attack might reach detection threshold. See p.457]",
     "nodeType": "effect"
   },
   {
@@ -136,11 +136,11 @@
   },
   {
     "id": "54", 
-    "parentIds": ["39", "0"],
+    "parentIds": ["39", "144"],
     "title": "Low received power from object", 
     "decomBlock": "Reception", 
     "description": "Laser beams which are reflected by object of interest contain low radiation power when hitting reception unit.", 
-    "references": "[39, Zhou et al., Improvement of the signal to noise ratio of Lidar echo signal based on wavelet de-noising technique, https://linkinghub.elsevier.com/retrieve/pii/S0143816613000742] [39, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [0, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073] [0, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566]",
+    "references": "[39, Jiang et al., Adaptive Suppression Method of LiDAR Background Noise Based on Threshold Detection, https://www.mdpi.com/2076-3417/13/6/3772, Adaptive adjustment of the signal detection threshold in order to maintain the TNR (Threshold Noise Ratio).] [39, Zhou et al., Improvement of the signal to noise ratio of Lidar echo signal based on wavelet de-noising technique, https://linkinghub.elsevier.com/retrieve/pii/S0143816613000742] [39, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [144, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566] [144, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073]",
     "nodeType": "effect"
   },
   {
@@ -271,11 +271,11 @@
   },
   {
     "id": "71", 
-    "parentIds": ["0"],
+    "parentIds": ["144"],
     "title": "Low ADC dynamic range", 
     "decomBlock": "Reception", 
     "description": "ADC dynamic range being the ratio between maximum and minimum convertable voltage into discrete values, determined the number of bits.", 
-    "references": "[0, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073] [0, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566]",
+    "references": "[144, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566] [144, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073]",
     "nodeType": "effect"
   },
   {
@@ -835,5 +835,14 @@
     "description": "Moonlight, starlight and artificial light being the nighttime dominant light sources.", 
     "references": "[99, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [69, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.]",
     "nodeType": "systemIndependent"
+  },
+  {
+    "id": "144", 
+    "parentIds": ["0"],
+    "title": "Received power below minimum quantizable power", 
+    "decomBlock": "Pre-processing", 
+    "description": "Returned power being too small to be perceived, since it is too small to be covered by quantization of ADC.", 
+    "references": "[0, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566] [0, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073]",
+    "nodeType": "effect"
   }
 ]
