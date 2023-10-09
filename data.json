@@ -4,7 +4,7 @@
     "parentIds": [],
     "title": "False negative detection",
     "decomBlock": "Detection identification",
-    "description": "Missing detection, compared to an ideally detected surrounding.",
+    "description": "Missing detection, compared to an ideally detected surrounding. False negative detections to be handled by following processing steps.",
     "references": "",
     "nodeType": "effect"
   },
@@ -13,7 +13,7 @@
     "parentIds": [],
     "title": "False positive detection",
     "decomBlock": "Detection identification",
-    "description": "Additional detection, compared to an ideally detected surrounding.",
+    "description": "Additional detection, compared to an ideally detected surrounding. False positive detections to be filtered/handled/eliminated by following processing steps.",
     "references": "[]",
     "nodeType": "effect"
   },
