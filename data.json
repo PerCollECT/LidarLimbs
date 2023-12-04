@@ -780,7 +780,7 @@
     "tags": ["Grain boundary-induced inner scattering", "Scattering by material boundaries", "Inner scattering from object part", "Object part material boundary impact"]
   },
   {
-    "id": "127", 
+    "id": "127",
     "parentIds": ["110", "111", "112"],
     "title": "Birefringence in object part material", 
     "decomBlock": "Signal propagation", 
