@@ -6,7 +6,8 @@
     "decomBlock": "Detection identification",
     "description": "Missing detection, compared to an ideally detected surrounding. False negative detections to be handled by following processing steps.",
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Missed target identification", "Undetected object", "Failure to recognize", "Neglected positive signal", "Incomplete detection", "Signal oversight"]
   },
   {
     "id": "1",
@@ -15,7 +16,8 @@
     "decomBlock": "Detection identification",
     "description": "Additional detection, compared to an ideally detected surrounding. False positive detections to be filtered/handled/eliminated by following processing steps.",
     "references": "[]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Incorrect target identification", "Spurious object detection", "Mistaken positive signal", "False alarm", "Inaccurate positive identification", "Signal misinterpretation"]
   },
   {
     "id": "2",
@@ -24,7 +26,8 @@
     "decomBlock": "Detection identification",
     "description": "Measured radiation power impulses are determinated as detections only if detection threshold, e.g. power level threshold, is exceeded.",
     "references": "[39, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [39, Jiang et al., Adaptive Suppression Method of LiDAR Background Noise Based on Threshold Detection, https://www.mdpi.com/2076-3417/13/6/3772, Adaptive adjustment of the signal detection threshold in order to maintain the TNR (Threshold Noise Ratio).] [1, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Threshold for detection", "Minimum detectable signal level", "Detection sensitivity level", "Signal recognition threshold", "Detection cutoff point", "Sensing threshold"]
   },
   {
     "id": "3", 
@@ -33,7 +36,8 @@
     "decomBlock": "Emission",
     "description": "Wavelength of the emitted light beam, considered an ectromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].", 
     "references": "[92, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Absorption cross section σ_abs(λ): Wavelength λ; p.10.] [92, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [92, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [92, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Size factor x: Wavelength λ; p.6.] [93, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Scattering cross section σ_sca(λ): Wavelength λ; p.10.] [93, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [93, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [93, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Size factor x: Wavelength λ; p.6.] [112, Milenković et al., Total canopy transmittance estimated from small-footprint; full-waveform airborne LiDAR, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X] [112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.95.] [112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415] [111, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [128, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [128, Eichler et al., Optical Waveguides and Glass Fibers, http://link.springer.com/10.1007/978-3-319-99895-4_13, p.256.] [129, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [129, Eichler et al., Optical Waveguides and Glass Fibers, http://link.springer.com/10.1007/978-3-319-99895-4_13, p.256.]",
-  "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Signal frequency", "Radiating wave length", "Emission frequency", "Transmitter wave characteristics", "Wavelength of emitting source"]
   },
   {
     "id": "4", 
@@ -42,7 +46,8 @@
     "decomBlock": "Emission", 
     "description": "Power level of emitted beam, specifically of one laser pulse.", 
     "references": "[54, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: System factor K: Average Power of laser pulse P_0; p.6-7.] [54, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Laser-Radar-Equation: Emitted luminous power P_0.] [69, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [69, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: System factor K: Average Power of laser pulse P_0; p.6-7.] [142, Uehara, Systems and methods for mitigating effects of high-reflectivity objects in lidar data, https://patents.justia.com/patent/20190391270] [142, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29, Influences on blooming listed here. Thus; being influences on saturation of a photodiode in the first place.]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Transmit power intensity", "Signal emission strength", "Radiating power level", "Output signal strength", "Emission intensity", "Transmit power magnitude"]
   },
   {
     "id": "5", 
@@ -51,7 +56,8 @@
     "decomBlock": "Emission", 
     "description": "Emission time of one single continuous laser pulse.", 
     "references": "[54, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: System factor K: Temporal pulse length τ; p.6-7.]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Pulse duration over time", "Signal time span variation", "Temporal pulse characteristics", "Pulse length variability", "Time-dependent pulse duration", "Signal waveform duration"]
   },
   {
     "id": "7", 
@@ -60,7 +66,8 @@
     "decomBlock": "Emission", 
     "description": "Lidar mounted at low height.", 
     "references": "[56, Wu et al., Real-Time Queue Length Detection with Roadside LiDAR Data, https://www.mdpi.com/1424-8220/20/8/2342] [79, Wu et al., Real-Time Queue Length Detection with Roadside LiDAR Data, https://www.mdpi.com/1424-8220/20/8/2342]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Lidar installation height", "Sensor low mounting coordinates", "Lidar fixture position", "Mounting elevation", "Sensor deployment at low position", "Low-set Lidar placement"]
   },
   {
     "id": "14", 
@@ -69,7 +76,8 @@
     "decomBlock": "Emission", 
     "description": "Excentric alignment of emitter output and receiver field of view.", 
     "references": "[73, Ansmann and Müller, Lidar and Atmospheric Aerosol Particles, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.109.] [73, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Geometric factor G(R): Overlap function O(R); p. 8-9.]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Off-center sensor alignment", "Non-centralized positioning", "Excentric sensor configuration", "Misaligned sensor setup", "Off-axis sensor arrangement", "Excentric alignment"]
   },
   {
     "id": "15", 
@@ -78,7 +86,8 @@
     "decomBlock": "Emission", 
     "description": "A polarized electromagnetic wave is having no disordered but fixed directions of the oscillating electric and the orthogonal magnetic field.", 
     "references": "[111, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Signal orientation", "Polarized emission", "Emitter signal alignment", "Polarization direction", "Signal polarization state", "Emission wave alignment"]
   },
   {
     "id": "17", 
@@ -87,7 +96,8 @@
     "decomBlock": "Emission", 
     "description": "Freqeuency of oscillating/rotating components of emitter optics.", 
     "references": "[102, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Lidar and mirror dynamics", "Spinning rate of Lidar or mirror", "Oscillation frequency of Lidar or mirror", "Rotational frequency of Lidar system", "Spin and oscillation dynamics", "Lidar mirror movement rate"]
   },
   {
     "id": "39", 
@@ -96,7 +106,8 @@
     "decomBlock": "Pre-processing",
     "description": "The power received from the reflective surface of the object of interest present in ground truth does not exceed the static/dynamic detection threshold.",
     "references": "[0, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Insufficient received signal strength", "Power level below detection limit", "Below-threshold received signal", "Inadequate signal power", "Sub-threshold received power", "Below-detection power"]
   },
   {
     "id": "43", 
@@ -105,7 +116,8 @@
     "decomBlock": "Pre-processing", 
     "description": "Variety of unintentionally measured radiation power impulses.", 
     "references": "[39, Jiang et al., Adaptive Suppression Method of LiDAR Background Noise Based on Threshold Detection, https://www.mdpi.com/2076-3417/13/6/3772, Adaptive adjustment of the signal detection threshold in order to maintain the TNR (Threshold Noise Ratio).] [39, Liu et al., A dual-rate multi-filter algorithm for LiDAR-aided indoor navigation systems, http://ieeexplore.ieee.org/document/6851467/] [39, Maksymova et al., Review of LiDAR Sensor Data Acquisition and Compression for Automotive Applications, http://www.mdpi.com/2504-3900/2/13/852, See signal to noise ratio (SNR)] [1, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29, See blooming. Excess charges flowing into neighboring photodiodes or pixels; creating unintentionally measured power impulses and thus; creating false positive detections.] [1, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [1, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, Raised noise floor due to saturation/blending security attack might reach detection threshold. See p.457]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Noise level", "Background noise", "Floor noise level", "Oservable noise", "Ambient noise baseline", "Signal floor"]
   },
   {
     "id": "50", 
@@ -114,7 +126,8 @@
     "decomBlock": "Pre-processing", 
     "description": "Delay in data transfer determined by finite processing speed.", 
     "references": "[0, Weon et al., Object Recognition Based Interpolation With 3D LIDAR and Vision for Autonomous Driving of an Intelligent Vehicle, https://ieeexplore.ieee.org/document/9044844/] [0, Zheng et al., Frequency-multiplexing photon-counting multi-beam LiDAR, https://www.osapublishing.org/abstract.cfm?URI=prj-7-12-1381]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Processing time delay", "Latency due to data processing", "Delay in signal interpretation", "Processing time lag", "Latency caused by data analysis", "Signal processing delay"]
   },
   {
     "id": "51", 
@@ -123,7 +136,8 @@
     "decomBlock": "Pre-processing", 
     "description": "Installed components of processing unit.", 
     "references": "[50, Weon et al., Object Recognition Based Interpolation With 3D LIDAR and Vision for Autonomous Driving of an Intelligent Vehicle, https://ieeexplore.ieee.org/document/9044844/]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Processing system architecture", "Signal processing unit design", "Data analysis unit configuration", "Processing module structure", "Unit for signal interpretation", "Data processing design"]
   },
   {
     "id": "52", 
@@ -132,7 +146,8 @@
     "decomBlock": "Pre-processing", 
     "description": "Merging of data received by Lidar and additional perception sensor.", 
     "references": "[50, Weon et al., Object Recognition Based Interpolation With 3D LIDAR and Vision for Autonomous Driving of an Intelligent Vehicle, https://ieeexplore.ieee.org/document/9044844/] [50, Zheng et al., Frequency-multiplexing photon-counting multi-beam LiDAR, https://www.osapublishing.org/abstract.cfm?URI=prj-7-12-1381]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Integration of Lidar and sensor data", "Combined data from Lidar and additional sensor", "Fusion of Lidar and supplementary sensor information", "Merged Lidar and sensor data", "Unified Lidar and perception sensor input", "Data fusion of Lidar and additional sensor"]
   },
   {
     "id": "54", 
@@ -141,7 +156,8 @@
     "decomBlock": "Reception", 
     "description": "Laser beams which are reflected by object of interest contain low radiation power when hitting reception unit.", 
     "references": "[39, Jiang et al., Adaptive Suppression Method of LiDAR Background Noise Based on Threshold Detection, https://www.mdpi.com/2076-3417/13/6/3772, Adaptive adjustment of the signal detection threshold in order to maintain the TNR (Threshold Noise Ratio).] [39, Zhou et al., Improvement of the signal to noise ratio of Lidar echo signal based on wavelet de-noising technique, https://linkinghub.elsevier.com/retrieve/pii/S0143816613000742] [39, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [144, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566] [144, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Insufficient power from object", "Weak signal reception", "Low object signal strength", "Poor signal power from target", "Inadequate received power", "Sub-optimal object signal"]
   },
   {
     "id": "56", 
@@ -150,7 +166,8 @@
     "decomBlock": "Reception", 
     "description": "Receiver field of view being spatially limited.", 
     "references": "[0, Bobrovnikov et al., A Multi-Aperture Transceiver System of a Lidar with Narrow Field of View and Minimal Dead Zone, http://link.springer.com/10.1134/S1024856018060052, See dead zone.]",
-    "nodeType": "effect"  
+    "nodeType": "effect"  ,
+    "tags": ["Restricted sensor perspective", "Narrow receiver field", "Limited sensor vision angle", "Constrained field of view", "Reduced sensor viewing area", "Receiver limited field of vision"]
   },
   {
     "id": "58", 
@@ -159,7 +176,8 @@
     "decomBlock": "Reception", 
     "description": "Noise induced by photosensor.", 
     "references": "[43, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [43, Zhang et al., Noise Reduction of LiDAR Signal via Local Mean Decomposition Combined With Improved Thresholding Method, https://ieeexplore.ieee.org/document/9121225] [43, Mei et al., Atmospheric extinction coefficient retrieval and validation for the single-band Mie-scattering Scheimpflug lidar technique, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [43, Liu et al., Estimating random errors due to shot noise in backscatter lidar observations, https://www.osapublishing.org/abstract.cfm?URI=ao-45-18-4437]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Internal sensor noise", "Photosensor internal interference", "Inner sensor signal disturbance", "Noise within photosensor", "Internal noise from photosensor", "Inner sensor noise floor"]
   },
   {
     "id": "59", 
@@ -168,7 +186,8 @@
     "decomBlock": "Reception", 
     "description": "Limited field of view of primary receiver optics, determined by size of beam-receiving lens.", 
     "references": "[54, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: System factor K: Area of primary receiver optics A; p.6-7.] [54, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Laser-Radar-Equation: Receiving lens surface A_sensor.]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Limited optic surface", "Reduced primary optic area", "Small receiver optics region", "Constrained primary optic size", "Optic surface area limitation", "Primary optic size restriction"]
   },
   {
     "id": "60", 
@@ -177,7 +196,8 @@
     "decomBlock": "Reception", 
     "description": "Noise induced by spontaneous generation of free charge carriers due to thermal excitement of valence electrons within semiconductors of the photodiode without exposal to light.", 
     "references": "[58, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [58, Mei et al., Atmospheric extinction coefficient retrieval and validation for the single-band Mie-scattering Scheimpflug lidar technique, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [58, Zhang et al., Noise Reduction of LiDAR Signal via Local Mean Decomposition Combined With Improved Thresholding Method, https://ieeexplore.ieee.org/document/9121225] [58, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [58, Liu et al., Estimating random errors due to shot noise in backscatter lidar observations, https://www.osapublishing.org/abstract.cfm?URI=ao-45-18-4437] [101, Northend et al., Laser Radar (Lidar) for Meteorological Observations, http://aip.scitation.org/doi/10.1063/1.1720199] [101, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Noise from dark current", "Dark signal interference", "Noise from unilluminated sensor", "Low-light current noise", "Dark current noise level"]
   },
   {
     "id": "61", 
@@ -186,7 +206,8 @@
     "decomBlock": "Reception", 
     "description": "Noise induced by readout amplifier of the photosensor due to inaccuracies while measuring charges of electrons and converting them into corresponding voltages.", 
     "references": "[58, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [58, Mei et al., Atmospheric extinction coefficient retrieval and validation for the single-band Mie-scattering Scheimpflug lidar technique, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [58, Zhang et al., Noise Reduction of LiDAR Signal via Local Mean Decomposition Combined With Improved Thresholding Method, https://ieeexplore.ieee.org/document/9121225] [58, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Noise during readout", "Amplifier-induced noise", "Signal readout interference", "Amplification noise", "Readout and amplifier noise", "Signal readout distortion"]
   },
   {
     "id": "62", 
@@ -195,7 +216,8 @@
     "decomBlock": "Reception", 
     "description": "Noise of fixed pattern, valued by two different parameters dark signal non-uniformity (DSNU) and photon response non-uniformity (PRNU).", 
     "references": "[58, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [58, Mei et al., Atmospheric extinction coefficient retrieval and validation for the single-band Mie-scattering Scheimpflug lidar technique, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Consistent noise pattern", "Unchanging noise interference", "Fixed signal distortion", "Patterned noise presence", "Persistent noise pattern", "Fixed interference pattern"]
   },
   {
     "id": "63", 
@@ -204,7 +226,8 @@
     "decomBlock": "Reception", 
     "description": "Temperature of photosensor.", 
     "references": "[60, Widenhorn et al., Temperature dependence of dark current in a CCD, http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=876982, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [60, Thorlabs, Camera Noise and Temperature Tutorial, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [65, Geese et al., CNN based dark signal non-uniformity estimation, http://ieeexplore.ieee.org/document/6331408/, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [65, Soszynska et al., Feasibility Study of Hyperspectral Line-Scanning Camera Imagery for Remote Sensing Purposes, https://ieeexplore.ieee.org/document/8634703/, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Sensor thermal conditions", "Photosensor heat level", "Temperature impact on sensor", "Thermal effects on photosensor", "Photosensor temperature influence", "Sensor heat characteristics"]
   },
   {
     "id": "64", 
@@ -213,7 +236,8 @@
     "decomBlock": "Reception", 
     "description": "Installed photosensor components including photodetector/s and photosensor electronics.", 
     "references": "[61, Thorlabs, Camera Noise and Temperature Tutorial, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [61, Basden, Analysis of electron multiplying charge coupled device and scientific CMOS readout noise models for Shack–Hartmann wavefront sensor accuracy, http://astronomicaltelescopes.spiedigitallibrary.org/article.aspx?doi=10.1117/1.JATIS.1.3.039002, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [61, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [70, Zheng and Kostamovaara, Statistical behavior of a comparator with weak repetitive signal and additive white Gaussian noise, http://ieeexplore.ieee.org/document/7520420/] [70, Sun et al., HgCdTe avalanche photodiode detectors for airborne and spaceborne lidar at infrared wavelengths, https://www.osapublishing.org/abstract.cfm?URI=oe-25-14-16589] [70, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [60, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [71, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073] [71, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566] [142, Uehara, Systems and methods for mitigating effects of high-reflectivity objects in lidar data, https://patents.justia.com/patent/20190391270] [142, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29, Influences on blooming listed here. Thus; being influences on saturation of a photodiode in the first place.]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Photosensor structure", "Sensor design for signal capture", "Photosensor configuration", "Signal-capturing unit design", "Design of light-sensitive sensor", "Photodetector system design"]
   },
   {
     "id": "65", 
@@ -222,7 +246,8 @@
     "decomBlock": "Reception", 
     "description": "Noise induced by Dark signal non-uniformity (DSNU), being expressed by the standard deviation of the pixel responsiveness from the average responsiveness in the imaging array under no illumination, often measured in electrons.", 
     "references": "[62, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [62, Keal, What is Scientific Imaging Quality?, https://www.photometrics.com/wp-content/uploads/2021/01/Scientific-Image-Quality-A3-19-11-2020.pdf, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [62, Mei et al., Atmospheric extinction coefficient retrieval and validation for the single-band Mie-scattering Scheimpflug lidar technique, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["DSNU", "Non-uniform noise in dark conditions", "Uneven dark signal interference", "Dark signal non-uniformity", "Non-consistent dark signal noise", "Variable dark signal interference", "Non-uniform dark signal noise"]
   },
   {
     "id": "66", 
@@ -231,7 +256,8 @@
     "decomBlock": "Reception", 
     "description": "Noise induced by Photon response non-uniformity (PRNU), being expressed by the standard deviation of the pixel gain factor from the average pixel gain factor under even illumination, often given as a percentage.", 
     "references": "[62, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [62, Keal, What is Scientific Imaging Quality?, https://www.photometrics.com/wp-content/uploads/2021/01/Scientific-Image-Quality-A3-19-11-2020.pdf, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [62, Mei et al., Atmospheric extinction coefficient retrieval and validation for the single-band Mie-scattering Scheimpflug lidar technique, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["PRNU", "Non-uniformity in photon response", "Uneven photon response noise", "Inconsistency in photon response", "Variable photon response noise", "Non-consistent photon response", "Photon response non-uniformity"]
   },
   {
     "id": "67", 
@@ -240,7 +266,8 @@
     "decomBlock": "Reception", 
     "description": "Temporal length of photosensor exposure.", 
     "references": "[60, Widenhorn et al., Temperature dependence of dark current in a CCD, http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=876982, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [60, Thorlabs, Camera Noise and Temperature Tutorial, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [60, Widenhorn et al., Exposure Time Dependence of Dark Current in CCD Imagers, http://ieeexplore.ieee.org/document/5378633/, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [60, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [65, Geese et al., CNN based dark signal non-uniformity estimation, http://ieeexplore.ieee.org/document/6331408/, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [65, Soszynska et al., Feasibility Study of Hyperspectral Line-Scanning Camera Imagery for Remote Sensing Purposes, https://ieeexplore.ieee.org/document/8634703/, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [66, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [86, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [86, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [99, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Time of signal exposure", "Signal capture duration", "Duration of sensor exposure", "Time for signal detection", "Signal exposure time", "Duration of sensor observation"]
   },
   {
     "id": "68", 
@@ -249,7 +276,8 @@
     "decomBlock": "Reception", 
     "description": "Fixed differences in material distribution and size of the pixels within the photodiode, determined by deviations in manufacturing.", 
     "references": "[65, Thorlabs, Camera Noise and Temperature Tutorial, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [65, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [66, Thorlabs, Camera Noise and Temperature Tutorial, https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=10773, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [66, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Pixel irregularities in space", "Non-consistent pixel distribution", "Uneven spatial pixel arrangement", "Variable pixel layout", "Spatial pixel non-uniformity"]
   },
   {
     "id": "69", 
@@ -258,7 +286,8 @@
     "decomBlock": "Reception", 
     "description": "Intensity of illumination hitting the photosensor.", 
     "references": "[66, Cooper, Improved photo response non-uniformity (PRNU) based source camera identification, https://linkinghub.elsevier.com/retrieve/pii/S0379073812005695, Usage of CMOS and CCD imaging array technologies in flash Lidar and atmospheric Lidar systems: https://ieeexplore.ieee.org/document/8777993/ ; https://iopscience.iop.org/article/10.1070/QEL17329 ; https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628] [66, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [101, Ai et al., High-resolution random-modulation cw lidar, https://www.osapublishing.org/abstract.cfm?URI=ao-50-22-4478] [101, Northend et al., Laser Radar (Lidar) for Meteorological Observations, http://aip.scitation.org/doi/10.1063/1.1720199] [101, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Intensity of illuminating signal", "Light source strength", "Signal illumination level", "Illumination power", "Intensity of lighting", "Signal brightness level"]
   },
   {
     "id": "70", 
@@ -267,7 +296,8 @@
     "decomBlock": "Reception",
     "description": "Noise induced by analog-to-digital converter of the photosensor due to inaccuracies while converting continuous voltage signal into discrete digital signal.", 
     "references": "[58, Sun et al., HgCdTe avalanche photodiode detectors for airborne and spaceborne lidar at infrared wavelengths, https://www.osapublishing.org/abstract.cfm?URI=oe-25-14-16589] [58, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [58, Zheng and Kostamovaara, Statistical behavior of a comparator with weak repetitive signal and additive white Gaussian noise, http://ieeexplore.ieee.org/document/7520420/]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Noise in quantization", "Signal digitization interference", "Quantization distortion", "Digital signal noise", "Noise due to discretization", "Quantization error noise"]
   },
   {
     "id": "71", 
@@ -276,7 +306,8 @@
     "decomBlock": "Reception", 
     "description": "ADC dynamic range being the ratio between maximum and minimum convertable voltage into discrete values, determined the number of bits.", 
     "references": "[144, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566] [144, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Limited ADC signal span", "Reduced dynamic range of ADC", "Narrow analog-to-digital range", "ADC range limitation", "Insufficient analog-to-digital coverage", "Small ADC signal range"]
   },
   {
     "id": "72", 
@@ -285,7 +316,8 @@
     "decomBlock": "Signal propagation", 
     "description": "In case of saturation of the photodiode, excess electron charges will flow into neighboring photodiodes or pixels, if not blocked.", 
     "references": "[43, Lambert et al., Performance Analysis of 10 Models of 3D LiDARs for Automated Driving, https://ieeexplore.ieee.org/document/9142208/, See blooming.] [43, Uehara, Systems and methods for mitigating effects of high-reflectivity objects in lidar data, https://patents.justia.com/patent/20190391270]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Charge overflow in adjacent pixels", "Excessive charges leakage", "Blooming effect in pixels", "Charge spill into nearby elements", "Overflowing charges impact", "Blooming-induced signal distortion"]
   },
   {
     "id": "73", 
@@ -294,7 +326,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Excentric alignment and different divergences of laser beam and receiver field of view will lead to different stages of overlapping, depending on distance from sensor. Thus, the minimum object distance being determined.", 
     "references": "[54, Ansmann and Müller, Lidar and Atmospheric Aerosol Particles, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.109.] [54, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8-9.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Proximity below minimum range", "Object too close", "Insufficient distance to object", "Below minimum detection range", "Close-range object interference"]
   },
   {
     "id": "79", 
@@ -303,7 +336,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Objects located in front of other objects preventing illumination by laser beam and visibility by receiver.", 
     "references": "[0, Zhang et al., Lidar-based Object Classification with Explicit Occlusion Modeling, http://arxiv.org/abs/1907.04057]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Blocking by surrounding objects", "Object obstruction", "Obstructed sensor view", "Object interference", "Occluded detection", "Blockage by nearby objects"]
   },
   {
     "id": "81", 
@@ -312,7 +346,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Object moving relative to LIDAR sensor.", 
     "references": "[102, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Object motion", "Moving object impact", "Relative motion interference", "Object in motion", "Moving target influence", "Object movement effect"]
   },
   {
     "id": "82", 
@@ -321,7 +356,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Security attack by measuring the laser pulses or even particular ping waveforms sent out by the victims emitter and sending out delayed laser pulses/waveforms of the same wavelength to the victims receiver with the intention to insert false positive detections.", 
     "references": "[1, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, p.449-459]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Fraudulent signal relay", "Relay-based spoofing", "Security breach by relaying", "Signal deception through relay", "Spoofing via relay attack", "Relay-induced security threat"]
   },
   {
     "id": "83", 
@@ -330,7 +366,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Security attack by continuously illuminating the victims receiver with a strong laser of the same wavelength as the victims emitter wavelength. Saturating the victims receiving photosensor and, thus, preventing it from reflecting the variations in the input signal will lead to a blind sector in its field of view. The overwhelming of an input on purpose to hinder the readout of normal input traffic is being referred as denial-of-service attack.", 
     "references": "[142, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, p.449-464.] [43, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, Overall increase of the noise floor due to the injected light. See p.457.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Overloading for security attack", "Signal saturation attack", "Blinding for security breach", "Intentional signal overload", "Security attack by signal blinding", "Saturating and blinding tactics"]
   },
   {
     "id": "84", 
@@ -339,7 +376,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Crosstalk being a mutual illumination of receiver units by emitted beams between two seperately installed Lidar sensors on different vehicles.", 
     "references": "[1, Hebel et al., Mitigation of crosstalk effects in multi-LiDAR configurations, http://publica.fraunhofer.de/dokumente/N-515177.html]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Signal interference between channels", "Cross-signal contamination", "Crosstalk in signals", "Signal overlap", "Interference between adjacent channels", "Cross-communication interference"]
   },
   {
     "id": "85", 
@@ -348,7 +386,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Emerging of further active Lidar sensors.", 
     "references": "[84, Hebel et al., Mitigation of crosstalk effects in multi-LiDAR configurations, http://publica.fraunhofer.de/dokumente/N-515177.html] [84, Kim et al., An Experiment of Mutual Interference between Automotive LIDAR Scanners, http://ieeexplore.ieee.org/document/7113553/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Coexistent active Lidar", "Concurrent Lidar systems", "Multiple Lidar sensors", "Parallel Lidar sensor operation", "Simultaneous Lidar signals", "Active Lidar interference"]
   },
   {
     "id": "86", 
@@ -357,7 +396,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Noise induced by measured power of solar radiation.", 
     "references": "[43, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [43, Mei et al., Noise modeling; evaluation and reduction for the atmospheric lidar technique employing an image sensor, https://linkinghub.elsevier.com/retrieve/pii/S0030401818304632] [43, Zhang et al., Noise Reduction of LiDAR Signal via Local Mean Decomposition Combined With Improved Thresholding Method, https://ieeexplore.ieee.org/document/9121225] [43, Mei et al., Atmospheric extinction coefficient retrieval and validation for the single-band Mie-scattering Scheimpflug lidar technique, https://www.osapublishing.org/abstract.cfm?URI=oe-25-16-A628]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Solar noise interference", "Daylight signal interference", "Background noise from sunlight", "Sunlight-induced noise", "Daytime signal interference", "Sunlight background interference"]
   },
   {
     "id": "87", 
@@ -366,7 +406,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Attenuation of beam due to scattering and absorption by particles in atmospheric aerosol and accumulated hydrometeors. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In: Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of attenuation by molecules in air, if relevant. Hydrometeors being considered as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.", 
     "references": "[54, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R); p.10.] [54, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Laser-Radar-Equation: Transmittance of atmosphere T.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Aerosol particle attenuation", "Hydrometeor attenuation", "Atmospheric attenuation effects", "Aerosol interference", "Hydrometeor impact on signals", "Particle-induced signal loss", "Weather phenomena", "Precipitation", "Rain", "Raindrops", "Ice grains", "Graupel", "Hailstones", "Snowflakes", "Fog droplets", "Spray droplets"]
   },
   {
     "id": "89", 
@@ -375,7 +416,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Backscattering of beam by particles in atmospheric aerosol and accumulated hydrometeors. Aerosol being considered as “a mixture of particles (= extremely small pieces of matter) and the liquid or gas that they are contained in, that can spread through the air” [Aerosol. (n.d.). In Cambridge Dictionary. Retrieved June 21, 2021, from https://dictionary.cambridge.org/de/worterbuch/englisch/aerosol]. Seperate consideration of backscattering by molecules in air, if relevant. Hydrometeors being considered as “particulate solid and liquid formed principally by water” [Liberti G.L. (2014) Optical/Infrared, Scattering by Aerosols and Hydrometeors. In: Njoku E.G. (eds) Encyclopedia of Remote Sensing. Encyclopedia of Earth Sciences Series. Springer, New York, NY. https://doi.org/10.1007/978-0-387-36699-9_126]. Thus, including raindrops, ice grains, graupel, hailstones, snowflakes, fog droplets and spray droplets among others.", 
     "references": "[43, Espineira et al., Realistic LiDAR With Noise Model for Real-Time Testing of Automated Vehicles in a Virtual Environment, https://ieeexplore.ieee.org/document/9354172/] [43, Hadj-Bachir et al., Modelling of LIDAR sensor disturbances by solid airborne particles, http://arxiv.org/abs/2105.04193]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Aerosol particle backscatter", "Hydrometeor backscattering", "Atmospheric backscatter effects", "Aerosol-induced signal reflection", "Hydrometeor signal reflection", "Particle-induced signal backscatter", "Weather phenomena", "Precipitation", "Rain", "Raindrops", "Ice grains", "Graupel", "Hailstones", "Snowflakes", "Fog droplets", "Spray droplets"]
   },
   {
     "id": "90", 
@@ -384,7 +426,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Incoming solar radiation of different wavelengths straight from sun in the state as it reaches the earth.", 
     "references": "[86, Cianciotto, Detection and classification of subsurface objects in a marine environment by the use of a lidar system, http://ieeexplore.ieee.org/document/618120/] [86, Zhang and Yang, Lidar-Based Fast 3D Stockpile Modeling, https://ieeexplore.ieee.org/document/9051152/] [86, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/] [69, Cianciotto, Detection and classification of subsurface objects in a marine environment by the use of a lidar system, http://ieeexplore.ieee.org/document/618120/] [69, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Intensity of direct sunlight", "Solar radiation strength", "Sunlight signal intensity", "Direct solar power", "Solar intensity impact", "Sunlight direct irradiance"]
   },
   {
     "id": "91", 
@@ -393,7 +436,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Incoming solar radiation of different wavelengths after being scattered by surfaces in the surrounding.", 
     "references": "[86, Cianciotto, Detection and classification of subsurface objects in a marine environment by the use of a lidar system, http://ieeexplore.ieee.org/document/618120/] [86, Sun et al., Technique to separate lidar signal and sunlight, https://www.osapublishing.org/abstract.cfm?URI=oe-24-12-12949] [86, Lehtola et al., Single photon lidar in mobile laser scanning: The sampling rate problem and initial solutions via spital correlations, https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-2-W18/91/2019/] [86, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/] [69, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [69, Sun et al., Technique to separate lidar signal and sunlight, https://www.osapublishing.org/abstract.cfm?URI=oe-24-12-12949] [69, Lehtola et al., Single photon lidar in mobile laser scanning: The sampling rate problem and initial solutions via spital correlations, https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-2-W18/91/2019/] [69, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Intensity of scattered sunlight", "Scattered solar radiation strength", "Solar radiation scattering impact", "Scattered sunlight intensity", "Scattering-induced solar power", "Solar intensity from scattering"]
   },
   {
     "id": "92", 
@@ -402,7 +446,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Absorption of light by particles in atmospheric aerosol and accumulated hydrometeors. Hence, converting incoming light engery into kinetic and thermal energy within particles. Absorption cross section being a measure of the probability to absorb light by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section.", 
     "references": "[87, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Extinction coefficient α(R:λ): Extinction cross section σ_ext(λ): Absorption cross section σ_abs(λ); p.10-11.] [87, Yan et al., Improving classification accuracy of airborne LiDAR intensity data by geometric calibration and radiometric correction, https://linkinghub.elsevier.com/retrieve/pii/S0924271611001158, Formula reference to be added.] [87, Hasirlioglu et al., Modeling and simulation of rain for the test of automotive sensor systems, http://ieeexplore.ieee.org/document/7535399/, Formula reference to be added.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Atmospheric particle absorption", "Particle interference absorption", "Signal absorption by particles", "Particle-induced signal attenuation", "Weather phenomena", "Precipitation", "Rain", "Raindrops", "Ice grains", "Graupel", "Hailstones", "Snowflakes", "Fog droplets", "Spray droplets"]
   },
   {
     "id": "93", 
@@ -411,7 +456,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Scattering of light by particles in atmospheric aerosol and accumulated hydrometeors, specifically without converting any light engery but scattering incoming beams, modelable with Mie theory. Scattering cross section being a measure of the probability to scatter light by matter. Extinction cross section resulting from addition of absorption cross section and scattering cross section.", 
     "references": "[87, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Scattering cross section σ_sca(λ); p.10-11.] [87, Yan et al., Improving classification accuracy of airborne LiDAR intensity data by geometric calibration and radiometric correction, https://linkinghub.elsevier.com/retrieve/pii/S0924271611001158, Formula reference to be added.] [87, Hasirlioglu et al., Modeling and simulation of rain for the test of automotive sensor systems, http://ieeexplore.ieee.org/document/7535399/, Formula reference to be added.] [89, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Backscatter coefficient β(R; λ): Differencial scattering cross section dσ_j;sca(π; λ); p.9-10.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Atmospheric particle scattering", "Particle interference scattering", "Signal scattering by particles", "Particle-induced signal diffusion", "Weather phenomena", "Precipitation", "Rain", "Raindrops", "Ice grains", "Graupel", "Hailstones", "Snowflakes", "Fog droplets", "Spray droplets"]
   },
   {
     "id": "94", 
@@ -420,7 +466,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Number concentration of atmospheric aerosol particles in regular automotive Lidar surroundings is high enough to interact measurable with laser beams. Number concentration of accumulated hydrometeors depending on environmental influences.",
     "references": "[87, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Number concentration N_j(R); p.10-11.] [87, Yan et al., Improving classification accuracy of airborne LiDAR intensity data by geometric calibration and radiometric correction, https://linkinghub.elsevier.com/retrieve/pii/S0924271611001158, Formula reference to be added.] [87, Hasirlioglu et al., Modeling and simulation of rain for the test of automotive sensor systems, http://ieeexplore.ieee.org/document/7535399/, Formula reference to be added.] [89, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Backscatter coefficient β(R; λ): Number concentration N_j(R); p.9.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Density of particles in air", "Particle concentration in atmosphere", "Atmospheric particle number density", "Particle number concentration", "Number of particles in air"]
   },
   {
     "id": "95", 
@@ -429,7 +476,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Geometric size of atmospheric particles.", 
     "references": "[92, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [92, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [92, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Size factor x: Radius a; p.6.] [93, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [93, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [93, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Size factor x: Radius a; p.6.]", 
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Particle dimensions", "Atmospheric particle size distribution", "Size variation of air particles", "Particle size in the atmosphere", "Sizing of atmospheric particles"]
   },
   {
     "id": "96", 
@@ -438,7 +486,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter.", 
     "references": "[92, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [92, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [92, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Mie coefficients a_j and b_j: complex index of refraction m'; p.6.] [93, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [93, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [93, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Mie coefficients a_j and b_j: complex index of refraction m'; p.6.]", 
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Atmospheric particle optics", "Refractive characteristics", "Optical properties of air particles", "Atmospheric particle refraction", "Refractive index variation"]
   },
   {
     "id": "97", 
@@ -447,7 +496,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Geometric shape of atmospheric particles.", 
     "references": "[92, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [92, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [92, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Size factor x: 2πa as geometric cross section of spherical particle; p.6.] [93, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [93, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [93, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Size factor x: 2πa as geometric cross section of spherical particle; p.6.]", 
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Particle geometry", "Atmospheric particle shape variation", "Particle form in the atmosphere", "Particle geometry in air", "Shape characteristics of atmospheric particles"]
   },
   {
     "id": "98", 
@@ -456,7 +506,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Distance of laser beam travelling through volume of particles in atmospheric aerosol and accumulated hydrometeors.", 
     "references": "[87, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Range R; p.10-11.] [87, Yan et al., Improving classification accuracy of airborne LiDAR intensity data by geometric calibration and radiometric correction, https://linkinghub.elsevier.com/retrieve/pii/S0924271611001158, Formula reference to be added.] [87, Hasirlioglu et al., Modeling and simulation of rain for the test of automotive sensor systems, http://ieeexplore.ieee.org/document/7535399/, Formula reference to be added.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Signal propagation in air", "Atmospheric particle signal travel", "Transmission through air particles", "Signal path in particle-filled atmosphere", "Distance through particle-laden air", "Particle volume signal travel"]
   },
   {
     "id": "99", 
@@ -465,7 +516,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Noise induced by measured power of radiation of nighttime dominant light sources.", 
     "references": "[43, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [43, Zhang et al., Noise Reduction of LiDAR Signal via Local Mean Decomposition Combined With Improved Thresholding Method, https://ieeexplore.ieee.org/document/9121225]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Nighttime ambient light interference", "Background noise during night", "Dark-time signal interference", "Nocturnal background noise", "Low-light signal interference", "Nighttime light background interference"]
   },
   {
     "id": "100", 
@@ -474,7 +526,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Moonlight, starlight and artificial light being the nighttime dominant light sources.", 
     "references": "[99, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [99, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/] [69, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [69, Ivanov and Ivanov, Investigation of the effect of noise parameters of a 3D lidar on the error in estimating relief signatures of distant objects from 2D field intensity distributions of reflected radiation, https://iopscience.iop.org/article/10.1070/QEL17329] [69, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Intensity of moon and starlight", "Nighttime celestial light strength", "Moonlight and starlight impact", "Ambient light from celestial bodies", "Moonlight and starlight intensity influence", "Celestial light strength at night"]
   },
   {
     "id": "101", 
@@ -483,7 +536,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Noise induced by quantum mechanics, specifically the poisson distribution of photon units and electrons. Thus, the capability to generate free charge carriers within semiconductors of the photodiode correlates with the poisson distribution of incoming photons and generated photo-electrons. Also the spontaneous generation of free charge carriers due to thermal excitement of valence electrons within semiconductors of the photodiode without exposal to light, referred to as dark current, correlates with the poisson distribution of the generated photo-electrons and therefore entails shot noise.", 
     "references": "[43, Inoue et al., LiDAR system with a coin-sized sensor head and an optical preamplifier capable of detection at 200 m, https://ieeexplore.ieee.org/document/9464641/] [43, Ai et al., High-resolution random-modulation cw lidar, https://www.osapublishing.org/abstract.cfm?URI=ao-50-22-4478] [43, Northend et al., Laser Radar (Lidar) for Meteorological Observations, http://aip.scitation.org/doi/10.1063/1.1720199] [43, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/] [43, Liu et al., Estimating random errors due to shot noise in backscatter lidar observations, https://www.osapublishing.org/abstract.cfm?URI=ao-45-18-4437] [58, Patil et al., Functional Safety of a Lidar Sensor System, https://ieeexplore.ieee.org/document/9184668/] [58, Northend et al., Laser Radar (Lidar) for Meteorological Observations, http://aip.scitation.org/doi/10.1063/1.1720199] [58, Kopeika and Bordogna, Background noise in optical communication systems, http://ieeexplore.ieee.org/document/1449912/]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Poisson distribution of photons and electrons", "Quantum mechanics", "Statistical noise in signals", "Signal randomness interference", "Noise from random signal variations", "Random signal interference", "Stochastic signal noise", "Shot-induced signal noise"]
   },
   {
     "id": "102", 
@@ -492,7 +546,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Vertical or horizontal scan of an object moving vertically or horizontally relative to the scanning direction is leading to a longer or shorter object scan period and, thus, to a directional expansion or compression of the resolution of the beams hitting the object and incorrect dimensions of the received object point cloud. The inequalities between detections without impact of motion scan effect and dynamic detections distorted by motion scan effect being referred as detection state errors.", 
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Scan-induced motion interference", "Motion scan impact on signals", "Signal distortion from scanning motion", "Motion scan effect on detection", "Influence of scanning motion on signals", "Scan-induced signal variation"]
   },
   {
     "id": "104", 
@@ -501,7 +556,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Spatial distance between Lidar sensor and object.", 
     "references": "[73, Ansmann and Müller, Lidar and Atmospheric Aerosol Particles, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.109.] [73, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8-9.] [117, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/] [139, Kashani et al., A Review of LIDAR Radiometric Processing: From Ad Hoc Intensity Correction to Rigorous Radiometric Calibration, http://www.mdpi.com/1424-8220/15/11/28099, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.] [54, Ansmann and Müller, Lidar and Atmospheric Aerosol Particles, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Distance R; p.109.] [54, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Geometric factor G(R): Distance R; p.8-9.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Sensor-object separation", "Proximity measurement", "Distance between detection system and object", "Sensor-object spacing", "Range between sensor and object", "Sensor-object distance"]
   },
   {
     "id": "105", 
@@ -510,7 +566,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Multiple echos consecutively received by a single transmitted beam.", 
     "references": "[54, Kim et al., Mutual Interference on Mobile Pulsed Scanning LIDAR, https://doi.org/10.14372/IEMEK.2017.12.1.43] [54, Milenković et al., Total canopy transmittance estimated from small-footprint; full-waveform airborne LiDAR, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X] [54, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/] [54, Jutzi and Gross, Normalization of lidar intensity data based on range and surface incidence angle, https://www.semanticscholar.org/paper/NORMALIZATION-OF-LIDAR-INTENSITY-DATA-BASED-ON-AND-Jutzi-Gross/91fc1c40a8168bf6060642a01ff456a36e42ebe0] [1, Chongjian et al., Pixel-level Extrinsic Self Calibration of High Resolution LiDAR and Camera in Targetless Environments, https://ieeexplore.ieee.org/document/9495137/, See bleeding. Emerging of false positive detections falsely related to beam centerline due to partwise illumination of non targeted object parts; additionally to true positive detection of targeted object part; if detection threshold is exceeded for both measured impulses. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating non targeted object parts; here. If foreground object is close to background object; the received radiation engery impulses may be lumped and create one combined false positive detection; if detection threshold is exceeded for both measured impulses.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Multiple reflections per beam", "Echo repetition in signals", "Multiple signal rebounds", "Successive echoes per beam", "Echoes within a single beam", "Signal multiple reflections"]
   },
   {
     "id": "106", 
@@ -519,7 +576,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Divergence of outgoing beam being characterized by divergence angle.", 
     "references": "[54, Jutzi and Gross, Normalization of lidar intensity data based on range and surface incidence angle, https://www.semanticscholar.org/paper/NORMALIZATION-OF-LIDAR-INTENSITY-DATA-BASED-ON-AND-Jutzi-Gross/91fc1c40a8168bf6060642a01ff456a36e42ebe0] [54, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Laser-Radar-Equation: Beam size A_beam;0 and reflected beam size A_beam;r: Vertical and horizontal beam divergence: α_i.] [73, Ansmann and Müller, Lidar and Atmospheric Aerosol Particles, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.109.] [73, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8-9.] [117, Kim et al., Mutual Interference on Mobile Pulsed Scanning LIDAR, https://doi.org/10.14372/IEMEK.2017.12.1.43] [117, Słota, Full-waveform data for building roof step edge localization, https://linkinghub.elsevier.com/retrieve/pii/S0924271615001458] [117, Chongjian et al., Pixel-level Extrinsic Self Calibration of High Resolution LiDAR and Camera in Targetless Environments, https://ieeexplore.ieee.org/document/9495137/, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.] [117, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/] [142, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29, Influences on blooming listed here. Thus; being influences on saturation of a photodiode in the first place.] [139, Kashani et al., A Review of LIDAR Radiometric Processing: From Ad Hoc Intensity Correction to Rigorous Radiometric Calibration, http://www.mdpi.com/1424-8220/15/11/28099]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Spread of outgoing signal", "Beam dispersion", "Diverging signal emission", "Outgoing beam widening", "Beam divergence effect", "Signal spread upon emission"]
   },
   {
     "id": "107", 
@@ -528,7 +586,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Divergence of receiver field of view due to its angular restriction.", 
     "references": "[56, Ansmann and Müller, Lidar and Atmospheric Aerosol Particles, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.109.] [56, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8-9.] [56, Bobrovnikov et al., A Multi-Aperture Transceiver System of a Lidar with Narrow Field of View and Minimal Dead Zone, http://link.springer.com/10.1134/S1024856018060052] [73, Ansmann and Müller, Lidar and Atmospheric Aerosol Particles, http://link.springer.com/10.1007/0-387-25101-4_4, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.109.] [73, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Geometric factor G(R): Overlap function O(R); p.8-9.]",
-    "nodeType": "designParameter"
+    "nodeType": "designParameter",
+    "tags": ["Spread of receiver vision", "Field of view dispersion", "Diverging vision angle", "Receiver vision widening", "Field of view divergence effect", "Vision spread upon reception"]
   },
   {
     "id": "108", 
@@ -537,7 +596,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Beam propagating back to receiver in multiple paths as being scattered by multiple parts of objects.", 
     "references": "[105, Turpin et al., 3D Imaging from Multipath Temporal Echoes, https://link.aps.org/doi/10.1103/PhysRevLett.126.174301] [105, Gatziolis and Andersen, A guide to LIDAR data acquisition and processing for the forests of the Pacific Northwest., https://www.fs.usda.gov/treesearch/pubs/30652] [105, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Multipath backscatter", "Backscattering from multiple parts", "Backscattering from various components", "Multi-path signal reflection", "Object part-induced signal backscatter"]
   },
   {
     "id": "109", 
@@ -546,7 +606,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Measured radiation engery impulse width increases when illuminated object part surface normal is not coaxial to laser beam propagation direction because of surface parts which are further back being illuminated later.", 
     "references": "[54, Tachella et al., 3D Reconstruction Using Single-photon Lidar Data Exploiting the Widths of the Returns, https://ieeexplore.ieee.org/document/8683075/]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Widened signal impulse", "Broadened signal profile", "Enlarged impulse shape", "Extended signal impulse duration", "Increased signal profile width", "Impulse broadening effect"]
   },
   {
     "id": "110", 
@@ -555,7 +616,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Object parts transmitting portions of beam. Transmittance, building on refraction, being expressed by Bidirectional Transmittance Distribution Function (BTDF).", 
     "references": "[54, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected.] [54, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected.] [54, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected. See p.415.] [105, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/] [105, Kim et al., Mutual Interference on Mobile Pulsed Scanning LIDAR, https://doi.org/10.14372/IEMEK.2017.12.1.43] [105, Milenković et al., Total canopy transmittance estimated from small-footprint; full-waveform airborne LiDAR, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X] [105, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, p.448.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Object part transparency", "Refraction through objects", "Object material transmittance", "Transmission properties of object parts", "Refraction by physical parts", "Object part optical behavior"]
   },
   {
     "id": "111", 
@@ -564,7 +626,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Object parts reflecting portions of beam. Diffuse reflection being referred as scattering. Reflectance of an object part being expressed by Bidirectional Reflectance Distribution Function (BRDF).", 
     "references": "[109, Tachella et al., 3D Reconstruction Using Single-photon Lidar Data Exploiting the Widths of the Returns, https://ieeexplore.ieee.org/document/8683075/] [109, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/] [108, Turpin et al., 3D Imaging from Multipath Temporal Echoes, https://link.aps.org/doi/10.1103/PhysRevLett.126.174301] [108, Gatziolis and Andersen, A guide to LIDAR data acquisition and processing for the forests of the Pacific Northwest., https://www.fs.usda.gov/treesearch/pubs/30652] [108, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29] [118, Kim et al., Mutual Interference on Mobile Pulsed Scanning LIDAR, https://doi.org/10.14372/IEMEK.2017.12.1.43] [1, Yang and Wang, On Solving Mirror Reflection in LIDAR Sensing, http://ieeexplore.ieee.org/document/5409636/, Reflection by perfectly mirroring surfaces leading to false positive detections behind the mirroring surface.] [1, Hasirlioglu and Riener, Challenges in Object Detection Under Rainy Weather Conditions, http://link.springer.com/10.1007/978-3-030-14757-0_5, Reflection by perfectly mirroring surfaces leading to false positive detections behind the mirroring surface. See p.61.] [1, Hasirlioglu and Riener, A General Approach for Simulating Rain Effects on Sensor Data in Real and Virtual Environments, https://ieeexplore.ieee.org/document/8936913/, Reflection by perfectly mirroring surfaces leading to false positive detections behind the mirroring surface.] [54, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected. Additionaly; direct reference is given here by Laser-Radar-Equation: Reflectivity of object K_r.] [54, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected. Additionaly diffuse scattering leading to distribution of scattering intensity (see BRDF).] [54, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected. See p.415.] [54, Muckenhuber et al., Automotive Lidar Modelling Approach Based on Material Properties and Lidar Capabilities, https://www.mdpi.com/1424-8220/20/11/3309, Distribution of scattering intensity (see BRDF).] [54, Li and Liang, Remote measurement of surface roughness; surface reflectance; and body reflectance with LiDAR, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904, Distribution of scattering intensity (see BRDF).] [105, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/] [105, Kim et al., Mutual Interference on Mobile Pulsed Scanning LIDAR, https://doi.org/10.14372/IEMEK.2017.12.1.43] [105, Milenković et al., Total canopy transmittance estimated from small-footprint; full-waveform airborne LiDAR, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X] [105, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, p.448.] [142, Uehara, Systems and methods for mitigating effects of high-reflectivity objects in lidar data, https://patents.justia.com/patent/20190391270] [142, Lichti et al., Error Models and Propagation in Directly Georeferenced Terrestrial Laser Scanner Networks, http://ascelibrary.org/doi/10.1061/%28ASCE%290733-9453%282005%29131%3A4%28135%29, Influences on blooming listed here. Thus; being influences on saturation of a photodiode in the first place.] [139, Kashani et al., A Review of LIDAR Radiometric Processing: From Ad Hoc Intensity Correction to Rigorous Radiometric Calibration, http://www.mdpi.com/1424-8220/15/11/28099, See bleeding.] [139, Chongjian et al., Pixel-level Extrinsic Self Calibration of High Resolution LiDAR and Camera in Targetless Environments, https://ieeexplore.ieee.org/document/9495137/, See bleeding.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Object part reflectivity", "Reflective properties of parts", "Specular reflection characteristics", "Diffuse reflection by physical parts", "Part surface reflection", "Object part reflection behavior"]
   },
   {
     "id": "112", 
@@ -573,7 +636,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Object parts absorbing portions of beam. Hence, converting incoming light engery into kinetic and thermal energy.", 
     "references": "[54, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected.] [54, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected.] [54, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; bigger portion of transmission and absorbtion of beam implies lower portion of beam being reflected. See p.415.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Object material absorption", "Absorptive characteristics of parts", "Material-specific absorption", "Object part energy absorption", "Absorption by physical components", "Particulate matter absorption"]
   },
   {
     "id": "113", 
@@ -582,7 +646,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Dielectric permittivity being the ratio of an electric field to electric displacement within the considered material.", 
     "references": "[111, Carrea et al., Correction of terrestrial LiDAR intensity channel using Oren–Nayar reflectance model: An application to lithological differentiation, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658] [111, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.94.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [128, Eichler et al., Light, Atoms, Molecules, Solids, http://link.springer.com/10.1007/978-3-319-99895-4_1, p.5.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Material permittivity of parts", "Dielectric characteristics of object parts", "Object part material electrical properties", "Dielectric behavior of physical components", "Material permittivity impact", "Dielectric properties of parts"]
   },
   {
     "id": "114", 
@@ -591,7 +656,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Incidence angle describing the angle between incoming beam and surface normal.", 
     "references": "[110, Milenković et al., Total canopy transmittance estimated from small-footprint; full-waveform airborne LiDAR, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X] [110, Butler et al., Comparison of bidirectional transmittance distribution function (BTDF) measurements on fused silica and sintered polytetrafluoroethylene diffusers, https://iopscience.iop.org/article/10.1088/1681-7575/ab4523] [110, Hennigs et al., Passive and Active Protective Clothing against High-Power Laser Radiation, https://linkinghub.elsevier.com/retrieve/pii/S1875389213000953] [111, Carrea et al., Correction of terrestrial LiDAR intensity channel using Oren–Nayar reflectance model: An application to lithological differentiation, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658] [111, Milenković et al., Total canopy transmittance estimated from small-footprint; full-waveform airborne LiDAR, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X] [111, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [111, Muckenhuber et al., Automotive Lidar Modelling Approach Based on Material Properties and Lidar Capabilities, https://www.mdpi.com/1424-8220/20/11/3309] [111, Li and Liang, Remote measurement of surface roughness; surface reflectance; and body reflectance with LiDAR, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904] [111, Kukko et al., Effect of incidence angle on laser scanner intensity and surface data, https://www.osapublishing.org/abstract.cfm?URI=ao-47-7-986] [111, Colomb et al., Spectral reflectance characterization of the road environment to optimize the choice of autonomous vehicle sensors*, https://ieeexplore.ieee.org/document/8917455/] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [128, Eichler et al., Polarization, http://link.springer.com/10.1007/978-3-319-99895-4_15, p.291-292.] [109, Tachella et al., 3D Reconstruction Using Single-photon Lidar Data Exploiting the Widths of the Returns, https://ieeexplore.ieee.org/document/8683075/] [109, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Angle of signal incidence", "Signal approach angle", "Incidence angle impact", "Signal entry angle", "Angle of signal arrival", "Signal incidence angle"]
   },
   {
     "id": "115", 
@@ -600,7 +666,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Surface orientation being the spatial orientation of the considered surface normal.", 
     "references": "[114, Milenković et al., Total canopy transmittance estimated from small-footprint; full-waveform airborne LiDAR, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X] [114, Jutzi and Gross, Normalization of lidar intensity data based on range and surface incidence angle, https://www.semanticscholar.org/paper/NORMALIZATION-OF-LIDAR-INTENSITY-DATA-BASED-ON-AND-Jutzi-Gross/91fc1c40a8168bf6060642a01ff456a36e42ebe0]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Object surface alignment", "Orientation of physical components", "Object part surface positioning", "Alignment of physical surfaces", "Surface orientation impact", "Surface alignment of object parts"]
   },
   {
     "id": "116", 
@@ -609,7 +676,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Object part surface not orthogonal to beam propagation direction.", 
     "references": "[109, Tachella et al., 3D Reconstruction Using Single-photon Lidar Data Exploiting the Widths of the Returns, https://ieeexplore.ieee.org/document/8683075/] [109, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Surface with slant angle", "Inclined surface of object", "Object with oblique angle", "Surface inclination impact", "Object with slanted orientation", "Surface tilt in object"]
   },
   {
     "id": "117", 
@@ -618,7 +686,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Incomplete incidence of single beam on object part because object part size being smaller than beam cross section or beam hitting the edge of an object part.", 
     "references": "[118, Kim et al., Mutual Interference on Mobile Pulsed Scanning LIDAR, https://doi.org/10.14372/IEMEK.2017.12.1.43] [118, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/] [118, Chongjian et al., Pixel-level Extrinsic Self Calibration of High Resolution LiDAR and Camera in Targetless Environments, https://ieeexplore.ieee.org/document/9495137/, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Percentage of beam impact", "Single beam fraction on object", "Beam portion striking object", "Proportion of beam hitting part", "Beam impact ratio", "Object part hit fraction"]
   },
   {
     "id": "118", 
@@ -627,7 +696,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Single beam being partwise reflected by an object part, thus, the not intercepted part which is maintaining the propagation direction is being reflected by the background.", 
     "references": "[105, Kim et al., Mutual Interference on Mobile Pulsed Scanning LIDAR, https://doi.org/10.14372/IEMEK.2017.12.1.43] [105, Rapp et al., Advances in Single-Photon Lidar for Autonomous Vehicles: Working Principles; Challenges; and Recent Advances, https://ieeexplore.ieee.org/document/9127841/] [105, Chongjian et al., Pixel-level Extrinsic Self Calibration of High Resolution LiDAR and Camera in Targetless Environments, https://ieeexplore.ieee.org/document/9495137/, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Split beam reflection", "Beam division by object", "Reflected split beam", "Object part and background reflection", "Foreground and background reflection", "Reflected beam split by object"]
   },
   {
     "id": "119", 
@@ -636,7 +706,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Magnetic permeability being the ratio of magnetic induction to a magnetic field within the considered material.", 
     "references": "[111, Carrea et al., Correction of terrestrial LiDAR intensity channel using Oren–Nayar reflectance model: An application to lithological differentiation, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [128, Eichler et al., Light, Atoms, Molecules, Solids, http://link.springer.com/10.1007/978-3-319-99895-4_1, p.5.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Material's magnetic properties", "Magnetic permeability of object part", "Object part magnetic characteristics", "Material's magnetic behavior", "Magnetic response of object material", "Object part magnetic permeability"]
   },
   {
     "id": "120", 
@@ -645,7 +716,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Cunductivity being the ability of a material to conduct electric current.", 
     "references": "[111, Carrea et al., Correction of terrestrial LiDAR intensity channel using Oren–Nayar reflectance model: An application to lithological differentiation, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658] [112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.94.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Material conductivity", "Object part electrical conductivity", "Conductive properties of material", "Electrical behavior of object part", "Material's electrical conductance", "Object part conductivity"]
   },
   {
     "id": "121", 
@@ -654,7 +726,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Color of object part surface being determined by non-absorbed but reflected portion of wavelengths of incident solar radiation hitting the object part surface material.", 
     "references": "[111, Carrea et al., Correction of terrestrial LiDAR intensity channel using Oren–Nayar reflectance model: An application to lithological differentiation, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658] [111, Li and Liang, Remote measurement of surface roughness; surface reflectance; and body reflectance with LiDAR, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904] [111, Li et al., Bidirectional reflectance distribution function based surface modeling of non-Lambertian using intensity data of light detection and ranging, https://www.osapublishing.org/abstract.cfm?URI=josaa-31-9-2055] [111, Colomb et al., Spectral reflectance characterization of the road environment to optimize the choice of autonomous vehicle sensors*, https://ieeexplore.ieee.org/document/8917455/] [112, Heiden et al., Physics-based Simulation of Continuous-Wave LIDAR for Localization; Calibration and Tracking, https://ieeexplore.ieee.org/document/9197138/] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Color of object surface", "Object part exterior color", "Surface hue of object part", "Object coloration", "Exterior color of physical component", "Object part color"]
   },
   {
     "id": "122", 
@@ -663,7 +736,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Temperature of object part.", 
     "references": "[113, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [131, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [132, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [133, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [119, Abo El Ata et al., Studies of AC electrical conductivity and initial magnetic permeability of rare-earth-substituted Li–Co ferrites, https://linkinghub.elsevier.com/retrieve/pii/S0304885305002246] [120, Abo El Ata et al., Studies of AC electrical conductivity and initial magnetic permeability of rare-earth-substituted Li–Co ferrites, https://linkinghub.elsevier.com/retrieve/pii/S0304885305002246]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Temperature of object part", "Part temperature", "Object surface heat level", "Component temperature", "Material temperature", "Object part thermal condition"]
   },
   {
     "id": "123", 
@@ -672,7 +746,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Roughness being a value for the heights and depths of microscopic bumps and holes within a surface.", 
     "references": "[110, Peelen and Metselaar, Light scattering by pores in polycrystalline materials: Transmission properties of alumina, http://aip.scitation.org/doi/10.1063/1.1662961] [111, Carrea et al., Correction of terrestrial LiDAR intensity channel using Oren–Nayar reflectance model: An application to lithological differentiation, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658] [111, Li and Liang, Remote measurement of surface roughness; surface reflectance; and body reflectance with LiDAR, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904] [111, Li et al., Bidirectional reflectance distribution function based surface modeling of non-Lambertian using intensity data of light detection and ranging, https://www.osapublishing.org/abstract.cfm?URI=josaa-31-9-2055] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Surface irregularity of parts", "Roughness of physical components", "Rough surface on parts", "Part surface unevenness"]
   },
   {
     "id": "124", 
@@ -681,7 +756,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Internal scattering of transmitted beam by pores in object part material, generally referred as bulk scatter.", 
     "references": "[110, Peelen and Metselaar, Light scattering by pores in polycrystalline materials: Transmission properties of alumina, http://aip.scitation.org/doi/10.1063/1.1662961] [111, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Pore-induced inner scattering", "Scattering by material pores", "Inner scattering from object part", "Object part material porosity impact", "Material's inner scattering by pores", "Inner scattering due to material porosity"]
   },
   {
     "id": "125", 
@@ -690,7 +766,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Internal scattering of transmitted beam by additional phase in object part material, generally referred as bulk scatter.", 
     "references": "[110, Peelen and Metselaar, Light scattering by pores in polycrystalline materials: Transmission properties of alumina, http://aip.scitation.org/doi/10.1063/1.1662961] [111, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Additional phase-induced inner scattering", "Scattering by material phases", "Inner scattering from object part", "Object part material phase impact"]
   },
   {
     "id": "126", 
@@ -699,16 +776,18 @@
     "decomBlock": "Signal propagation", 
     "description": "Internal scattering of transmitted beam by grain boundaries in object part material, generally referred as bulk scatter.", 
     "references": "[110, Peelen and Metselaar, Light scattering by pores in polycrystalline materials: Transmission properties of alumina, http://aip.scitation.org/doi/10.1063/1.1662961] [111, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Grain boundary-induced inner scattering", "Scattering by material boundaries", "Inner scattering from object part", "Object part material boundary impact"]
   },
   {
-    "id": "127", 
+    "id": "127",
     "parentIds": ["110", "111", "112"],
     "title": "Birefringence in object part material", 
     "decomBlock": "Signal propagation", 
     "description": "Birefringence, referred as double refraction, resulting from the occurance of an ordinary refractive index and an additional extraordinary refractive index depending on beam polarization state and incidence angle, most common for anisotropic materials.", 
     "references": "[110, Peelen and Metselaar, Light scattering by pores in polycrystalline materials: Transmission properties of alumina, http://aip.scitation.org/doi/10.1063/1.1662961] [111, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Polarization", "Anisotropic material", "Double refraction", "Refractive index", "Incidence angle", "Material birefringence", "Object part optical anisotropy", "Birefringent properties of material", "Optical behavior of object part", "Material's birefringence impact", "Object part birefringence"]
   },
   {
     "id": "128", 
@@ -717,7 +796,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter and calculable by the square root of material dielectric permittivity multiplied by material magnetic permeability.",
     "references": "[111, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [110, Heiden et al., Physics-based Simulation of Continuous-Wave LIDAR for Localization; Calibration and Tracking, https://ieeexplore.ieee.org/document/9197138/] [127, Eichler et al., Polarization, http://link.springer.com/10.1007/978-3-319-99895-4_15, p.291-292.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Object part material optics", "Refractive characteristics", "Index of refraction in object part", "Optical properties of material", "Object part material refraction", "Material refractive index"]
   },
   {
     "id": "129", 
@@ -726,7 +806,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Refractive index being the ratio of vacuum wavelength to wavelength in permeated matter, here atmosphere. Thus, being the ratio of speed of light in vacuum to speed of light in permeated matter, here atmosphere, and calculable by the square root of material/atmospheric dielectric permittivity multiplied by material/atmospheric magnetic permeability.", 
     "references": "[111, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [110, Heiden et al., Physics-based Simulation of Continuous-Wave LIDAR for Localization; Calibration and Tracking, https://ieeexplore.ieee.org/document/9197138/] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [92, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [92, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Mie coefficients a_j and b_j: complex index of refraction n; p.6.] [93, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [93, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Mie coefficients a_j and b_j: complex index of refraction n; p.6.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Atmospheric optics", "Refractive characteristics of air", "Index of refraction in atmosphere", "Optical properties of air", "Atmospheric refraction", "Atmosphere refractive index"]
   },
   {
     "id": "130", 
@@ -735,7 +816,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Moisture of object part surface.", 
     "references": "[111, Carrea et al., Correction of terrestrial LiDAR intensity channel using Oren–Nayar reflectance model: An application to lithological differentiation, https://linkinghub.elsevier.com/retrieve/pii/S0924271615002658] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Moisture on object surface", "Object part humidity level", "Surface wetness of object part", "Object part moisture content", "Object surface dampness", "Moisture presence on object part"]
   },
   {
     "id": "131", 
@@ -744,7 +826,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Band structure describing the states of electrons and free charge carriers within the momentum space of a solid.",
     "references": "[111, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.95.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Material's electronic band structure", "Object part band characteristics", "Electronic band properties of material", "Band structure of object part", "Electronic behavior of object part", "Material band structure"]
   },
   {
     "id": "132", 
@@ -753,7 +836,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Plasma oscillations being oscillations of the charge density within a material.", 
     "references": "[111, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.95.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Object part plasma characteristics", "Plasma properties of material", "Plasma oscillations of object part", "Object part plasma behavior", "Material plasma oscillations"]
   },
   {
     "id": "133", 
@@ -762,7 +846,8 @@
     "decomBlock": "Signal propagation", 
     "description": "A phase within a solid material being one delimited homogeneous structure, separable to a different homogeneous structure within the material.", 
     "references": "[111, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Material phase characteristics", "Object part phase properties", "Phase of material in object", "Phase impact on object part"]
   },
   {
     "id": "134", 
@@ -771,7 +856,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Thickness of object part material considered being the length of the path in normal direction of the tangential plane through the object part material.", 
     "references": "[112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [110, Chen et al., Thickness Dependence of Optical Transmittance of Transparent Wood: Chemical Modification Effects, https://pubs.acs.org/doi/10.1021/acsami.9b11816] [111, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Material thickness variation", "Object part thickness", "Thickness of physical components", "Particulate matter material thickness", "Component material thickness"]
   },
   {
     "id": "135", 
@@ -780,7 +866,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Density of the electron cloud distributed in a metallic material.", 
     "references": "[132, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.95.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Metallic material's electron density", "Object part electron concentration", "Electron density in metallic material", "Metallic material electron behavior", "Object part metallic electron density"]
   },
   {
     "id": "136", 
@@ -789,7 +876,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Object part surface texture describing the macroscopic appearance of the object part surface structure.", 
     "references": "[111, Li and Liang, Remote measurement of surface roughness; surface reflectance; and body reflectance with LiDAR, https://www.osapublishing.org/abstract.cfm?URI=ao-54-30-8904] [111, Li et al., Bidirectional reflectance distribution function based surface modeling of non-Lambertian using intensity data of light detection and ranging, https://www.osapublishing.org/abstract.cfm?URI=josaa-31-9-2055] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [112, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [112, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Surface characteristics of parts", "Texture of physical components", "Particulate matter surface features", "Object part tactile properties", "Surface texture of components", "Part material texture"]
   },
   {
     "id": "139", 
@@ -798,7 +886,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Highly reflective object parts in foreground, e.g. retroreflectors, being able to reflect fragments of light from across the edges of the main beam cross section back to the reception unit, additionally to main beam reflection by object part.", 
     "references": "[105, Kashani et al., A Review of LIDAR Radiometric Processing: From Ad Hoc Intensity Correction to Rigorous Radiometric Calibration, http://www.mdpi.com/1424-8220/15/11/28099, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.] [105, Chongjian et al., Pixel-level Extrinsic Self Calibration of High Resolution LiDAR and Camera in Targetless Environments, https://ieeexplore.ieee.org/document/9495137/, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Beam reflection by object part", "Radiation fragments reflection", "Main beam reflection", "Object part reflective behavior", "Reflection from highly reflective foreground", "Reflected radiation fragments"]
   },
   {
     "id": "140", 
@@ -807,7 +896,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Small fragments of radiation being emitted across the edges of the main beam cross section, as the edges of the main beam cross section are not perfectly sharp cut.", 
     "references": "[139, Kashani et al., A Review of LIDAR Radiometric Processing: From Ad Hoc Intensity Correction to Rigorous Radiometric Calibration, http://www.mdpi.com/1424-8220/15/11/28099, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.] [139, Chongjian et al., Pixel-level Extrinsic Self Calibration of High Resolution LiDAR and Camera in Targetless Environments, https://ieeexplore.ieee.org/document/9495137/, See bleeding. No differentiation between fraction of main beam and fraction of light from across main beam cross section illuminating object parts; here.]",            
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Radiation fragment dispersion", "Beam cross-section edges", "Edges of main beam", "Fragmentation at beam edges", "Cross-sectional radiation fragments", "Radiation fragments along beam edges"]
   },
   {
     "id": "141", 
@@ -816,7 +906,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Number concentration of atmospheric aerosol particles may vary within particle volume.",
     "references": "[94, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Backscatter coefficient β(R; λ): Number concentration N_j(R); p.9.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Spatial variation of particle density", "Differences in atmospheric particle concentration", "Particle concentration disparities in space", "Varied particle density distribution", "Number concentration variation in particle volume", "Spatial differences in particle density"]
   },
   {
     "id": "142", 
@@ -825,7 +916,8 @@
     "decomBlock": "Reception", 
     "description": "With regard to an installed photodiode, an electric field is induced by the electron flow of the electrons released by the luminous flux, which is opposite to the field existing due to the bias voltage of the diode. Thereby the flow of the released photoelectrons is slowed down until, at a certain exposure intensity, the photoelectron current asymptotically approaches a limit value.",
     "references": "[72, Uehara, Systems and methods for mitigating effects of high-reflectivity objects in lidar data, https://patents.justia.com/patent/20190391270] [0, Shin et al., Illusion and Dazzle: Adversarial Optical Channel Exploits Against Lidars for Automotive Applications, http://link.springer.com/10.1007/978-3-319-66787-4_22, Blind sector inevitably leading to false negative detections. See p.457.]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Photodiode overloading", "Sensor saturation", "Photodiode signal saturation", "Saturation of light-sensitive diode", "Overwhelmed photodetector", "Photodiode signal overload"]
   },
   {
     "id": "143", 
@@ -834,7 +926,8 @@
     "decomBlock": "Signal propagation", 
     "description": "Moonlight, starlight and artificial light being the nighttime dominant light sources.", 
     "references": "[99, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.] [69, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, p.11.]",
-    "nodeType": "systemIndependent"
+    "nodeType": "systemIndependent",
+    "tags": ["Intensity of artificial light", "Light strength from artificial sources", "Artificial light radiation intensity", "Intensity of man-made illumination", "Light power from artificial sources", "Artificial light source intensity"]
   },
   {
     "id": "144", 
@@ -843,6 +936,7 @@
     "decomBlock": "Pre-processing", 
     "description": "Returned power being too small to be perceived, since it is too small to be covered by quantization of ADC.", 
     "references": "[0, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566] [0, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073]",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["Power below quantization threshold", "Sub-minimum quantization power", "Inadequate power for quantization", "Below-quantization threshold signal", "Power insufficient for quantization", "Sub-threshold quantization power"]
   }
 ]
