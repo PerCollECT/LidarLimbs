@@ -1,178 +1,7 @@
 [
   {
-    "id": "Focal Length",
+    "id": "1000",
     "parentIds": [],
-    "title": "Focal Length",
-    "decomBlock": "Optical System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "PIC Modefield",
-    "parentIds": [],
-    "title": "PIC Modefield",
-    "decomBlock": "PIC",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "Target Distance",
-    "parentIds": [],
-    "title": "Target Distance",
-    "decomBlock": "General",
-    "description": "",
-    "references": "",
-    "nodeType": "systemIndependent"
-  },
-  {
-    "id": "Entrance Pupil",
-    "parentIds": [],
-    "title": "Entrance Pupil",
-    "decomBlock": "Optical System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "output power",
-    "parentIds": ["Laser safety"],
-    "title": "output power",
-    "decomBlock": "Optical System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "Laser safety",
-    "parentIds": [],
-    "title": "Laser safety",
-    "decomBlock": "Optical System",
-    "description": "",
-    "references": "",
-    "nodeType": "systemIndependent"
-  },
-  {
-    "id": "speckles",
-    "parentIds": ["wavelength", "Scan Speed", "Target Distance"],
-    "title": "speckles",
-    "decomBlock": "General",
-    "description": "",
-    "references": "",
-    "nodeType": "effect"
-  },
-  {
-    "id": "Incoupling Efficiency",
-    "parentIds": ["Entrance Pupil", "Target Distance", "PIC Modefield", "beam size", "laser quality", "beam quality", "wavelength", "output power", "Scan Speed"],
-    "title": "Incoupling Efficiency",
-    "decomBlock": "General",
-    "description": "",
-    "references": "",
-    "nodeType": "effect"
-  },
-  {
-    "id": "Scan Speed",
-    "parentIds": [],
-    "title": "Scan Speed",
-    "decomBlock": "Scan System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "Wavefront errors",
-    "parentIds": [],
-    "title": "Wavefront errors",
-    "decomBlock": "Optical System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "beam size",
-    "parentIds": ["PIC Modefield", "Focal Length"],
-    "title": "beam size",
-    "decomBlock": "Optical System",
-    "description": "",
-    "references": "",
-    "nodeType": "systemIndependent"
-  },
-  {
-    "id": "beam quality",
-    "parentIds": ["Wavefront errors"],
-    "title": "beam quality",
-    "decomBlock": "Optical System",
-    "description": "",
-    "references": "",
-    "nodeType": "effect"
-  },
-  {
-    "id": "laser quality",
-    "parentIds": ["laser coherence", "laser noise"],
-    "title": "laser quality",
-    "decomBlock": "Laser System",
-    "description": "",
-    "references": "",
-    "nodeType": "effect"
-  },
-  {
-    "id": "laser coherence",
-    "parentIds": [],
-    "title": "laser coherence",
-    "decomBlock": "Laser System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "laser noise",
-    "parentIds": [],
-    "title": "laser noise",
-    "decomBlock": "Laser System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "wavelength",
-    "parentIds": [],
-    "title": "wavelength",
-    "decomBlock": "Laser System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "other losses",
-    "parentIds": [],
-    "title": "other losses",
-    "decomBlock": "General",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "time domain signal",
-    "parentIds": ["Incoupling Efficiency", "speckles", "other losses", "photo diode performance"],
-    "title": "time domain signal",
-    "decomBlock": "Detection System",
-    "description": "",
-    "references": "",
-    "nodeType": "systemIndependent"
-  },
-  {
-    "id": "photo diode performance",
-    "parentIds": [],
-    "title": "photo diode performance",
-    "decomBlock": "Detection System",
-    "description": "",
-    "references": "",
-    "nodeType": "designParameter"
-  },
-  {
-    "id": "False detection",
-    "parentIds": ["time domain signal", "signal thresholding", "signal windowing", "detection alogrithm"],
     "title": "False detection",
     "decomBlock": "General",
     "description": "",
@@ -180,28 +9,199 @@
     "nodeType": "effect"
   },
   {
-    "id": "signal thresholding",
-    "parentIds": [],
-    "title": "signal thresholding",
-    "decomBlock": "DSP System",
+    "id": "1001",
+    "parentIds": ["1000"],
+    "title": "Time domain signal",
+    "decomBlock": "Detection system",
+    "description": "",
+    "references": "",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "1002",
+    "parentIds": ["1000"],
+    "title": "Signal thresholding",
+    "decomBlock": "DSP system",
     "description": "",
     "references": "",
     "nodeType": "designParameter"
   },
   {
-    "id": "detection alogrithm",
-    "parentIds": [],
-    "title": "detection alogrithm",
-    "decomBlock": "DSP System",
+    "id": "1003",
+    "parentIds": ["1000"],
+    "title": "Signal windowing",
+    "decomBlock": "DSP system",
     "description": "",
     "references": "",
     "nodeType": "designParameter"
   },
   {
-    "id": "signal windowing",
-    "parentIds": [],
-    "title": "signal windowing",
-    "decomBlock": "DSP System",
+    "id": "1004",
+    "parentIds": ["1000"],
+    "title": "Detection alogrithm",
+    "decomBlock": "DSP system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1005",
+    "parentIds": ["1001"],
+    "title": "Incoupling efficiency",
+    "decomBlock": "General",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "1006",
+    "parentIds": ["1001"],
+    "title": "Speckles",
+    "decomBlock": "General",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "1007",
+    "parentIds": ["1001"],
+    "title": "Other losses",
+    "decomBlock": "General",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1008",
+    "parentIds": ["1001"],
+    "title": "Photo diode performance",
+    "decomBlock": "Detection system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1009",
+    "parentIds": ["1005", "1006"],
+    "title": "Wavelength",
+    "decomBlock": "Laser system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1010",
+    "parentIds": ["1005", "1006"],
+    "title": "Scan speed",
+    "decomBlock": "Scan system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1011",
+    "parentIds": ["1005", "1006"],
+    "title": "Target distance",
+    "decomBlock": "General",
+    "description": "",
+    "references": "",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "1012",
+    "parentIds": ["1005"],
+    "title": "Laser quality",
+    "decomBlock": "Laser system",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "1013",
+    "parentIds": ["1005"],
+    "title": "Beam quality",
+    "decomBlock": "Optical system",
+    "description": "",
+    "references": "",
+    "nodeType": "effect"
+  },
+  {
+    "id": "1014",
+    "parentIds": ["1005"],
+    "title": "Output power",
+    "decomBlock": "Optical system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1015",
+    "parentIds": ["1005"],
+    "title": "Entrance pupil",
+    "decomBlock": "Optical system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1016",
+    "parentIds": ["1005"],
+    "title": "Beam size",
+    "decomBlock": "Optical system",
+    "description": "",
+    "references": "",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "1017",
+    "parentIds": ["1005","1016"],
+    "title": "PIC modefield",
+    "decomBlock": "PIC",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1018",
+    "parentIds": ["1016"],
+    "title": "Focal length",
+    "decomBlock": "Optical system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1019",
+    "parentIds": ["1014"],
+    "title": "Laser safety",
+    "decomBlock": "Optical system",
+    "description": "",
+    "references": "",
+    "nodeType": "systemIndependent"
+  },
+  {
+    "id": "1020",
+    "parentIds": ["1013"],
+    "title": "Wavefront errors",
+    "decomBlock": "Optical system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1021",
+    "parentIds": ["1012"],
+    "title": "Laser coherence",
+    "decomBlock": "Laser system",
+    "description": "",
+    "references": "",
+    "nodeType": "designParameter"
+  },
+  {
+    "id": "1022",
+    "parentIds": ["1012"],
+    "title": "Laser noise",
+    "decomBlock": "Laser system",
     "description": "",
     "references": "",
     "nodeType": "designParameter"
