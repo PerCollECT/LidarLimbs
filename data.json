@@ -59,7 +59,7 @@
     "title": "Incoupling efficiency",
     "decomBlock": "General",
     "description": "Capablity to inject the returned light in the single mode waveguides.",
-    "references": "[1005, Schwab et al., 2022, Coupling light emission of single-photon sources into single-mode fibers: mode matching, coupling efficiencies and thermo-optical effects]",
+    "references": "[1005, Schwab et al., Coupling light emission of single-photon sources into single-mode fibers: mode matching; coupling efficiencies and thermo-optical effects, https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-18-32292&id=493226]",
     "nodeType": "effect"
   },
   {
@@ -68,7 +68,7 @@
     "title": "Speckles",
     "decomBlock": "General",
     "description": "Coherent light effect due to rough surfaces.",
-    "references": "[1006, Dainty, 1977, The Statistics of Speckle Patterns]",
+    "references": "[1006, Dainty, The Statistics of Speckle Patterns, https://www.sciencedirect.com/science/article/abs/pii/S007966380870249X?via%3Dihub]",
     "nodeType": "effect"
   },
   {
@@ -104,7 +104,7 @@
     "title": "Scan Speed",
     "decomBlock": "Scan system",
     "description": "The angular speed of non-solid state scan units. Mitgates the speckle effect but reduces coupling efficiency.",
-    "references": "[1010, Dabas et al., 1994, Characterization of pulsed coherent Doppler LIDAR with the speckle effect]",
+    "references": "[1010, Dabas et al., Characterization of pulsed coherent Doppler LIDAR with the speckle effect, https://opg.optica.org/ao/abstract.cfm?uri=ao-33-27-6524]",
     "nodeType": "designParameter"
   },
   {
@@ -185,7 +185,7 @@
     "title": "Laser Safety Class",
     "decomBlock": "Optical system",
     "description": "The laser safety class limits the optical power that can be used.",
-    "references": "[1019, DIN EN 60825-1:2022-07, 2022, Laser Norm]",
+    "references": "[1014, Laser Norm, DIN EN 60825-1:2022-07, https://www.vde-verlag.de/standards/0800758/din-en-60825-1-vde-0837-1-2022-07.html]",
     "nodeType": "systemIndependent"
   },
   {
