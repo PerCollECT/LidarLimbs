@@ -3,7 +3,7 @@
     "id": "1000",
     "parentIds": [],
     "title": "False detection",
-    "decomBlock": "General",
+    "decomBlock": "Detection identification",
     "description": "Wrong detection during the measurement.",
     "references": "",
     "nodeType": "effect"
@@ -12,7 +12,7 @@
     "id": "1100",
     "parentIds": [],
     "title": "True detection",
-    "decomBlock": "General",
+    "decomBlock": "Detection identification",
     "description": "True detection during the measurement.",
     "references": "",
     "nodeType": "effect"
@@ -21,7 +21,7 @@
     "id": "1001",
     "parentIds": ["1004"],
     "title": "Time domain signal",
-    "decomBlock": "Detection system",
+    "decomBlock": "Pre-processing",
     "description": "The time-dependent beat signal before digital processing",
     "references": "",
     "nodeType": "systemIndependent"
@@ -30,7 +30,7 @@
     "id": "1002",
     "parentIds": ["1004"],
     "title": "Signal thresholding",
-    "decomBlock": "DSP system",
+    "decomBlock": "Pre-processing",
     "description": "The tresholding is influences the the false detection and true detection.",
     "references": "",
     "nodeType": "designParameter"
@@ -39,7 +39,7 @@
     "id": "1003",
     "parentIds": ["1004"],
     "title": "Signal windowing",
-    "decomBlock": "DSP system",
+    "decomBlock": "Pre-processing",
     "description": "The windowing of the time domain signal influences the frequency domain.",
     "references": "",
     "nodeType": "designParameter"
@@ -48,7 +48,7 @@
     "id": "1004",
     "parentIds": ["1000", "1100"],
     "title": "Detection algorithm",
-    "decomBlock": "DSP system",
+    "decomBlock": "Detection identification",
     "description": "The choice of the peak detection algorithm defined the false detection and true detection.",
     "references": "",
     "nodeType": "designParameter"
@@ -57,7 +57,7 @@
     "id": "1005",
     "parentIds": ["1001"],
     "title": "Incoupling efficiency",
-    "decomBlock": "General",
+    "decomBlock": "Reception",
     "description": "Capablity to inject the returned light in the single mode waveguides.",
     "references": "[1005, Schwab et al., Coupling light emission of single-photon sources into single-mode fibers: mode matching; coupling efficiencies and thermo-optical effects, https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-18-32292&id=493226]",
     "nodeType": "effect"
@@ -66,7 +66,7 @@
     "id": "1006",
     "parentIds": ["1005"],
     "title": "Speckles",
-    "decomBlock": "General",
+    "decomBlock": "Signal propagation",
     "description": "Coherent light effect due to rough surfaces.",
     "references": "[1006, Dainty, The Statistics of Speckle Patterns, https://www.sciencedirect.com/science/article/abs/pii/S007966380870249X?via%3Dihub]",
     "nodeType": "effect"
@@ -75,7 +75,7 @@
     "id": "1007",
     "parentIds": ["1005"],
     "title": "Other Losses",
-    "decomBlock": "General",
+    "decomBlock": "Signal propagation",
     "description": "Includes all other optical losses, like material absorptions, Fresnel reflections ...",
     "references": "",
     "nodeType": "designParameter"
@@ -84,7 +84,7 @@
     "id": "1008",
     "parentIds": ["1001"],
     "title": "Photo Diode Performance",
-    "decomBlock": "Detection system",
+    "decomBlock": "Reception",
     "description": "Sensitivity of the photodiodes and transimpedance amplifiers.",
     "references": "",
     "nodeType": "designParameter"
@@ -93,7 +93,7 @@
     "id": "1009",
     "parentIds": ["1006", "1019"],
     "title": "Wavelength",
-    "decomBlock": "Laser system",
+    "decomBlock": "Emission",
     "description": "System central wave length.",
     "references": "",
     "nodeType": "designParameter"
@@ -102,7 +102,7 @@
     "id": "1010",
     "parentIds": ["1005", "1006"],
     "title": "Scan Speed",
-    "decomBlock": "Scan system",
+    "decomBlock": "Emission",
     "description": "The angular speed of non-solid state scan units. Mitgates the speckle effect but reduces coupling efficiency.",
     "references": "[1010, Dabas et al., Characterization of pulsed coherent Doppler LIDAR with the speckle effect, https://opg.optica.org/ao/abstract.cfm?uri=ao-33-27-6524]",
     "nodeType": "designParameter"
@@ -111,7 +111,7 @@
     "id": "1011",
     "parentIds": ["1006"],
     "title": "Target Distance and Velocity",
-    "decomBlock": "General",
+    "decomBlock": "Signal propagation",
     "description": "The distance and velocity of the target to be measured.",
     "references": "",
     "nodeType": "systemIndependent"
@@ -120,7 +120,7 @@
     "id": "1012",
     "parentIds": ["1001"],
     "title": "Laser Quality",
-    "decomBlock": "Laser system",
+    "decomBlock": "Emission",
     "description": "The quality of the laser system influences the SNR of the detected signal. Quality is given by low noises and small coherence length.",
     "references": "",
     "nodeType": "effect"
@@ -129,7 +129,7 @@
     "id": "1013",
     "parentIds": ["1005"],
     "title": "Beam quality",
-    "decomBlock": "Optical system",
+    "decomBlock": "Emission",
     "description": "The overall beam quality influence the beam propgation and thus the coupling efficiciency.",
     "references": "",
     "nodeType": "effect"
@@ -138,7 +138,7 @@
     "id": "1014",
     "parentIds": ["1005"],
     "title": "Output power",
-    "decomBlock": "Optical system",
+    "decomBlock": "Emission",
     "description": "The power of each beam. More power allows a better coupling efficiency.",
     "references": "",
     "nodeType": "designParameter"
@@ -147,7 +147,7 @@
     "id": "1015",
     "parentIds": ["1005"],
     "title": "Entrance pupil",
-    "decomBlock": "Optical system",
+    "decomBlock": "Reception",
     "description": "The entrance pupil (aperture) of the optical system.",
     "references": "",
     "nodeType": "designParameter"
@@ -156,7 +156,7 @@
     "id": "1016",
     "parentIds": ["1013"],
     "title": "Beam size",
-    "decomBlock": "Optical system",
+    "decomBlock": "Emission",
     "description": "Size of the out-going laser beam.",
     "references": "",
     "nodeType": "systemIndependent"
@@ -165,7 +165,7 @@
     "id": "1017",
     "parentIds": ["1005", "1016"],
     "title": "PIC mode field",
-    "decomBlock": "PIC",
+    "decomBlock": "Emission",
     "description": "The mode field distribution used for beam generation and in-coupling.",
     "references": "",
     "nodeType": "designParameter"
@@ -174,7 +174,7 @@
     "id": "1018",
     "parentIds": ["1016"],
     "title": "Focal length",
-    "decomBlock": "Optical system",
+    "decomBlock": "Emission",
     "description": "Focal length of the optical system.",
     "references": "",
     "nodeType": "designParameter"
@@ -183,7 +183,7 @@
     "id": "1019",
     "parentIds": ["1014"],
     "title": "Laser Safety Class",
-    "decomBlock": "Optical system",
+    "decomBlock": "Emission",
     "description": "The laser safety class limits the optical power that can be used.",
     "references": "[1014, Laser Norm, DIN EN 60825-1:2022-07, https://www.vde-verlag.de/standards/0800758/din-en-60825-1-vde-0837-1-2022-07.html]",
     "nodeType": "systemIndependent"
@@ -192,7 +192,7 @@
     "id": "1020",
     "parentIds": ["1013"],
     "title": "Wavefront Errors",
-    "decomBlock": "Optical system",
+    "decomBlock": "Emission",
     "description": "The overall wavefront errors of the optical system influence the beam quality",
     "references": "",
     "nodeType": "designParameter"
@@ -201,7 +201,7 @@
     "id": "1021",
     "parentIds": ["1012"],
     "title": "Laser Coherence",
-    "decomBlock": "Laser system",
+    "decomBlock": "Emission",
     "description": "The coherence length influences the shape and SNR of the result detected peak. Smaller coherence length improves SNR.",
     "references": "",
     "nodeType": "designParameter"
@@ -210,7 +210,7 @@
     "id": "1022",
     "parentIds": ["1012"],
     "title": "Laser Noise",
-    "decomBlock": "Laser system",
+    "decomBlock": "Emission",
     "description": "General noises influencing the chirp linearity and stability and thus the SNR of the detection. Better chirp linearity improves SNR.",
     "references": "",
     "nodeType": "designParameter"
