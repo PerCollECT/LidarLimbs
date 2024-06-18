@@ -7,7 +7,7 @@
     "description": "Missing detection, compared to an ideally detected surrounding. False negative detections to be handled by following processing steps.",
     "references": "",
     "nodeType": "effect",
-    "tags": ["Missed target identification", "Undetected object", "Failure to recognize", "Neglected positive signal", "Incomplete detection", "Signal oversight"]
+    "tags": ["Existence error", "Missed target identification", "Undetected object", "Failure to recognize", "Neglected positive signal", "Incomplete detection", "Signal oversight"]
   },
   {
     "id": "1",
@@ -15,9 +15,9 @@
     "title": "False positive detection",
     "decomBlock": "Detection identification",
     "description": "Additional detection, compared to an ideally detected surrounding. False positive detections to be filtered/handled/eliminated by following processing steps.",
-    "references": "[]",
+    "references": "",
     "nodeType": "effect",
-    "tags": ["Incorrect target identification", "Spurious object detection", "Mistaken positive signal", "False alarm", "Inaccurate positive identification", "Signal misinterpretation"]
+    "tags": ["Existence error", "False target identification", "Spurious object detection", "Mistaken positive signal", "False alarm", "False positive identification", "Signal misinterpretation"]
   },
   {
     "id": "2",
@@ -68,6 +68,16 @@
     "references": "[56, Wu et al., Real-Time Queue Length Detection with Roadside LiDAR Data, https://www.mdpi.com/1424-8220/20/8/2342] [79, Wu et al., Real-Time Queue Length Detection with Roadside LiDAR Data, https://www.mdpi.com/1424-8220/20/8/2342]",
     "nodeType": "designParameter",
     "tags": ["Lidar installation height", "Sensor low mounting coordinates", "Lidar fixture position", "Mounting elevation", "Sensor deployment at low position", "Low-set Lidar placement"]
+  },
+  {
+    "id": "10",
+    "parentIds": [],
+    "title": "Detection state error",
+    "decomBlock": "Detection identification",
+    "description": "Detection with errornous properties, compared to an ideally detected surrounding. This could mean wrong position, velocity, time stamp, intensity, or any other wrong property. Detections with state errors should be filtered/handled/eliminated by following processing steps.",
+    "references": "[]",
+    "nodeType": "effect",
+    "tags": ["Incorrect target identification", "State error", "Inaccurate positive identification", "Signal misinterpretation"]
   },
   {
     "id": "14", 
@@ -151,7 +161,7 @@
   },
   {
     "id": "54", 
-    "parentIds": ["39", "144"],
+    "parentIds": ["10", "39", "144"],
     "title": "Low received power from object", 
     "decomBlock": "Reception", 
     "description": "Laser beams which are reflected by object of interest contain low radiation power when hitting reception unit.", 
@@ -541,7 +551,7 @@
   },
   {
     "id": "102", 
-    "parentIds": ["0", "1"],
+    "parentIds": ["10"],
     "title": "Motion scan effect", 
     "decomBlock": "Signal propagation", 
     "description": "Vertical or horizontal scan of an object moving vertically or horizontally relative to the scanning direction is leading to a longer or shorter object scan period and, thus, to a directional expansion or compression of the resolution of the beams hitting the object and incorrect dimensions of the received object point cloud. The inequalities between detections without impact of motion scan effect and dynamic detections distorted by motion scan effect being referred as detection state errors.", 
@@ -621,7 +631,7 @@
   },
   {
     "id": "111", 
-    "parentIds": ["109", "108", "118", "1", "54", "105", "142", "139"],
+    "parentIds": ["102", "109", "108", "118", "1", "54", "105", "142", "139"],
     "title": "Specular/diffuse reflection by object parts", 
     "decomBlock": "Signal propagation", 
     "description": "Object parts reflecting portions of beam. Diffuse reflection being referred as scattering. Reflectance of an object part being expressed by Bidirectional Reflectance Distribution Function (BRDF).", 
