@@ -23,7 +23,7 @@
     "title": "Time domain signal",
     "decomBlock": "Pre-processing",
     "description": "The time-dependent beat signal before digital processing",
-    "references": "",
+    "references": "[1004, Elghandour and Ren, Modeling and comparative study of various detection techniques for FMCW LIDAR using optisystem, https://doi.org/10.1117/12.2034878]",
     "nodeType": "systemIndependent"
   },
   {
@@ -32,7 +32,7 @@
     "title": "Signal thresholding",
     "decomBlock": "Pre-processing",
     "description": "The tresholding is influences the the false detection and true detection.",
-    "references": "",
+    "references": "[1004, Gu et al., Learning Moving-Object Tracking with FMCW LiDAR, https://doi.org/10.1109/IROS47612.2022.9981346]",
     "nodeType": "designParameter"
   },
   {
@@ -41,7 +41,7 @@
     "title": "Signal windowing",
     "decomBlock": "Pre-processing",
     "description": "The windowing of the time domain signal influences the frequency domain.",
-    "references": "",
+    "references": "[1004, Gu et al., Learning Moving-Object Tracking with FMCW LiDAR, https://doi.org/10.1109/IROS47612.2022.9981346]",
     "nodeType": "designParameter"
   },
   {
@@ -49,8 +49,8 @@
     "parentIds": ["1000", "1100"],
     "title": "Detection algorithm",
     "decomBlock": "Detection identification",
-    "description": "The choice of the peak detection algorithm defined the false detection and true detection.",
-    "references": "",
+    "description": "The choice of the peak detection algorithm defines the false detection and true detection.",
+    "references": "[1000, Gu et al., Learning Moving-Object Tracking with FMCW LiDAR, https://doi.org/10.1109/IROS47612.2022.9981346] [1100, Gu et al., Learning Moving-Object Tracking with FMCW LiDAR, https://doi.org/10.1109/IROS47612.2022.9981346]",
     "nodeType": "designParameter"
   },
   {
@@ -59,16 +59,16 @@
     "title": "Incoupling efficiency",
     "decomBlock": "Reception",
     "description": "Capablity to inject the returned light in the single mode waveguides.",
-    "references": "[1005, Schwab et al., Coupling light emission of single-photon sources into single-mode fibers: mode matching; coupling efficiencies and thermo-optical effects, https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-18-32292&id=493226]",
+    "references": "[1001, Li et al., Analysis on coupling efficiency of the fiber probe used in frequency scanning interference distance measurement, https://doi.org/10.1016/j.ijleo.2019.164006] [1001, Schwab et al., Coupling light emission of single-photon sources into single-mode fibers: mode matching; coupling efficiencies and thermo-optical effects, https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-18-32292&id=493226]",
     "nodeType": "effect"
   },
   {
     "id": "1006",
-    "parentIds": ["1005"],
+    "parentIds": ["1005", "1023"],
     "title": "Speckles",
     "decomBlock": "Signal propagation",
     "description": "Coherent light effect due to rough surfaces.",
-    "references": "[1006, Dainty, The Statistics of Speckle Patterns, https://www.sciencedirect.com/science/article/abs/pii/S007966380870249X?via%3Dihub]",
+    "references": "[1023, Baumann et al., Speckle phase noise in coherent laser ranging: fundamental precision limitations, http://dx.doi.org/10.1364/OL.39.004776]",
     "nodeType": "effect"
   },
   {
@@ -76,8 +76,8 @@
     "parentIds": ["1005"],
     "title": "Other Losses",
     "decomBlock": "Signal propagation",
-    "description": "Includes all other optical losses, like material absorptions, Fresnel reflections ...",
-    "references": "",
+    "description": "Includes all other optical losses, like material absorptions, Fresnel reflections.",
+    "references": "[1005, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075]",
     "nodeType": "designParameter"
   },
   {
@@ -95,25 +95,25 @@
     "title": "Wavelength",
     "decomBlock": "Emission",
     "description": "System central wave length.",
-    "references": "",
+    "references": "[1019, DIN, DIN EN 60825-1:2022-07, https://www.vde-verlag.de/standards/0800758/din-en-60825-1-vde-0837-1-2022-07.html][1006, Dainty et al., Laser Speckle and Related Phenomena, https://link.springer.com/chapter/10.1007/978-3-662-43205-1_2]",
     "nodeType": "designParameter"
   },
   {
     "id": "1010",
-    "parentIds": ["1005", "1006"],
+    "parentIds": ["1005", "1023"],
     "title": "Scan Speed",
     "decomBlock": "Emission",
-    "description": "The angular speed of non-solid state scan units. Mitgates the speckle effect but reduces coupling efficiency.",
-    "references": "[1010, Dabas et al., Characterization of pulsed coherent Doppler LIDAR with the speckle effect, https://opg.optica.org/ao/abstract.cfm?uri=ao-33-27-6524]",
+    "description": "The angular speed of non-solid state scan units. Mitgates speckle-induced noise but reduces coupling efficiency.",
+    "references": "[1023, Baumann et al., Speckle phase noise in coherent laser ranging: fundamental precision limitations, http://dx.doi.org/10.1364/OL.39.004776]",
     "nodeType": "designParameter"
   },
   {
     "id": "1011",
-    "parentIds": ["1006"],
+    "parentIds": ["1023"],
     "title": "Target Distance and Velocity",
     "decomBlock": "Signal propagation",
     "description": "The distance and velocity of the target to be measured.",
-    "references": "",
+    "references": "[1023, Baumann et al., Speckle phase noise in coherent laser ranging: fundamental precision limitations, http://dx.doi.org/10.1364/OL.39.004776, Impact of scan speed on speckle-induced noise being used as confirmation of dependency between relative movement of target and sensor.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -131,7 +131,7 @@
     "title": "Beam quality",
     "decomBlock": "Emission",
     "description": "The overall beam quality influence the beam propgation and thus the coupling efficiciency.",
-    "references": "",
+    "references": "[1005, Ding et al., Study of Fiber Coupling Efficiency and Adaptive Optics Correction Technique in Atmospheric Slant-Range Channels, https://doi.org/10.20944/preprints202309.1784.v1]",
     "nodeType": "effect"
   },
   {
@@ -140,7 +140,7 @@
     "title": "Output power",
     "decomBlock": "Emission",
     "description": "The power of each beam. More power allows a better coupling efficiency.",
-    "references": "",
+    "references": "[1005, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075]",
     "nodeType": "designParameter"
   },
   {
@@ -149,7 +149,7 @@
     "title": "Entrance pupil",
     "decomBlock": "Reception",
     "description": "The entrance pupil (aperture) of the optical system.",
-    "references": "",
+    "references": "[1005, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075]",
     "nodeType": "designParameter"
   },
   {
@@ -158,7 +158,7 @@
     "title": "Beam size",
     "decomBlock": "Emission",
     "description": "Size of the out-going laser beam.",
-    "references": "",
+    "references": "[1013, Edmund Optics GmbH, Beam Quality and Strehl Ratio, https://www.edmundoptics.com/knowledge-center/application-notes/lasers/beam-quality-and-strehl-ratio/, See Strehl Ratio.]",
     "nodeType": "systemIndependent"
   },
   {
@@ -167,7 +167,7 @@
     "title": "PIC mode field",
     "decomBlock": "Emission",
     "description": "The mode field distribution used for beam generation and in-coupling.",
-    "references": "",
+    "references": "[1005, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075] [1016, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075]",
     "nodeType": "designParameter"
   },
   {
@@ -176,7 +176,7 @@
     "title": "Focal length",
     "decomBlock": "Emission",
     "description": "Focal length of the optical system.",
-    "references": "",
+    "references": "[1016, Pan et al., Micron-precision measurement using a combined frequency-modulated continuous wave ladar autofocusing system at 60 meters standoff distance, https://doi.org/10.1364/OE.26.015186]",
     "nodeType": "designParameter"
   },
   {
@@ -185,7 +185,7 @@
     "title": "Laser Safety Class",
     "decomBlock": "Emission",
     "description": "The laser safety class limits the optical power that can be used.",
-    "references": "[1014, Laser Norm, DIN EN 60825-1:2022-07, https://www.vde-verlag.de/standards/0800758/din-en-60825-1-vde-0837-1-2022-07.html]",
+    "references": "[1014, DIN, DIN EN 60825-1:2022-07, https://www.vde-verlag.de/standards/0800758/din-en-60825-1-vde-0837-1-2022-07.html]",
     "nodeType": "systemIndependent"
   },
   {
@@ -194,7 +194,7 @@
     "title": "Wavefront Errors",
     "decomBlock": "Emission",
     "description": "The overall wavefront errors of the optical system influence the beam quality",
-    "references": "",
+    "references": "[1013, Edmund Optics GmbH, Beam Quality and Strehl Ratio, https://www.edmundoptics.com/knowledge-center/application-notes/lasers/beam-quality-and-strehl-ratio/, See Strehl Ratio.]",
     "nodeType": "designParameter"
   },
   {
@@ -214,5 +214,14 @@
     "description": "General noises influencing the chirp linearity and stability and thus the SNR of the detection. Better chirp linearity improves SNR.",
     "references": "",
     "nodeType": "designParameter"
+  },
+  {
+    "id": "1023",
+    "parentIds": [],
+    "title": "Speckle-induced noise",
+    "decomBlock": "Signal propagation",
+    "description": "Phase noise created by speckle effect.",
+    "references": "",
+    "nodeType": "effect"
   }
 ]
