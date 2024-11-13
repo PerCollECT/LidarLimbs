@@ -37,7 +37,7 @@
     "description": "Wavelength of the emitted light beam, considered an ectromagnetic wave. Thus, wavelength being “the distance, measured in the direction of propagation of a wave, between two successive points in the wave that are characterized by the same phase of oscillation“ [Wavelength. (n.d.). In Dictionary.com. Retrieved June 21, 2021, from https://www.dictionary.com/browse/wavelength].", 
     "references": "[92, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Absorption cross section σ_abs(λ): Wavelength λ; p.10.] [92, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [92, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [92, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Absorption efficiency factor Q_abs(a): Size factor x: Wavelength λ; p.6.] [93, Wandinger, Introduction to Lidar, https://link.springer.com/chapter/10.1007/0-387-25101-4_1, Lidar Equation: Transmission term T(R): Extinction coefficient α(R;λ): Extinction cross section σ_ext(λ): Scattering cross section σ_sca(λ): Wavelength λ; p.10.] [93, Liou et al., On geometric optics and surface waves for light scattering by spheres, https://linkinghub.elsevier.com/retrieve/pii/S0022407310001408] [93, Mishchenko and Dlugach, Scattering and extinction by spherical particles immersed in an absorbing host medium, https://linkinghub.elsevier.com/retrieve/pii/S0022407318300840] [93, Yin and Pilon, Efficiency factors and radiation characteristics of spherical scatterers in an absorbing medium, https://www.osapublishing.org/abstract.cfm?URI=josaa-23-11-2784, Mie Theory: Scattering efficiency factor Q_sca(a): Size factor x: Wavelength λ; p.6.] [112, Milenković et al., Total canopy transmittance estimated from small-footprint; full-waveform airborne LiDAR, https://linkinghub.elsevier.com/retrieve/pii/S092427161630171X] [112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.95.] [112, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [110, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [110, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415] [111, Rosenberger et al., Analysis of Real World Sensor Behavior for Rising Fidelity of Physically Based Lidar Sensor Models, https://ieeexplore.ieee.org/document/8500511/, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Wei et al., Multi-wavelength canopy LiDAR for remote sensing of vegetation: Design and system performance, https://linkinghub.elsevier.com/retrieve/pii/S0924271612000378, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two.] [111, Gotzig and Geduld, Automotive LIDAR, http://link.springer.com/10.1007/978-3-319-12352-3_18, Mutual influence of absorption; reflection and transmission: A + R + T = 1 with hemispherical absorptance A; hemispherical reflectance R; hemispherical transmittance T. Thus; causes for one of these three inevitably affect the other two. See p.415.] [128, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [128, Eichler et al., Optical Waveguides and Glass Fibers, http://link.springer.com/10.1007/978-3-319-99895-4_13, p.256.] [129, Brown and Arnold, Fundamentals of Laser-Material Interaction and Application to Multiscale Surface Modification, http://link.springer.com/10.1007/978-3-642-10523-4_4, p.93.] [129, Eichler et al., Optical Waveguides and Glass Fibers, http://link.springer.com/10.1007/978-3-319-99895-4_13, p.256.]",
     "nodeType": "designParameter",
-    "tags": ["Signal frequency", "Radiating wave length", "Emission frequency", "Transmitter wave characteristics", "Wavelength of emitting source"]
+    "tags": ["Signal frequency", "Radiating wavelength", "Emission frequency", "Transmitter wave characteristics", "Wavelength of emitting source"]
   },
   {
     "id": "4", 
@@ -938,5 +938,288 @@
     "references": "[0, Jiang et al., Invited Article: Optical dynamic range compression, http://aip.scitation.org/doi/10.1063/1.5051566] [0, Kokhanenko et al., Expanding the dynamic range of a lidar receiver by the method of dynode-signal collection, https://www.osapublishing.org/abstract.cfm?URI=ao-41-24-5073]",
     "nodeType": "effect",
     "tags": ["Power below quantization threshold", "Sub-minimum quantization power", "Inadequate power for quantization", "Below-quantization threshold signal", "Power insufficient for quantization", "Sub-threshold quantization power"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  {
+    "id": "1000",
+    "parentIds": [],
+    "title": "False detection",
+    "decomBlock": "Detection identification",
+    "description": "Wrong detection during the measurement.",
+    "references": "",
+    "nodeType": "effect",
+    "tags": ["Incorrect measurement detection", "Erroneous detection", "False signal identification", "Measurement error in detection", "False positive detection", "Detection anomaly"]
+  },
+  {
+    "id": "1100",
+    "parentIds": [],
+    "title": "True detection",
+    "decomBlock": "Detection identification",
+    "description": "True detection during the measurement.",
+    "references": "",
+    "nodeType": "effect",
+    "tags": ["Accurate measurement detection", "Correct signal identification", "True detection event", "Validated detection", "True positive detection", "Detection success"]
+  },
+  {
+    "id": "1001",
+    "parentIds": ["1004"],
+    "title": "Time domain signal",
+    "decomBlock": "Pre-processing",
+    "description": "The time-dependent beat signal before digital processing",
+    "references": "[1004, Elghandour and Ren, Modeling and comparative study of various detection techniques for FMCW LIDAR using optisystem, https://doi.org/10.1117/12.2034878]",
+    "nodeType": "systemIndependent",
+    "tags": ["Time-domain beat signal", "Pre-processed time signal", "Beat signal characteristics", "Signal before digital conversion", "Temporal signal analysis", "Analog beat signal"]
+  },
+  {
+    "id": "1002",
+    "parentIds": ["1004"],
+    "title": "Signal thresholding",
+    "decomBlock": "Pre-processing",
+    "description": "Declaration as detection only if detection threshold, e.g. power level threshold, is exceeded.",
+    "references": "[1004, Gu et al., Learning Moving-Object Tracking with FMCW LiDAR, https://doi.org/10.1109/IROS47612.2022.9981346]",
+    "nodeType": "designParameter",
+    "tags": ["Signal threshold influence", "Threshold-based detection", "Detection sensitivity threshold", "Signal threshold adjustment", "Thresholding impact on detection", "Threshold-driven signal analysis"]
+  },
+  {
+    "id": "1003",
+    "parentIds": ["1004"],
+    "title": "Signal windowing",
+    "decomBlock": "Pre-processing",
+    "description": "The windowing of the time domain signal influences the frequency domain.",
+    "references": "[1004, Gu et al., Learning Moving-Object Tracking with FMCW LiDAR, https://doi.org/10.1109/IROS47612.2022.9981346]",
+    "nodeType": "designParameter",
+    "tags": ["Windowing in time domain", "Signal window effect", "Frequency domain influence", "Time domain signal windowing", "Windowing for frequency analysis", "Signal segmentation by windowing"]
+  },
+  {
+    "id": "1004",
+    "parentIds": ["1000", "1100"],
+    "title": "Detection algorithm",
+    "decomBlock": "Detection identification",
+    "description": "The choice of the peak detection algorithm defines the false detection and true detection.",
+    "references": "[1000, Gu et al., Learning Moving-Object Tracking with FMCW LiDAR, https://doi.org/10.1109/IROS47612.2022.9981346] [1100, Gu et al., Learning Moving-Object Tracking with FMCW LiDAR, https://doi.org/10.1109/IROS47612.2022.9981346]",
+    "nodeType": "designParameter",
+    "tags": ["Detection algorithm impact", "Algorithm for detection accuracy", "False and true detection dependency", "Peak algorithm choice", "Detection methodology"]
+  },
+  {
+    "id": "1005",
+    "parentIds": ["1001"],
+    "title": "Incoupling efficiency",
+    "decomBlock": "Reception",
+    "description": "Capablity to inject the returned light in the single mode waveguides.",
+    "references": "[1001, Li et al., Analysis on coupling efficiency of the fiber probe used in frequency scanning interference distance measurement, https://doi.org/10.1016/j.ijleo.2019.164006] [1001, Schwab et al., Coupling light emission of single-photon sources into single-mode fibers: mode matching; coupling efficiencies and thermo-optical effects, https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-18-32292&id=493226]",
+    "nodeType": "effect",
+    "tags": ["Light incoupling efficiency", "Waveguide light injection", "Single-mode waveguide coupling", "Optical incoupling performance", "Coupling efficiency assessment", "Returned light injection"]
+  },
+  {
+    "id": "1006",
+    "parentIds": ["1005", "1023"],
+    "title": "Speckles",
+    "decomBlock": "Signal propagation",
+    "description": "Coherent light effect due to rough surfaces.",
+    "references": "[1023, Baumann et al., Speckle phase noise in coherent laser ranging: fundamental precision limitations, http://dx.doi.org/10.1364/OL.39.004776]",
+    "nodeType": "effect",
+    "tags": ["Coherent light speckles", "Phase distortions", "Coherent speckle interference", "Laser speckle phenomena"]
+  },
+  {
+    "id": "1007",
+    "parentIds": ["1005"],
+    "title": "Other Losses",
+    "decomBlock": "Signal propagation",
+    "description": "Includes all other optical losses, like material absorptions, Fresnel reflections.",
+    "references": "[1005, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075]",
+    "nodeType": "designParameter",
+    "tags": ["Optical system losses", "Fresnel reflection losses", "Material absorption losses", "Additional optical losses", "Other light transmission losses", "Loss factors in optics"]
+  },
+  {
+    "id": "1008",
+    "parentIds": ["1001"],
+    "title": "Photo Diode Performance",
+    "decomBlock": "Reception",
+    "description": "Sensitivity of the photodiodes and transimpedance amplifiers.",
+    "references": "",
+    "nodeType": "designParameter",
+    "tags": ["Photodiode sensitivity", "Transimpedance amplifier performance", "Sensor response characteristics", "Photodiode detection efficiency", "Photoelectric sensitivity", "Photodiode and amplifier properties"]
+  },
+  {
+    "id": "1009",
+    "parentIds": ["1006", "1019"],
+    "title": "Wavelength",
+    "decomBlock": "Emission",
+    "description": "System central wavelength.",
+    "references": "[1019, DIN, DIN EN 60825-1:2022-07, https://www.vde-verlag.de/standards/0800758/din-en-60825-1-vde-0837-1-2022-07.html][1006, Dainty et al., Laser Speckle and Related Phenomena, https://link.springer.com/chapter/10.1007/978-3-662-43205-1_2]",
+    "nodeType": "designParameter",
+    "tags": ["Central wavelength definition", "Emission wavelength properties", "Laser central wavelength", "Wavelength impact on system", "System wavelength specification", "Design wavelength parameter"]
+  },
+  {
+    "id": "1010",
+    "parentIds": ["1005", "1023"],
+    "title": "Scan Speed",
+    "decomBlock": "Emission",
+    "description": "The angular speed of non-solid state scan units. Mitgates speckle-induced noise but reduces coupling efficiency.",
+    "references": "[1023, Baumann et al., Speckle phase noise in coherent laser ranging: fundamental precision limitations, http://dx.doi.org/10.1364/OL.39.004776]",
+    "nodeType": "designParameter",
+    "tags": ["Angular scan speed", "Non-solid-state scanning", "Scan speed noise mitigation", "Speckle noise reduction", "Scanning angular velocity", "Coupling efficiency trade-off"]
+  },
+  {
+    "id": "1011",
+    "parentIds": ["1023"],
+    "title": "Target Distance and Velocity",
+    "decomBlock": "Signal propagation",
+    "description": "The distance and velocity of the target to be measured.",
+    "references": "[1023, Baumann et al., Speckle phase noise in coherent laser ranging: fundamental precision limitations, http://dx.doi.org/10.1364/OL.39.004776, Impact of scan speed on speckle-induced noise being used as confirmation of dependency between relative movement of target and sensor.]",
+    "nodeType": "systemIndependent",
+    "tags": ["Target distance measurement", "Velocity of measured target", "Distance and velocity analysis", "Target motion detection", "Relative target measurement"]
+  },
+  {
+    "id": "1012",
+    "parentIds": ["1001"],
+    "title": "Laser Quality",
+    "decomBlock": "Emission",
+    "description": "The quality of the laser system influences the SNR of the detected signal. Quality is given by low noises and small coherence length.",
+    "references": "",
+    "nodeType": "effect",
+    "tags": ["Laser system quality", "Low noise laser properties", "Short coherence length", "Laser SNR influence", "Emission system quality", "Laser stability and performance"]
+  },
+  {
+    "id": "1013",
+    "parentIds": ["1005"],
+    "title": "Beam quality",
+    "decomBlock": "Emission",
+    "description": "The overall beam quality influence the beam propgation and thus the coupling efficiciency.",
+    "references": "[1005, Ding et al., Study of Fiber Coupling Efficiency and Adaptive Optics Correction Technique in Atmospheric Slant-Range Channels, https://doi.org/10.20944/preprints202309.1784.v1]",
+    "nodeType": "effect",
+    "tags": ["Beam propagation quality", "Laser beam parameters", "Beam quality assessment", "Optical coupling beam quality", "Emission beam influence", "Laser beam performance"]
+  },
+  {
+    "id": "1014",
+    "parentIds": ["1005"],
+    "title": "Output power",
+    "decomBlock": "Emission",
+    "description": "The power of each beam. More power allows a better coupling efficiency.",
+    "references": "[1005, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075]",
+    "nodeType": "designParameter",
+    "tags": ["Laser beam output power", "Emission power impact", "Output power coupling", "Beam intensity for coupling", "Power level in laser system", "Light power output"]
+  },
+  {
+    "id": "1015",
+    "parentIds": ["1005"],
+    "title": "Entrance pupil",
+    "decomBlock": "Reception",
+    "description": "The entrance pupil (aperture) of the optical system.",
+    "references": "[1005, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075]",
+    "nodeType": "designParameter",
+    "tags": ["Optical system aperture", "Entrance pupil size", "Aperture for light reception", "Optical system input aperture", "Entrance pupil impact", "Reception aperture characteristics"]
+  },
+  {
+    "id": "1016",
+    "parentIds": ["1013"],
+    "title": "Beam size",
+    "decomBlock": "Emission",
+    "description": "Size of the out-going laser beam.",
+    "references": "[1013, Edmund Optics GmbH, Beam Quality and Strehl Ratio, https://www.edmundoptics.com/knowledge-center/application-notes/lasers/beam-quality-and-strehl-ratio/, See Strehl Ratio.]",
+    "nodeType": "systemIndependent",
+    "tags": ["Outgoing laser beam size", "Beam diameter specification", "Laser beam size influence", "Emission beam dimensions", "Size of outgoing beam"]
+  },
+  {
+    "id": "1017",
+    "parentIds": ["1005", "1016"],
+    "title": "PIC mode field",
+    "decomBlock": "Emission",
+    "description": "The mode field distribution used for beam generation and in-coupling.",
+    "references": "[1005, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075] [1016, Son et al., High-efficiency broadband light coupling between optical fibers and photonic integrated circuits, https://doi.org/10.1515/nanoph-2018-0075]",
+    "nodeType": "designParameter",
+    "tags": ["PIC mode field distribution", "Waveguide mode field", "Mode field for coupling", "Beam generation field", "PIC mode for emission", "Optical mode field distribution"]
+  },
+  {
+    "id": "1018",
+    "parentIds": ["1016"],
+    "title": "Focal length",
+    "decomBlock": "Emission",
+    "description": "Focal length of the optical system.",
+    "references": "[1016, Pan et al., Micron-precision measurement using a combined frequency-modulated continuous wave ladar autofocusing system at 60 meters standoff distance, https://doi.org/10.1364/OE.26.015186]",
+    "nodeType": "designParameter",
+    "tags": ["Optical system focal length", "Lens focal distance", "Focal length parameters", "Focusing length specification", "System focal characteristics", "Beam focusing length"]
+  },
+  {
+    "id": "1019",
+    "parentIds": ["1014"],
+    "title": "Laser Safety Class",
+    "decomBlock": "Emission",
+    "description": "The laser safety class limits the optical power that can be used.",
+    "references": "[1014, DIN, DIN EN 60825-1:2022-07, https://www.vde-verlag.de/standards/0800758/din-en-60825-1-vde-0837-1-2022-07.html]",
+    "nodeType": "systemIndependent",
+    "tags": ["Laser safety classification", "Optical power safety limits", "Laser power class", "Safety standards for laser", "Emission safety classification", "Laser system safety"]
+  },
+  {
+    "id": "1020",
+    "parentIds": ["1013"],
+    "title": "Wavefront Errors",
+    "decomBlock": "Emission",
+    "description": "The overall wavefront errors of the optical system influence the beam quality",
+    "references": "[1013, Edmund Optics GmbH, Beam Quality and Strehl Ratio, https://www.edmundoptics.com/knowledge-center/application-notes/lasers/beam-quality-and-strehl-ratio/, See Strehl Ratio.]",
+    "nodeType": "designParameter",
+    "tags": ["Wavefront error", "Optical wavefront analysis", "Wavefront quality impact", "Beam quality wavefront errors", "Optical system wavefront", "Emission wavefront assessment"]
+  },
+  {
+    "id": "1021",
+    "parentIds": ["1012"],
+    "title": "Laser Coherence",
+    "decomBlock": "Emission",
+    "description": "The coherence length influences the shape and SNR of the result detected peak. Smaller coherence length improves SNR.",
+    "references": "",
+    "nodeType": "designParameter",
+    "tags": ["Laser coherence properties", "Coherence length specification", "SNR improvement by coherence", "Coherence length influence", "Laser peak coherence", "Coherence impact on SNR"]
+  },
+  {
+    "id": "1022",
+    "parentIds": ["1012"],
+    "title": "Laser Noise",
+    "decomBlock": "Emission",
+    "description": "General noises influencing the chirp linearity and stability and thus the SNR of the detection. Better chirp linearity improves SNR.",
+    "references": "",
+    "nodeType": "designParameter",
+    "tags": ["Laser noise impact", "Chirp linearity stability", "Noise-induced detection errors", "Signal-to-noise ratio improvement", "Laser chirp properties", "Emission noise reduction"]
+  },
+  {
+    "id": "1023",
+    "parentIds": [],
+    "title": "Speckle-induced noise",
+    "decomBlock": "Signal propagation",
+    "description": "Phase noise created by speckle effect.",
+    "references": "",
+    "nodeType": "effect",
+    "tags": ["Speckle noise phase effect", "Noise from speckle patterns", "Speckle-induced errors", "Laser speckle phenomena", "Phase noise by speckle"]
   }
 ]
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
