@@ -939,8 +939,6 @@
     "nodeType": "effect",
     "tags": ["Power below quantization threshold", "Sub-minimum quantization power", "Inadequate power for quantization", "Below-quantization threshold signal", "Power insufficient for quantization", "Sub-threshold quantization power"]
   },
-
-
   {
     "id": "145", 
     "parentIds": [],
@@ -950,18 +948,6 @@
     "references": "",
     "nodeType": "effect"
   },
-
-
-
-
-
-
-
-
-
-
-
-
   {
     "id": "1003",
     "parentIds": ["0"],
@@ -973,7 +959,6 @@
     "tags": ["Windowing in time domain", "Signal window effect", "Frequency domain influence", "Time domain signal windowing", "Windowing for frequency analysis", "Signal segmentation by windowing"],
     "FMCWspecific": "true"
   },
-
   {
     "id": "1005",
     "parentIds": ["54"],
@@ -994,12 +979,6 @@
     "nodeType": "effect",
     "tags": ["Coherent light speckles", "Phase distortions", "Coherent speckle interference", "Laser speckle phenomena"]
   },
-
-  
-
-
-
-
   {
     "id": "1011",
     "parentIds": ["1023"],
@@ -1010,10 +989,6 @@
     "nodeType": "systemIndependent",
     "tags": ["Target distance measurement", "Velocity of measured target", "Distance and velocity analysis", "Target motion detection", "Relative target measurement"]
   },
-
-
-
-
   {
     "id": "1017",
     "parentIds": ["1005"],
@@ -1034,7 +1009,6 @@
     "nodeType": "designParameter",
     "tags": ["Optical system focal length", "Lens focal distance", "Focal length parameters", "Focusing length specification", "System focal characteristics", "Beam focusing length"]
   },
-
   {
     "id": "1020",
     "parentIds": ["1005"],
@@ -1045,8 +1019,6 @@
     "nodeType": "designParameter",
     "tags": ["Wavefront error", "Optical wavefront analysis", "Wavefront quality impact", "Beam quality wavefront errors", "Optical system wavefront", "Emission wavefront assessment"]
   },
-
-
   {
     "id": "1023",
     "parentIds": ["145"],
