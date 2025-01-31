@@ -947,7 +947,7 @@
     "description": "State error of single detection point compared to ground truth regarding the fixed timestamp of whole point cloud. States being distance, velocity, angle and intensity.", 
     "references": "",
     "nodeType": "effect",
-    "tags": ["State error of detection", "Deviation from ground truth", "Detection point state discrepancy", "Error in detected state parameters","Mismatch in detection state values", "Error in distance, velocity, angle, or intensity"]
+    "tags": ["State error of detection", "Deviation from ground truth", "Detection point state discrepancy", "Error in detected state parameters","Mismatch in detection state values", "Error in distance, velocity, angle, intensity"]
   },
   {
     "id": "146",
