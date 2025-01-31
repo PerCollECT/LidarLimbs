@@ -946,7 +946,8 @@
     "decomBlock": "Detection identification", 
     "description": "State error of single detection point compared to ground truth regarding the fixed timestamp of whole point cloud. States being distance, velocity, angle and intensity.", 
     "references": "",
-    "nodeType": "effect"
+    "nodeType": "effect",
+    "tags": ["State error of detection", "Deviation from ground truth", "Detection point state discrepancy", "Error in detected state parameters","Mismatch in detection state values", "Error in distance, velocity, angle, or intensity"]
   },
   {
     "id": "146",
